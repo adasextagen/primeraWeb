@@ -1,0 +1,99 @@
+body{
+    width: 1920px;
+    margin: 0 auto;
+}
+.main-banner{
+    background-image: url("file:///C:/Users/ACER/Documents/ADA/primeraWeb/images/home-banner.jpg");
+    height: 1000px;
+    width: 1920px;
+    overflow: hidden;
+}
+
+header{
+    overflow: hidden;
+    line-height: 40px;
+    padding: 0 0 0 330px;
+}
+
+.main-banner header .logo{
+    margin: 20px 0 0 0;
+}
+
+.main-banner nav{
+    line-height: 40px;
+}
+.main-banner ul{
+    margin: 0 0 0 700px;
+    line-height: 40px;
+
+}
+.main-banner li{
+    list-style: none;
+    display: block;
+    font-size: 17px;
+    float: left;
+    width: 70px;
+    height: 30px;
+    padding-left: 20px; 
+    margin: 20px 0 5px 0;
+
+}
+.main-banner li a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(19, 19, 80);
+}
+
+.main-banner li a:hover{
+    color: rgb(211, 211, 40);
+}
+
+.main-banner .logo{
+    float: left;
+}
+
+h3,h1{
+    color: rgb(19, 19, 80);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+}
+h3{
+    padding: 200px 0 0 0;
+}
+
+h1{
+    font-size: 48px;
+}
+
+.main-banner div{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 25px 0 0 0;
+}
+.main-banner div .learn-more,.see-course{
+    display: inline-block;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    width: 240px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    border-radius: 12px;
+}
+.main-banner div .learn-more{
+    border: 1px solid rgb(19, 19, 80);
+    background-color: rgb(19, 19, 80);
+    color: rgb(211, 211, 40);
+    margin-right: 10px;
+}
+
+.main-banner div .see-course{
+    border: 1px solid rgb(211, 211, 40);
+    background-color: rgb(211, 211, 40);
+    margin-left: 10px;
+}
