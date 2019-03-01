@@ -1,0 +1,20 @@
+header {
+    overflow:hidden;
+}
+
+.header-logo {
+    float:left;
+}
+
+.main-banner header nav {
+    float:right;
+    }
+
+.main-banner header nav ul li {
+    display:inline-block;
+    text-decoration:none;
+    }
+
+.main-banner header nav ul li a {
+    text-decoration:none;
+    }
