@@ -1,44 +1,52 @@
 /* GENERAL */
 body{
-    margin: 0;
+    margin:0;
     font-family: Arial, Helvetica, sans-serif; 
     color: #030521;
+    font-size: 15px;
 }
 
 a{
     text-decoration: none;
+    font-weight: bold;
+    color: #030521;
+}
+
+a:hover{
+    color: #f7c216;
 }
 
 ul{
     list-style: none;
     padding: 0;
     margin: 0;
+    font-weight: bold;
 }
 
 /* MAIN */
 .main-banner{
     background-image: url("home-banner.jpg"); /* cambie la ubicacion */
-    height: 500px; /* no es el height verdadero de la imagen */
+    height: 700px; /* no es el height verdadero de la imagen */
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-header{
-    margin: 0 10%;
-    display: inline;
-}
-
 .main-banner .logo{
-    display: inline;
+    position: absolute;
+    margin-left: 15%; 
+    margin-top: 20px;
 }
 
 .main-banner ul{
     float: right;
+    margin-right: 15%;
+    margin-top: 30px;
 }
 
 .main-banner li{
-    display: inline;
+    display: inline-block;
+    margin: 0 20px;
 }
 
 .main-banner h3{
@@ -55,18 +63,18 @@ header{
 }
 
 .main-text h3{
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .main-text h1{
-    font-size: 28px;
+    font-size: 35px;
 }
 
 .main-text div a{
-    font-size: 7px;
+    font-size: 10px;
     font-weight: bold;
     display: inline-block;
-    padding: 10px 25px;
+    padding: 15px 40px;
     border-radius: 5px;
 }
 
@@ -77,11 +85,21 @@ header{
     margin-right: 4px;
 }
 
+.main-text div .learn-more:hover{
+    color: #030521;
+    background-color: #f7c216;
+}
+
 .main-text div .see-course{
     color: #030521;
     border: 1px solid #f7c216;
     background-color: #f7c216;
     margin-left: 4px;
+}
+
+.main-text div .see-course:hover{
+    color: #f7c216;
+    background-color: #030521;
 }
 
 
