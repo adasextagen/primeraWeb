@@ -1,4 +1,5 @@
 /* GENERAL */
+
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif; 
@@ -67,6 +68,7 @@ section{
 }
 
 /* MAIN */
+
 header{
     height: 50px;
 }
@@ -99,7 +101,7 @@ header{
 }
 
 .main-banner-content{
-    height: calc(60vh - 50px); /* un cálculo: cambie los 80vh por 60vh para que quede mas arriba (menos los 50px del header) */
+    height: calc(50vh - 50px); /* un cálculo: cambie los 80vh por 60vh para que quede mas arriba (menos los 50px del header) */
     display: flex;
     flex-direction: column; /* lo pone en una columna */
     justify-content: center; /* centra verticalmente */
@@ -146,7 +148,6 @@ header{
     background-color: #030521;
 }
 
-
 /* AWESOME FEATURE */
 
 .features-list {
@@ -165,4 +166,51 @@ header{
 
 .ourPopularCourses{
     padding-top: 0; 
+}
+
+.courses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.courses .courses-computer, .courses .courses-custom, .courses .courses-social{
+    padding: 0;
+    background-color: aliceblue;
+    margin: 0 10px;
+    position: relative;
+}
+
+span.price{
+    color: #030521;
+    font-weight: bold;
+    border: 1px solid #f7c216;
+    border-radius: 100%;
+    padding: 15px;
+    background-color: #f7c216;
+    position: absolute;
+    top: 45%; /* NO ES LA MEJOR SOLUCION */
+    right: 5%; /* NO ES LA MEJOR SOLUCION */
+}
+
+.courses .courses-content{
+    margin: 20px;
+}
+
+.courses a.design{
+    background-color: #030521;
+    border: 1px solid #030521;
+    padding: 5px 10px;
+    color: white;
+    margin-top: 20px;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}/*flex-container*/
+
+.social-media img{
+    border-radius: 100px;
 }
