@@ -22,26 +22,71 @@ ul{
     margin: 0;
     font-weight: bold;
 }
+  
+.container{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 90%;
+    min-width: 600px;
+    max-width: 900px;
+}
+
+.subtitle{
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+section{
+    padding: 70px 0;
+}
+
+.subtitle h3{
+    font-size: 30px;
+    color: #030521;
+    margin: 0 0 20px 0;
+}
+
+.subtitle p{
+    margin: 0;
+    color: grey;
+    font-style: italic;
+}
+
+.content-text h4{
+    color: #030521;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.content-text p{
+    color: grey;
+    margin: 0;
+    font-size: 12px;
+    line-height: 20px;
+}
 
 /* MAIN */
+header{
+    height: 50px;
+}
+
 .main-banner{
-    background-image: url("home-banner.jpg"); /* cambie la ubicacion */
-    height: 700px; /* no es el height verdadero de la imagen */
-    background-position: center;
-    background-size: cover;
-    position: relative;
+    background-image: url("../images/home-banner.jpg");
+    height: 80vh; /* viewpoint height - hace que la imagen cubra el 80% de la pantalla */
+    background-position: center bottom; /* center: horizontalmente / bottom: centra desde abajo */
+    background-repeat: no-repeat; 
+    background-size: cover /* los valores posibles son cover (expande la imagen) y contain (la contrae) */
 }
 
 .main-banner .logo{
-    position: absolute;
-    margin-left: 15%; 
-    margin-top: 20px;
+    float: left;
+    margin: 10px 0 0 0;
 }
 
-.main-banner ul{
+.main-banner nav{
     float: right;
-    margin-right: 15%;
-    margin-top: 30px;
+    margin: 15px 0 0 0;
 }
 
 .main-banner li{
@@ -53,24 +98,23 @@ ul{
     clear: both;
 }
 
-.main-text{
-    margin: 0;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+.main-banner-content{
+    height: calc(60vh - 50px); /* un cálculo: cambie los 80vh por 60vh para que quede mas arriba (menos los 50px del header) */
+    display: flex;
+    flex-direction: column; /* lo pone en una columna */
+    justify-content: center; /* centra verticalmente */
+    text-align: center; /* esto lo agregue yo para centrar horizontalmente */
 }
 
-.main-text h3{
+.main-banner-content h3{
     font-size: 15px;
 }
 
-.main-text h1{
+.main-banner-content h1{
     font-size: 35px;
 }
 
-.main-text div a{
+.main-banner-content div a{
     font-size: 10px;
     font-weight: bold;
     display: inline-block;
@@ -78,29 +122,47 @@ ul{
     border-radius: 5px;
 }
 
-.main-text div .learn-more{
+.main-banner-content div .learn-more{
     color: #f7c216;
     border: 1px solid #030521;
     background-color: #030521;
     margin-right: 4px;
 }
 
-.main-text div .learn-more:hover{
+.main-banner-content div .learn-more:hover{
     color: #030521;
     background-color: #f7c216;
 }
 
-.main-text div .see-course{
+.main-banner-content div .see-course{
     color: #030521;
     border: 1px solid #f7c216;
     background-color: #f7c216;
     margin-left: 4px;
 }
 
-.main-text div .see-course:hover{
+.main-banner-content div .see-course:hover{
     color: #f7c216;
     background-color: #030521;
 }
 
 
 /* AWESOME FEATURE */
+
+.features-list {
+    display: flex;
+    flex-direction: row; /*valor por defecto del flex*/
+    justify-content: space-between;
+}
+  
+.features-item {
+    padding: 20px;
+    background-color: aliceblue;
+    margin: 0 10px;
+}
+
+/* OUR POPULAR COURSES */
+
+.ourPopularCourses{
+    padding-top: 0; 
+}
