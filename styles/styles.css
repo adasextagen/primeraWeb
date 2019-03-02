@@ -71,6 +71,11 @@ section{
     line-height: 20px;
 }
 
+img.icon{
+    padding: 10px;
+    background-color: grey;
+}
+
 /* MAIN */
 
 header{
@@ -193,27 +198,44 @@ span.price{
     padding: 15px;
     background-color: #f7c216;
     position: absolute;
-    top: 45%; /* NO ES LA MEJOR SOLUCION */
+    top: 40%; /* NO ES LA MEJOR SOLUCION */
     right: 5%; /* NO ES LA MEJOR SOLUCION */
 }
 
 .courses .courses-content{
     margin: 20px;
+    overflow: hidden;
 }
 
 .courses a.design{
     background-color: #030521;
     border: 1px solid #030521;
-    padding: 5px 10px;
+    padding: 10px 10px;
     color: white;
-    margin-top: 20px;
+    display: inline-block;
 }
 
-.social-media{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}/*flex-container*/
+.social-media-account{
+    display: inline-block;
+}
+
+.social-media-account img{
+    float: left;
+}
+
+.social-media-account a{
+    margin-left: 5px;
+    padding-top: 10px;
+}
+
+.social-media-status{
+    float: right;
+}
+
+.social-media-status a{
+    margin-left: 10px;
+    margin-top: 30px;
+}
 
 .social-media img{
     border-radius: 100px;
