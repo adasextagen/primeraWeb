@@ -1,0 +1,134 @@
+/* DEFINICIONES GENERALES*/
+body{
+    color: rgb(7, 41, 104);
+    font-family: calibri, helvetica;
+    font-size: 14px;
+    background-color: #ffffff;
+    margin:0;
+}
+
+.container{         /* esto te permite definir el ancho general de la web, y facilita futuras modificaciones*/
+    margin: 0 auto;
+    overflow: hidden;
+    width: 90%;
+    max-width: 900px;
+    min-width: 400px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(7, 41, 104);
+    font-weight: bold;
+}
+
+a:hover{
+    color: rgb(255, 238, 0);
+}
+
+ul{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    display: block;
+}
+
+li{
+    display: inline-block;
+    padding: 15px;
+    margin: auto 0;
+}
+
+.btn-container{
+    margin:0 auto;
+    width: 200px;
+    overflow: hidden;
+}
+
+.btn{
+    display: block;
+    border-radius: 10%;
+    width:80px;
+    height: 25px;
+}
+
+.blue{
+    color:  rgb(255, 238, 0);
+    background-color: rgb(7, 41, 104);
+}
+
+.yellow{
+    color: rgb(7, 41, 104);
+    background-color: rgb(255, 238, 0) ;
+}
+
+.main-banner{
+    background: url("../images/home-banner.jpg") no-repeat center bottom;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-size: cover;
+    /* background-image: url("../images/home-banner.jpg");
+    background-position: center bottom; */
+    height: 100vh; /*Viewport height*/
+    text-align: center; 
+    overflow: hidden;
+}
+
+.main-banner header{
+    width: 80%;
+    height: 50px;
+    display: block;
+}
+
+.main-banner header .logo{
+    display: block;
+    float: left;
+    padding: 15px 0 0 15px; 
+}
+
+nav{
+    float: right;
+}
+
+h3, h1{
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    font-size: 48px;
+    margin: 12px;
+}
+
+h3{
+    font-size: 24px;
+}
+.main-banner-content{
+    height: calc(100% - 50px);  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-banner .btn-container a.btn{
+    display: block;
+    float:left;
+
+}
+
+p.centerParagraph{
+    margin: 0 auto;
+    width: 400px;
+}
+
+.features-list{
+    display: flex;
+    flex-direction: row; /*es el valor que el flex trae por defecto*/
+    justify-content: space-between;
+}
+
+.features-item{
+    background-color: lightgray;
+    padding: 20px;
+    margin: 10px;
+}
