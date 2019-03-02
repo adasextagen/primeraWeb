@@ -41,6 +41,10 @@ section{
     padding: 70px 0;
 }
 
+.section-blue{
+    background-color: #030521;
+}
+
 .subtitle h3{
     font-size: 30px;
     color: #030521;
@@ -213,4 +217,79 @@ span.price{
 
 .social-media img{
     border-radius: 100px;
+}
+
+/* REGISTER NOW */
+
+.register-now{
+   width: 60%;
+   display: inline-block;
+   color: white;
+}
+
+.register-now .subtitle{
+    text-align: left;
+}
+
+.register-now .subtitle h3{
+    color: white;
+}
+
+.register-now .subtitle p{
+    color: white;
+    font-style: normal;
+}
+
+form{
+    background-color: white;
+    border: 1px solid #030521;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    float: right;
+}
+
+form p{
+    margin: 5px 0 20px 0;
+    text-align: center;
+    color: grey;
+}
+
+form h4{
+    margin: 0;
+    text-align: center;
+}
+
+form input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 10px 0;
+    border-bottom-style: 1px solid grey;
+}
+
+form input.submit{
+    background-color: #f7c216;
+    color: #030521;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+}
+
+.countdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.countdown div{
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #1c406b;
+}
+
+.countdown .number{
+    font-size: 20px;
+    font-weight: bold
 }
