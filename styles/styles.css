@@ -51,10 +51,19 @@ section{
     margin: 0 0 20px 0;
 }
 
-.subtitle p{
+.subtitle-section-blue h3{
+    font-size: 30px;
+    color: white;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+.subtitle p, .subtitle-section-blue p{
     margin: 0;
     color: grey;
     font-style: italic;
+    text-align: center;
+    /*padding-bottom: 70px;*/
 }
 
 .content-text h4{
@@ -260,6 +269,7 @@ span.price{
 .register-now .subtitle p{
     color: white;
     font-style: normal;
+    text-align: left;
 }
 
 form{
@@ -356,4 +366,89 @@ form input.submit{
 
 .trainers p.trainers-position{
   margin: 5px 0 25px 0;
+}
+
+/* UPCOMING EVENTS */
+
+.events{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.events div{
+    margin: 70px 10px 0 10px;
+}
+
+.view-all p{ /* pasarlo a link */
+    color: #f7c216;
+    text-align: center;
+    font-size: 10px;
+    margin: 70px 0 0 0;
+}
+
+.events-details{
+    position: relative;
+}
+
+div.events-calendar{
+    margin: 0;
+    padding: 20px;
+    background-color: rgba(98,97,116,0.4);
+    width: 45%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+div.events-lists{
+    margin: 0;
+}
+
+.events-date, .events-place{
+    font-weight: normal;
+}
+
+.events-date{
+    display: inline-block;
+    border-right: 1px solid white;
+    padding-right: 10%;
+}
+
+.events-date li span{
+    font-size: 20px;
+}
+
+.events-date span{
+    color: #f7c216;
+    font-weight: bold;
+}
+
+.events-place{
+    float: right;
+}
+
+.events-view-details{
+    background-color: #f7c216;
+    padding: 10px 20px;
+    font-size: 10px;
+}
+
+.events-text{
+    margin: 30px 0;
+}
+
+.events-lists, .events-text{
+    color: white;
+}
+
+.view-all{
+    color: #f7c216;
+    display: block;
+    text-align: center;
+    margin-top: 70px;
+    font-weight: normal;
+    font-size: 10px;
 }
