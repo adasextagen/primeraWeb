@@ -368,6 +368,10 @@ form input.submit{
   margin: 5px 0 25px 0;
 }
 
+.trainers a img.icon:hover{
+    background-color: #030521;
+}
+
 /* UPCOMING EVENTS */
 
 .events{
@@ -536,6 +540,23 @@ section.final{
     padding-bottom: 30px;
 }
 
+.final .final-list-left a{
+    color: white;
+    font-weight: normal;
+}
+
+.final .final-list-left a:hover{
+    color: #f7c216;
+}
+
+.final p a{
+    color: white;
+}
+
+.final p a:hover{
+    color: #f7c216;
+}
+
 .final footer p{
     width: 60%;
     margin: 0;
@@ -569,4 +590,8 @@ input.subscribe-button{
 
 .final img.icon{
     background-color: #1c406b;
+}
+
+.final img.icon:hover{
+    background-color: #f7c216;
 }
