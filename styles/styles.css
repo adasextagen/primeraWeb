@@ -1,21 +1,25 @@
 body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif; 
+  color: #1c3c5c;
+  font-size: 15px;
+}
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #1c3c5c;
+}
+
+a:hover{
+  color: #f7c216;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
   margin: 0;
-}
-.main-banner{
-  background: url("../images/home-banner.jpg") no-repeat center bottom;
-  background-size:cover;
-  height: 80vh; /* vh = viewport height*/
-}
-
-.main-banner-content {
-  height: calc(80vh - 50px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-header{
-  height: 50px;
+  font-weight: bold;
 }
 
 .container{
@@ -26,46 +30,219 @@ header{
   max-width: 900px;
 }
 
-.logo{
-  float:left;
-}
-
-nav{
-  float: right;
-}
 h3, h1 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: #336699;
+  color: #1c3c5c;
   margin: 0;
 }
 
 h1{
-  font-size: 48px
+  font-size: 33px
 }
 
 h3{
-  font-size: 24px;
+  font-size: 15px;
   margin-bottom: 12px;
 }
-div.primarybuttons{
-  margin: 0 auto;
-  width: 200px;
+
+header{
+  height: 50px;
 }
 
-p.centerParragraph {
-  margin: 0 auto;
-  width: 400px;
+.main-banner{
+  background-image: url("../images/home-banner.jpg");
+  height: 80vh; /* viewpoint height - hace que la imagen cubra el 80% de la pantalla */
+  background-position: center bottom; /* center: horizontalmente / bottom: centra desde abajo */
+  background-repeat: no-repeat; 
+  background-size: cover /* los valores posibles son cover (expande la imagen) y contain (la contrae) */
+}
+
+.main-banner .logo{
+  float: left;
+  margin: 10px 0 0 0;
+}
+
+.main-banner nav{
+  float: right;
+  margin: 15px 0 0 0;
+}
+
+.main-banner li{
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.main-banner-content {
+  height: calc(50% - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:center;
+}
+
+.primaryButtons .learnMore{
+  color:  #f7c216;
+  background-color: #1c3c5c;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-right: 4px;
+}
+
+.primaryButtons .seeCourse{
+  color:  #1c3c5c;
+  background-color: #f7c216;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left:4px;
+}
+
+.primaryButtons{
+  margin: 20px 0 0 0;
+}
+
+.awesomeFeature{
+margin: 60px 0 0 0;
+}
+
+.awesomeFeature h3{
+  text-align: center;
+  font-size: 26px;
+  margin: 0 0 5px 0;
+}
+
+.awesomeFeature .centerParragraph{
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  margin: 0 0 40px 0;
 }
 
 .features-list {
   display: flex;
-  flex-direction: row; /*valor por defecto del flex*/
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .features-item {
   padding: 20px;
-  background-color: aliceblue;
+  background-color: rgb(243, 245, 247);
   margin: 0 10px;
 }
+
+.ourPopularCourses{
+  margin: 60px 0 0 0;
+}
+
+.ourPopularCourses h3{
+  text-align: center;
+  font-size: 26px;
+  margin: 0 0 5px 0;
+}
+
+.ourPopularCourses .centerParragraph{
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  margin: 0 0 40px 0;
+}
+
+.computerCourse {
+  padding: 20px;
+  background-color: rgb(243, 245, 247);
+  margin: 0 10px;
+}
+
+.courses-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.computerCourse, .customCourse, .socialCourse{
+  padding: 0;
+  margin: 0 10px;
+  background-color: rgb(243, 245, 247);
+  position: relative;
+}
+
+span.price{
+  background-color: #f7c216;
+  color: #1c3c5c;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid #f7c216;
+  position: absolute;
+  top: 40%;
+  right: 10px; 
+  text-align: center;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+.courseInfo{
+padding: 0 15px 0 15px;
+}
+
+.courseInfo .design{
+  color:  white;
+  background-color: #1c3c5c;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.courseText p{
+  color: grey;
+}
+
+.avatar img{
+  border-radius: 100px;
+}
+
+.interactions{
+  height: 50px;
+  overflow: hidden;
+}
+
+.avatar{
+  float:left;
+}
+
+.interactionButtons {
+  float: right;
+  line-height: 45px;
+}
+
+.interactionButtons a{
+  left: 60px;
+  margin: 0 10px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
