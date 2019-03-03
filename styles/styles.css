@@ -452,3 +452,24 @@ div.events-lists{
     font-weight: normal;
     font-size: 10px;
 }
+
+/* CLIENT SAY ABOUT ME */
+
+div.clients{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.clients-details{
+    margin: 0 20px;
+    border: 1px solid black; /* DESPUES LO SACO */
+}
+
+.clients-details img{
+    float: left;
+}
+
+.clients-name h5, .clients-name p{
+    float: right;
+}
