@@ -501,3 +501,72 @@ div.clients{
 .clients-nav img.icon:hover{
     background-color: #f7c216;
 }
+
+/* FINAL */
+
+section.final{
+    overflow: hidden;
+    color: white;
+}
+
+.final .final-lists{
+    margin-bottom: 40px;
+}
+
+.final .final-list-left{
+    width: 60%;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: left;
+}
+
+.final .final-list-right{
+    float: right;
+}
+
+.final .final-list-left ul li, .final-list-right li{
+    font-weight: normal;
+    padding: 0 0 15px 0;
+}
+
+.final .final-list-left .final-list-top, .final .final-list-right .final-list-top{
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.final footer p{
+    width: 60%;
+    margin: 0;
+    display: inline-block;
+}
+
+.final footer nav{
+    float: right;
+}
+
+.final footer nav li{
+    margin-left: 10px;
+    display: inline;
+}
+
+.final .final-list-right input{
+    padding: 10px;
+}
+
+input.email-slot{
+    background-color: #1c406b;
+    border: none;
+}
+
+input.subscribe-button{
+    background: #f7c216;
+    color: #030521;
+    border: none;
+    font-weight: bold;
+}
+
+.final img.icon{
+    background-color: #1c406b;
+}
