@@ -224,6 +224,15 @@ span.price{
     display: inline-block;
 }
 
+.content-text p{
+    margin-bottom: 20px;
+}
+
+.social-media{
+    overflow: hidden;
+    display: inline-block;
+}
+
 .social-media-account{
     display: inline-block;
 }
@@ -233,21 +242,46 @@ span.price{
 }
 
 .social-media-account a{
-    margin-left: 5px;
-    padding-top: 10px;
+    margin-top: 5px;
 }
 
 .social-media-status{
     float: right;
 }
 
+
 .social-media-status a{
-    margin-left: 10px;
+    margin-right: 0;
     margin-top: 30px;
 }
 
 .social-media img{
     border-radius: 100px;
+}
+
+/* SOCIAL MEDIA COURSE ONE */
+
+.social-media-account2{
+    display: inline-block;
+    width: 60%;
+}
+
+.social-media-account2 li a{
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.social-media-account2 li{
+    display: inline;
+}
+
+.social-media-status2{
+    float: right;
+}
+
+.social-media-status2 li{
+    display: inline;
 }
 
 /* REGISTER NOW */
