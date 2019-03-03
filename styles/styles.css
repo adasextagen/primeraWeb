@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+} 
+    
+a{
+    text-decoration: none;
+}
+
+.main-banner{
+    background: url("../images/home-banner.jpg"); no repeat; center bottom;
+    background-size: cover;
+    height: 700px;
+}
+
+.container{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 90%;
+    min-width: 600px;
+    max-width: 850px;
+}
+
+.logo{
+    float: left;
+}
+
+nav{
+    float: right;
+}
+
+h3, h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #040832;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.primaryButtons{
+    margin: 0 auto;
+    margin-bottom: 12px;
+}
+
+li{
+    display: inline;
+    color: #040832;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+
+    
