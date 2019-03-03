@@ -462,14 +462,42 @@ div.clients{
 }
 
 .clients-details{
-    margin: 0 20px;
-    border: 1px solid black; /* DESPUES LO SACO */
+    margin: 0 15px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px #888888;
 }
 
 .clients-details img{
     float: left;
+    margin-right: 15px;
 }
 
-.clients-name h5, .clients-name p{
-    float: right;
+.clients-name h5{
+    color: #030521;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.clients-name p{
+    color: grey;
+    line-height: 20px;
+    margin: 0;
+}
+
+.clients-nav ul{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.clients-nav ul li{
+    display: inline;
+}
+
+.clients-nav img.icon{
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.clients-nav img.icon:hover{
+    background-color: #f7c216;
 }
