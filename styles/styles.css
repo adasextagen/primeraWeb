@@ -246,15 +246,21 @@ span.price{
 }
 
 .social-media-status{
-    display: inline-block;
     float: right;
-    margin-right: 0;
 }
 
 
 .social-media-status a{
-    margin-right: 0;
-    margin-top: 30px;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.social-media-status a img:hover{
+    background-color: #f7c216;
+}
+
+.social-media-status img{
+    transform: translateY(20%) /* CON ESTO CENTRE LOS ICONOS DE LIKE Y PEOPLE */
 }
 
 .social-media img{
