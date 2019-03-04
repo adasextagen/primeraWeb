@@ -207,7 +207,7 @@ span.price{
     padding: 15px;
     background-color: #f7c216;
     position: absolute;
-    top: 50%; /* NO ES LA MEJOR SOLUCION */
+    top: 47%; /* NO ES LA MEJOR SOLUCION */
     right: 5%; /* NO ES LA MEJOR SOLUCION */
 }
 
@@ -229,12 +229,12 @@ span.price{
 }
 
 .social-media{
-    overflow: hidden;
-    display: inline-block;
+    display: block;
 }
 
 .social-media-account{
     display: inline-block;
+    line-height: 30px;
 }
 
 .social-media-account img{
@@ -242,11 +242,13 @@ span.price{
 }
 
 .social-media-account a{
-    margin-top: 5px;
+    margin-left: 10px;
 }
 
 .social-media-status{
+    display: inline-block;
     float: right;
+    margin-right: 0;
 }
 
 
@@ -257,31 +259,6 @@ span.price{
 
 .social-media img{
     border-radius: 100px;
-}
-
-/* SOCIAL MEDIA COURSE ONE */
-
-.social-media-account2{
-    display: inline-block;
-    width: 60%;
-}
-
-.social-media-account2 li a{
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: middle;
-}
-
-.social-media-account2 li{
-    display: inline;
-}
-
-.social-media-status2{
-    float: right;
-}
-
-.social-media-status2 li{
-    display: inline;
 }
 
 /* REGISTER NOW */
@@ -372,7 +349,7 @@ form input.submit{
 }
 
 .trainers .trainers-box{
-  box-shadow: 1px 1px 10px #888888;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 .trainers ul{
@@ -502,7 +479,7 @@ div.clients{
 .clients-details{
     margin: 0 15px;
     padding: 20px;
-    box-shadow: 1px 1px 10px #888888;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
 }
 
 .clients-details img{
