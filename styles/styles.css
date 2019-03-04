@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    font-family:  'Roboto Slab', serif;    
+    color: rgba(54, 54, 218, 0.897);
+}
+
+.main-banner{
+    background: url("../images/home-banner.jpg") center bottom no-repeat;
+    height: 700px;
+    background-size: cover;
+
+    
+}
+
+.container{
+    max-width: 1000px;
+    min-width: 500px;
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+
+}
+
+header {
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 90px;
+
+}
+
+ul {
+    display: flex;
+    padding: 0;
+}
+li {
+    list-style: none;
+    display: flex;
+    padding: 0 15px 0 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(54, 54, 218, 0.897);
+}
+li a{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+li a:hover{
+
+    color: rgb(211, 177, 24);
+}
+
+h3, h1 {
+    text-align: center;
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 15px;
+}
+h1 {
+    font-size: 30px;
+}
+
+div .main-cta{
+    height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 10px 0;
+ 
+}
+div .main-cta .cta{  
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+
+}
+
+div .main-cta .cta a{
+    border-radius: 10px;
+    width: 150px;
+    padding:10px 0;
+    text-align: center;
+    background-color: rgba(54, 54, 218, 0.897);
+    color:  rgb(211, 177, 24);
+    font-weight: bold;
+
+}
+
+div .main-cta .cta a.cta-learn:hover{
+    background-color: rgb(211, 177, 24);
+    color: rgba(54, 54, 218, 0.897);
+}
+
+div .main-cta .cta a.cta-course{
+    background-color: rgb(211, 177, 24);
+    color: rgba(54, 54, 218, 0.897);
+}
+
+div .main-cta .cta a.cta-course:hover{
+    background-color: rgba(54, 54, 218, 0.897);
+    color:  rgb(211, 177, 24);
+}
+
+section .features {
+    margin: 50px 0 0 0;
+   }
+
+section .features p {
+ text-align: center;
+ color: rgb(80, 82, 82);
+ font-size: 10px;
+}
+
+section .features-list{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+section .features-list .features-item{
+    background-color: rgb(247, 249, 249)  ;
+    margin: 0 10px 0 0;
+    padding: 10px;
+}
+
+section .features-list .features-item h4{
+    font-size: 18px;
+}
+section .features-list .features-item p{
+    font-size: 15px;
+    text-align: left;
+
+}
+section .features-list .features-item .icon{
+    font-size: 40px;
+}
