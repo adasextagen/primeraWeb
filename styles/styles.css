@@ -329,14 +329,14 @@ form input.submit{
 
 .trainer {
   padding: 20px;
-  background-color: rgb(243, 245, 247);
+  background-color: rgba(243, 245, 247, 0.3);
   margin: 0 10px;
+  border: 1px solid rgb(235, 235, 235);
 }
 
 .trainersList{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 
 .trainerInfo{
@@ -360,7 +360,7 @@ form input.submit{
   color:grey;
 }
 
-.trainerSocialMedia .trainerButtons a{
+.trainerSocialMedia .trainerButtons li{
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -372,11 +372,13 @@ form input.submit{
 .trainerSocialMedia .trainerButtons{
   display: flex;
   flex-direction: row;
+  position: relative;
+  left:8%;
   margin: 5px 5px;
 }
 
-.trainerSocialMedia .trainerButtons icon{
-  margin: 5px 5px;
+.trainerSocialMedia .trainerButtons .icon{
+  margin: 5px 8px;
 }
 
 
