@@ -1,24 +1,45 @@
 body{
-<<<<<<< HEAD
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 } 
     
 a{
     text-decoration: none;
+    color: #121750;
+    font-weight: bold;
+    font-size: 15px;
 }
+
+a:hover{
+    color: #F7AC06;
+  }
 
 .main-banner{
-    background: url("../images/home-banner.jpg"); no repeat; center bottom;
+    background: url("../images/home-banner.jpg"); 
     background-size: cover;
-    height: 700px;
+    background-position: center bottom;
+    background-repeat: no-repeat; 
+    height: 100vh; /* vh = viewport height*/
 }
 
+.main-banner-content {
+    height: calc(75% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+  
 .container{
     margin: 0 auto;
     overflow: hidden;
     width: 90%;
     min-width: 600px;
-    max-width: 850px;
+    max-width: 900px;
+}
+
+header{
+    height: 50px;
 }
 
 .logo{
@@ -34,102 +55,217 @@ h3, h1{
     text-transform: uppercase;
     text-align: center;
     color: #040832;
+    margin: 0;
 }
 
 h1{
-    font-size: 40px;
+    font-size: 36px;
+    margin-bottom: 35px;
 }
 
 h3{
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-
-.primaryButtons{
-    margin: 0 auto;
+    font-size: 18px;
     margin-bottom: 12px;
 }
 
+div.primarybuttons{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin: 50px 0 0 0;
+}
+
+.learn{
+    color: #F7AC06;
+    background-color: #040832;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 30px;
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+   
+}
+
+.see{
+    color: #040832;
+    background-color: #F7AC06;
+    border-radius: 5px;
+    border: none;
+    padding: 15px 30px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 4px;
+}
+
+
 li{
     display: inline;
-    color: #040832;
+    text-decoration: none;
+    color: 4, 8, 50;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: bold;
     margin-right: 30px;
 }
 
-
-    
-=======
-  margin: 0;
+.PageTitle{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: round;
+    font-weight: bold;
+    font-size: 24px;
+    color: #121750;
+    margin-top: 80px;
 }
-.main-banner{
-  background: url("../images/home-banner.jpg") no-repeat center bottom;
-  background-size:cover;
-  height: 80vh; /* vh = viewport height*/
-}
-
-.main-banner-content {
-  height: calc(80vh - 50px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-header{
-  height: 50px;
-}
-
-.container{
-  margin: 0 auto;
-  overflow: hidden;
-  width: 90%;
-  min-width: 600px;
-  max-width: 900px;
-}
-
-.logo{
-  float:left;
-}
-
-nav{
-  float: right;
-}
-h3, h1 {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #336699;
-  margin: 0;
-}
-
-h1{
-  font-size: 48px
-}
-
-h3{
-  font-size: 24px;
-  margin-bottom: 12px;
-}
-div.primarybuttons{
-  margin: 0 auto;
-  width: 200px;
-}
-
-p.centerParragraph {
-  margin: 0 auto;
-  width: 400px;
+  
+p.centerParagraph{
+    margin: 0 auto;
+    width: 425px;
+    font-style: italic;
+    font-size: 12;
+    margin-bottom: 50px;
+    color: #939399;
+    text-align: center;
 }
 
 .features-list {
-  display: flex;
-  flex-direction: row; /*valor por defecto del flex*/
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row; /*valor por defecto del flex*/
+    justify-content: space-between;
+}
+  
+.features-item{
+    padding: 20px;
+    background-color: aliceblue;
+    margin: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.features-item {
-  padding: 20px;
-  background-color: aliceblue;
-  margin: 0 10px;
+.features-item h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #121750;
+    font-size: 18px;
+    margin: 10px 0 5px 0;
 }
->>>>>>> 4e33eefc014cb7c0109938a9267ff7d369889072
+
+.features-item p{
+    color: #939399;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.products{
+    padding-top:0;
+}
+
+.product-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product-list .product1, .product-list .product2, .product-list .product3{
+    padding: 0;
+    background-color: aliceblue;
+    margin: 0 10px;
+    position: relative;
+}
+
+
+.productPhoto{
+    width: 18px;
+    height: 10px;
+    
+}
+
+.productInfo{
+    padding: 25px;
+}
+
+.circlePrice{
+    border-radius: 100%;
+    border: 0;
+    text-align: center;
+    background-color: #F7AC06;
+    font: 24px bold #121750;
+    padding: 15px;
+    margin-right: 20px;
+    float: right;
+}
+
+.Add-to-cart{
+    background-color: #121750;
+    padding: 10px 30px;
+    border:0;
+    font-size: 12px bold whitesmoke;
+    text-align: center;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-left: 0px;
+    display: inline-block;
+}
+
+.productDescription h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #121750;
+    font-size: 18px;
+}
+
+.productDescription p{
+    color: #939399;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.sellerData{
+    display: block;
+}
+
+.sellerAccount .sellerPhoto{
+    border: 2px solid #121750;
+    border-radius: 100%;
+}
+
+.sellerAccount a{
+    font-size: 14px;
+    font-weight: bold;
+    color: #121750;
+    text-align: center;
+    line-height: 15px;
+
+}
+
+.socialMedia{
+    float: right;
+    display:block;
+}
+
+.socialMedia a .iconFavourite{
+    margin-right: 10px;
+    color: #121750;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.socialMedia a .iconEmail{
+    margin-left: 8px;
+    margin-right: 8px;
+    display: inline;
+
+}
+
+.iconEmail{
+
+}
+
+
+
+
+
+
+    
