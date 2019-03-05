@@ -205,41 +205,39 @@ h4 {
 
 .blue {
   background-color: #002346;
-  position: relative;
   overflow: hidden;
   padding: 70px; /*revisar*/
+  position: relative;
+}
+
+.registernow {
+  display: inline-block;
+  width: 500px;
+  height: 150px;
 }
 
 .register-title {
   color: white;
   font-size: 25px;
-  display: inline-block;
-  position: absolute;
-  top: 15%;
-  left: 22%;
+  float: left;
 }
 
 .register-desc {
   color: white;
   font-size: 13px;
-  position: absolute;
-  top: 27%;
-  left: 22%;
-  display: inline-block;
-  width: 500px;
+  float: left;
 }
 
 .stats {
   display: inline-block;
-  width: 600px;
-  position: absolute;
-  top: 50%;
-  left: 17%;
+  width: 500px;
 }
 
 .stats ul {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .stats li {
@@ -266,8 +264,9 @@ h4 {
   width: 250px;
   height: 300px;
   display: inline-block;
-  float: inline-end;
   padding: 20px;
+  margin: 10px;
+  position: absolute;
 }
 
 .form-title {
@@ -284,15 +283,16 @@ h4 {
   text-align: center;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between
-} 
-
-/* centrar campos */
+form label input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 10px 30px;
+}
 
 .register-bttn {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   width: 200px;
   height: 40px;
