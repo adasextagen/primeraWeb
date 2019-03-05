@@ -18,7 +18,7 @@ ul.main-menu {
 li,a.headerbutton {
 list-style: none;
 text-decoration: none;
-color: #173479;
+color: #002444;
 margin-right: 15px;
 font-weight: bold;
 font-size: 15px;
@@ -26,7 +26,8 @@ font-size: 15px;
 
 
 .homeyellow {
-color: #F8DF1D;
+margin-right: 15px;
+color: #ffc452;
 text-decoration: none;}
 
 
@@ -47,7 +48,7 @@ header{
   overflow: hidden;
   width: 90%;
   min-width: 600px;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 .logo{
@@ -56,7 +57,9 @@ header{
   font-size: 25px;
   font-weight: bold;
   text-decoration: none;
-  color: #173479;
+  color: #002444;
+  height: 20px;
+  line-height: 20px;
 }
 
 nav{
@@ -66,7 +69,7 @@ nav{
 h3, h1 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: #173479;
+  color: #002444;
   margin: 0;
 }
 
@@ -89,29 +92,29 @@ text-decoration: none;
 font-weight: bold;
 margin: 0 10px;
 padding: 15px 35px;
-background-color: #173479;
+background-color: #002444;
 border-radius: 5px;
-color: #F8DF1D;
+color: #ffc452;
 font-size: 15px;
 }
 
-.yellow-button {background-color: #F8DF1D;
-  color: #173479;
+.yellow-button {background-color: #ffc452;
+  color: #002444;
 }
 
-section {height: 100vh;
-margin: 0,}
+.firstpart-white {height: 145vh;
+margin: 0;}
 
 .section-title {margin-top: 100px;
 font-size: 35px;
-color: #173479}
+color: #002444}
 
 p.centerParragraph {
   margin: 0 auto;
   width: 500px;
   font-style: italic;
   text-align: center;
-  
+  color: grey
 }
 
 .features-list {
@@ -122,11 +125,144 @@ p.centerParragraph {
 }
 
 .features-item {
-  padding: 20px;
-  background-color: rgba(232, 232, 241, 0.918);
+  padding: 10px 40px;
+  background-color: #f9f9fe;
   margin: 0 10px;
 }
 
-.features-item h4 {font-size: 15px;
+.features-item h4 {font-size: 20px;
 font-weight: bold;
-color: #173479}
+margin-bottom: 0;
+color: #002444}
+
+.features-item p {color: grey;
+font-size: 15px;}
+
+.courses-list { 
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+.courses-item {display: block;
+padding-bottom: 30px;
+background-color: #f9f9fe;
+margin: 0 10px;
+position: relative;
+width: 300px;
+}
+
+.design {
+  text-decoration: none;
+  color: white;
+  background-color: #002444;
+  display: block;
+  width: 90px;
+  text-align: center;
+  margin: 10px 0 0 0;
+  height: 30px;
+  line-height: 30px;
+  font-size: 15px;
+  }
+
+.price-img { width: 65px;
+  height: 65px;
+  background-color:#ffc452;
+  border-radius: 35px;
+  float:right;
+  margin: 0 0 0 10px;
+  text-align: center;
+  line-height: 65px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: 5%;
+  top: 33%;
+  }
+
+  .item-title {color: #002444;
+  font-weight: bold;
+  font-size: 20px;
+  display: block;}
+
+  .item-p{color: grey;}
+
+  .design,.item-title,.final-item-btn,.item-p{
+  margin: 20px 20px 0 20px;
+  }
+
+  .final-item-btn {margin-top: 40px;}
+
+  .avatar { width: 50px;
+    height: 50px;
+    border-radius: 35px;
+    float: left;
+  }
+
+  .account-name {color: #002444;
+  font-weight: bold;
+  line-height: 50px;
+  margin: 0 0 0 10px;
+ }
+
+ .reply-img{
+   height: 15px;
+   width: 15px;
+   margin-left: 20px
+ }
+
+ .reply-btn {text-decoration: none;
+color: #002444;
+}
+
+/*
+ksfjldskfjklsd
+*/
+
+.secondpart-blue {height: 75vh;
+  margin: 0;
+  background-color: #002444;
+  display: block;
+ 
+}
+
+.signform {float: right;
+background-color: white;
+width: 250px;
+height: 270px;
+padding: 20px 35px 35px 35px;
+text-align: center;
+}
+
+.signform h5 {font-size: 25px;
+margin: 10px 0 0 0;}
+
+.signform span {font-size: 15px;
+color: grey;
+display: flex;
+justify-content: center;
+margin: 0 0 30px 0;
+}
+
+.submit-btn {background-color: #ffc452; 
+  display: block;
+text-decoration: none;
+  color: #002444;
+  font-weight: bolder;
+  font-size: 13px;
+  height: 45px;
+  line-height: 45px;
+  margin-top: 25px;
+}
+
+.blankspace {text-decoration: none;
+border-top: none;
+border-right: none;
+border-left: none;
+font-size: 15px;
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+
