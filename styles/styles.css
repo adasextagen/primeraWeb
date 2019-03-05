@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-    max-width: 1000px;
+    max-width: 900px;
     min-width: 500px;
     margin: auto;
     width: 90%;
@@ -150,12 +150,14 @@ section .features-list .features-item .icon{
     position: relative; 
     display: inline-block;
     margin: 0 10px 0 0 ;
+    background-color: rgb(198, 245, 245)  ;
 }
 
 section .courses-info{
     display: flex;
     justify-content: space-around;
-    padding: 20px 0;
+    margin: 20px 0;
+
 }
 .courses img{
     width: 250px;
@@ -167,7 +169,7 @@ section .courses-info{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: yellow;
+    background-color: rgb(247, 247, 63);
     position: absolute;
     right: 10px;
     top: 175px;
@@ -179,14 +181,10 @@ section .courses-info{
     color:  rgba(54, 54, 218, 0.897);
     font-size: 17px;
     font-weight: bold;
-    
 }
 .courses .courses-detail{
     width: 250px;
     height: 200px;
-
-    background-color: rgb(247, 249, 249)  ;
-
 }
 
 .courses .courses-detail div{
@@ -242,3 +240,54 @@ section .courses-info{
     margin: auto;
 
 }
+.box{
+    background-color: rgb(22, 34, 120);
+}
+
+
+.register{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.register h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: capitalize;
+    display: flex;
+}
+
+.register p {
+    font-size: 10px;
+    color: #ffffff;
+    display: flex;
+}
+
+.register .register-details {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.register .register-details div{
+    width: 50px;
+    height: 50px;
+    border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgba(150, 150, 226, 0.842);
+}
+
+.register .register-details div p{
+    margin: 0;
+    font-size: 10px;
+}
+.register .register-details div span{
+    font-size: 5px;
+    color: #ffffff;
+
+} 
