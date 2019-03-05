@@ -1,77 +1,129 @@
 body{
-    width: 100%;
-    margin: 0 auto;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #002347;
 }
+
+
 .main-banner{
-    background-image: url(C:/Users/Usuario/Documents/Ada/primeraWeb/images/home-banner.jpg);
-    height: 100%;
-    width: 100%;
+    background: url("../images/home-banner.jpg") no-repeat center bottom;
+    background-size: cover;
+    height: 110vh;
+}
+
+.main-banner-content {
+    height: calc(1100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  header{
+    height: 50px;
+  }
+  
+  .container{
+    margin: 0 auto;
     overflow: hidden;
+    width: 90%;
+    min-width: 600px;
+    max-width: 900px;
+  }
+
+  /* Header de navegación*/
+
+nav{
+    float: right;
 }
 
-header{
-    overflow: hidden;
-    line-height: 40px;
-    padding: 0 0 0 300px;
-}
-.main-banner header .logo{
-    margin: 10px 0 0 0;
-    background-image: url(C:/Users/Usuario/Documents/Ada/primeraWeb/images/logo.png)
-
+a{
+  text-decoration: none;
+  color: #002347;
 }
 
-.main-banner nav{
-    line-height: 40%;
-}
-.main-banner ul{
-    margin: 0 0 0 70%;
-    line-height: 40%;
-
+.navegation-menu a:hover{
+  color: #f7c216;
 }
 
-.main-banner li{
+.navegation-menu ul{
     list-style: none;
-    display: block;
-    font-size: 17px;
-    float: left;
-    width: 70px;
-    height: 30px;
-    padding-left: 20px; 
-    margin: 20px 0 5px 0;
-
+    padding: 0;
+    margin: 19px 0px 0px 0px;
 }
-.main-banner li a{
-    text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+.navegation-menu li {
+    display:inline;
+    margin-left: 20px;
+    font-size: 15px;
     font-weight: bold;
-    color: rgb(19, 19, 80);
-}
+  }
 
-.main-banner li a:hover{
-    color: rgb(211, 211, 40);
-}
-
-.main-banner .logo{
+.logo{
     float: left;
+    margin: 10px 0 0 0;
 }
 
-h3,h1{
-    color: rgb(19, 19, 80);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    
-}
-h3{
-    padding: 200px 0 0 0;
+
+/* MAIN: Presentación web*/
+
+h3, h1 {
+  text-align: center;
 }
 
 h1{
-    font-size: 48px;
+  font-size: 45px
 }
 
-.main-banner div{
+h3{
+  font-size: 19px;
+  margin-bottom: 12px;
+  margin-top: 100px;
+}
+
+.mainButtons {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    margin: 25px 0 0 0;
+    margin: 12px 0 0 0;
 }
+
+/* le saqué el margin 0 para que quede mejor espaciado*/
+
+.learnMore {
+  display: inline-block;
+  background: #002347;
+  padding: 0px 48px;
+  color: #fdc632;
+  outline: none;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 48px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.seeCourse {
+  display: inline-block;
+  background: #fdc632;
+  padding: 0px 48px;
+  color: #002347;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 48px;
+  border-radius: 5px;
+   text-align: center;
+  cursor: pointer;  
+}
+
+.learnMore:hover{
+  color: #ffffff;
+  background-color:#6B6ED3;
+}
+
+.seeCourse:hover{
+  color: #ffffff;
+  background-color: #F5EF40;
+}
+
+/*Section: Awesome Feature*/
