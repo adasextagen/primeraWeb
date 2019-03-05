@@ -61,7 +61,6 @@ li a:hover{
 h3, h1 {
     text-align: center;
     font-weight: bold;
-
     text-transform: uppercase;
 }
 
@@ -117,8 +116,7 @@ div .main-cta .cta a.cta-course:hover{
 section .features {
     margin: 50px 0 0 0;
    }
-
-section .features p {
+p {
  text-align: center;
  color: rgb(80, 82, 82);
  font-size: 10px;
@@ -145,4 +143,102 @@ section .features-list .features-item p{
 }
 section .features-list .features-item .icon{
     font-size: 40px;
+}
+.courses{
+    width: 250px;
+    height: 400px;
+    position: relative; 
+    display: inline-block;
+    margin: 0 10px 0 0 ;
+}
+
+section .courses-info{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.courses img{
+    width: 250px;
+    height: 200px;
+
+}
+
+.courses .courses-price{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+    right: 10px;
+    top: 175px;
+}
+
+.courses .courses-price p{ /*no estoy segura de esto*/
+    margin: 0;
+    padding: 12px 0 0 0;
+    color:  rgba(54, 54, 218, 0.897);
+    font-size: 17px;
+    font-weight: bold;
+    
+}
+.courses .courses-detail{
+    width: 250px;
+    height: 200px;
+
+    background-color: rgb(247, 249, 249)  ;
+
+}
+
+.courses .courses-detail div{
+    padding: 10px;
+}
+.courses .courses-detail .courses-cta{
+    background-color:  rgba(54, 54, 218, 0.897);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.courses .courses-detail p{
+    text-align: left;
+
+}
+
+.courses .courses-detail .user{
+    position: relative;
+
+}
+.courses .courses-detail .user img{
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    top: 17px;
+}
+
+.courses .courses-detail .user p{
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+}
+
+.courses .courses-detail .user .courses-icons{
+    position: absolute;
+    right: 10px;
+    padding: 3px 0 0 0;
+}
+.courses .courses-detail .user .courses-icons a{
+    font-size: 10px;
+    text-align: right;
+    padding: 0 4px 0 0;
+}
+
+.courses .courses-detail .user .courses-icons span{
+    margin: auto;
+
 }
