@@ -126,4 +126,81 @@ h3{
   background-color: #F5EF40;
 }
 
-/*Section: Awesome Feature*/
+/*Sections*/
+
+p{
+  color: #747472;
+  font-size: 14px;
+}
+
+h4{
+font-size: 17px;
+}
+
+/* Section: Awesome Feauture*/
+
+p.subtitle {
+  margin: 0 auto;
+  width: 400px;
+  font-style: oblique;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: row; /*valor por defecto del flex*/
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.features-item {
+  padding: 20px;
+  background-color: #DBE4EC ;
+  margin: 0 10px;
+}
+
+/* Section: Popular Courses*/
+
+.courses {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  }
+
+.course-box{
+  padding: 20px;
+  background-color:#F4F6F8  ;
+  margin: 0 10px;
+}
+
+.course-image{
+  max-width: 100%;
+  width: 1000px;
+  height: 220px;
+  /* especifiqué las medidas porque con auto la del medio quedaba más pequeña*/
+}
+
+.design-label{
+  display: inline-block;
+  background: #002347;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 2px 23px;
+  margin-top: 5px;
+}
+
+span.price{
+   
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 79px;
+  line-height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background: #fdc632;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 15px;
+
+  /* no sé si ésta fue la mejor solución pero quedó(?) */
+}
