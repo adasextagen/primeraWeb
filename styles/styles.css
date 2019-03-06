@@ -246,6 +246,8 @@ h4 {
   display: block;
   float: right;
   margin-top:200px;
+  position:relative;
+  left: 169px;
 }
 
 .register-form {
@@ -262,7 +264,7 @@ h4 {
  margin-bottom:100px;
  position: relative;
  top:-350px;
- left:100px;
+ left:-66px;
 }
 
 form-text p{
