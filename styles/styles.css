@@ -1,0 +1,544 @@
+/*GENERAL*/
+
+body{
+    margin: 0;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(0, 35, 70);
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+h4, h3, h1, p{
+    text-align: center;
+    margin:0;
+}
+
+h1{
+    font-size: 35px;
+}
+
+h3{
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+/*MAIN*/
+
+.main-banner{
+    background: url("../images/home-banner.jpg") center bottom;
+    background-size: cover;
+    height: 90vh;
+}
+
+.container{
+    margin: 0 auto;
+    width: 70%;
+    min-width: 400;
+    max-width: 900;
+    overflow: hidden;
+}
+
+header{
+    height: 50px;
+}
+
+nav{
+    float: right;
+    margin-top: 0;
+}
+
+li{
+    float: left;
+    margin-right: 40px; 
+    font-weight: bold;
+}
+
+li a:hover{
+    color: rgb(253, 198, 50);
+}
+
+.home{
+    color: rgb(253, 198, 50);
+}
+
+.home:hover{
+    color:rgb(0, 35, 70);
+}
+
+.imagen-lupa{
+    width: 25px;
+}
+
+.logo img{
+    float: left;
+    margin-top: 10px;
+}
+
+.main-banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+div.primary-buttons{
+    margin: 15px auto;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+a.blue-button{
+    display: block;
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 15px;
+    background-color: rgb(0, 35, 70);
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    color: rgb(253, 198, 50);
+}
+
+a.blue-button:hover{
+    background-color: rgb(253, 198, 50);
+    color: rgb(0, 35, 70);
+}
+
+a.yellow-button{
+    display: block;
+    float: right;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(253, 198, 50);
+    color: rgb(0, 35, 70);
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+}
+
+a.yellow-button:hover{
+    background-color: rgb(0, 35, 70);
+    color: rgb(253, 198, 50);
+}
+
+
+
+/*SECCION 2B*/
+
+.title-section {
+    margin-bottom: 15px;
+}
+
+.center-parragraph {
+    font-style: oblique;
+    margin: 0px auto;
+    margin-bottom: 70px;
+    width: 500px;
+}
+
+.features-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.features-items{
+    padding: 20px;
+    background-color: rgb(249, 249, 254);
+    margin: 0 10px;
+    height: 180px;
+    width: 260px;
+}
+
+.features-items img{
+    width: 55px;
+    height: 45px;
+}
+
+.features-items h4{
+    font-size: 20px;
+}
+
+.div-parragraph {
+    text-align: left;
+    width: 300px;
+    font-size: 15px;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 600px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+div.features-items h4 {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/*SECCION 3B*/
+
+.courses-items{
+    padding: 0;
+    background-color: rgb(249, 249, 254);
+    margin: 0 10px;
+    height: 500px;
+    width: 300px;
+    box-shadow: 1px 1px 1px #ccc;
+    position: relative;
+}
+
+.courses-items:hover{
+    box-shadow: 2px 2px 5px rgb(179, 175, 175);
+}
+
+.courses-items h4{
+    font-size: 20px;
+}
+
+div.courses-items h4 {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.courses-content{
+    padding: 20px;
+}
+
+.courses-image{
+    height: 230px;
+    width: 300px;
+}
+
+.course-price{
+    display: block;
+    border-radius: 50%;
+    background-color: rgb(253, 198, 50);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 200px;
+    right: 12px;
+}
+
+.course-button{
+    display: block;
+    background-color: rgb(0, 35, 70);
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.course-button:hover{
+    background-color: rgb(253, 198, 50);
+    color: rgb(0, 35, 70);
+}
+
+.course-interaction{
+    display: block;
+    margin:15px 0;
+    height: 37px;
+    line-height: 37px;
+    font-weight: bold;
+    
+}
+
+.icon-interaction, .name-interaction{
+    float: left;
+    margin-right: 8px;
+}
+
+.counter-interaction{
+    float: right;
+    margin-left: 8px;
+}
+
+/*SECCION 4A*/
+
+.section-content-blue{
+    height: 600px;
+    overflow: hidden;
+    background-color: rgb(0, 35, 70);
+    color: #fff;
+}
+
+.section-content-blue .container{
+    margin: 100px auto;
+}
+
+.title-section-blue{
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.center-parragraph-blue{
+    font-style: oblique;
+    text-align: left;
+    margin-bottom: 70px;
+    width: 500px;
+}
+
+.register-container{
+    display:block;
+    float: left;
+}
+
+.data-box{
+    display: block;
+    float: left;
+    width: 105px;
+    height: 85px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(51, 79, 108);
+    font-size: 15px;
+    line-height: 80px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.number-box{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.register-form-container{
+    display: block;
+    float: right;
+    background-color: #fff;
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+}
+
+.register-form-container h4, .register-form-container p{
+    color: rgb(0, 35, 70);
+}
+
+.register-form-container input{
+    display: block;
+    width: 250px;
+    margin: 15px auto;
+    height: 25px;
+}
+
+.register-submit{
+    display: block;
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgb(253, 198, 50);
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.register-submit:hover{
+    background-color: rgb(0, 35, 70);
+    color: rgb(253, 198, 50);
+}
+
+/*SECCION 5B*/
+
+.trainers-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.trainers-items{
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    margin: 0 10px;
+    height: 350px;
+    width: 190px;
+    box-shadow: 1px 1px 1px #ccc;
+}
+
+.trainers-items:hover{
+    box-shadow: 2px 2px 5px rgb(179, 175, 175);
+}
+
+.trainers-image{
+    width: 190px;
+    height: 162px;
+}
+
+.trainers-content{
+    padding: 10px;
+}
+
+.trainers-content h4{
+    font-size: 20px;
+}
+
+.trainers-content h3{
+    font-size: 10px;
+    font-style: oblique;
+    font-weight: normal;
+}
+
+.trainers-content .div-parragraph{
+    text-align: center;
+    font-size: 15px;
+    width: 190px;
+}
+
+.trainers-interaction{
+    display: block;
+    width: 110px;
+    margin: 10px auto;
+}
+
+/*SECCION 6A*/
+
+.events-list{
+    margin: 10px auto;
+    width: 780px;
+    height: 280px;
+}
+
+.events-items-one{
+    display: block;
+    float: left;
+    background-image: url(../images/event1.jpg);
+    background-size: cover;
+    height: 280px;
+    width: 360px;
+    box-shadow: 1px 1px 1px rgb(104, 104, 104);
+    position: relative;
+}
+
+
+.events-items-two{
+    display: block;
+    float: right;
+    background-image: url(../images/event2.jpg);
+    background-size: cover;
+    height: 280px;
+    width: 360px;
+    box-shadow: 1px 1px 1px rgb(104, 104, 104);
+    position: relative;
+}
+.events-items-one:hover, .events-items-two:hover{
+    box-shadow: 2px 2px 5px rgb(163, 161, 161);
+}
+
+.events-details{
+    display: block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.295);
+    width: 185px;
+    height: 195px;
+    top:0;
+    right: 0;
+}
+
+.view-all{
+    display: block;
+    text-align: center;
+    color: rgb(253, 198, 50);
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.view-all:hover{
+    font-size:12px;
+}
+
+/*SECCION 7B*/
+
+.client-list{
+    margin: 0 auto;
+    width: 780px;
+    height: 200px;
+}
+
+.client-items{
+    display: block;
+    float: left;
+    height: 160px;
+    width: 350px;
+    box-shadow: 1px 1px 1px rgb(104, 104, 104); 
+    padding: 10px;
+    margin-right: 5px; 
+}
+
+.client-items:hover{
+    box-shadow: 2px 2px 5px rgb(179, 175, 175);
+}
+
+.client-items img{
+    float: left;
+    margin: 10px 10px;
+}
+
+.client-text{
+    float: left;
+    height: 130px;
+    width: 200px;
+    margin-top:10px;
+}
+
+.client-text h3, .client-text p{
+text-align: left;
+}
+
+.client-text p{
+    font-size: 15px;
+}
+
+.div-circle-slide{
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+}
+
+.circle-slide{
+    display: inline-block;
+    border-radius: 50px;
+    background-color: rgb(216,216,216);
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+}
+
+.circle-slide:hover{
+    background-color: rgb(253, 198, 50);
+    width: 15px;
+    height: 15px;
+}
+
+
+
