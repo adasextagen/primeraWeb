@@ -188,6 +188,7 @@ margin: 20px 0 20px 30px;
 justify-content: center;
 }
 
+/*Register now*/
 .register-now {
   background-color: #012348;
   color: white;
@@ -195,14 +196,24 @@ justify-content: center;
   height: 639px;
 }
 .text-register-now {
-  margin: 10px 0 0 150px;
- position: relative;
- top:50px;
- left:100px;
+  margin: 10px 0 0 200px;
+ display: flex;
+ flex-direction: left;
+ justify-content: left;
 }
+
+.register-now-subtitles{
+  position: relative;
+  top:150px;
+  left: -260px;
+  margin-top: 20px;
+}
+
 h4 {
   font-size: 42px;
 }
+
+
 
 .counter {
   position: relative;
@@ -236,8 +247,8 @@ h4 {
   height:379px;
   color: black;
   position: relative;
-  top:20px;
-  left:1200px;
+  top:5px;
+  left:1200px
 }
 
 form-text p{
@@ -384,4 +395,17 @@ margin-right:50px;
 .footer-subtitles {
   color: white;
   font-weight: bold;
+}
+
+.suscribe-form {
+  display: inline-flex;
+  flex-direction: row;
+}
+.suscribe-placeholder{
+ }
+
+
+.input-suscribe{
+  width: 300px;
+height: 40px;
 }
