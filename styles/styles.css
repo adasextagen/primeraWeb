@@ -177,7 +177,15 @@ section h3 {
   margin: 0 10px 
 
 }
+.icons {
+  width:60px;
+  height:60px;
+}
 
+h5 {
+  margin-top:1px;
+  font-size: 14px;
+}
 /*Our popular courses*/
 .our-popular-courses-container {
 display:flex;
@@ -217,10 +225,9 @@ padding: 50px;
 
 .course-content {
   display: block;
-  float: left;
-  
- 
+  float:left;
 }
+
 
 .call-to-action-design {
   width:80px;
@@ -233,11 +240,10 @@ padding: 50px;
  left:-234px;
 }
 
-.course-subtitle , .course-text  {
-position: relative;
- top: -43px;
- left:-238px;
+.text-courses {
+
 }
+
 
 .course-list {
   display:inline-flex;
@@ -262,7 +268,7 @@ position: relative;
   height: 600px;
 margin: 20px 0 20px 30px;
 justify-content: center;
-background-color: #cccccc;
+background-color: #f9f9ff;
 }
 
 
@@ -376,11 +382,25 @@ padding: 20px;
 .trainer-one , .trainer-two , .trainer-three , .trainer-four {
   width: 285px;
   height: 466px;
-  background-color: pink;
+  background-color: #ffffff;
   display: inline-flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 20px 0 20px 100px;
+  box-shadow: 0 2px 2px 2px #cccccc;
+}
+
+.trainer-one {
+  width: 285px ;
+  height: 466px;
+}
+.image-container-experts {
+  display: flex;
+}
+
+.experts-image {
+  width: 255px;
+  height: 223px;
 }
 
 /*Upcoming events*/
@@ -517,3 +537,7 @@ padding: 10px;
 padding-left: 20px;
 
 }
+
+
+
+
