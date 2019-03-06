@@ -330,3 +330,35 @@ color: grey;
   text-align: center; 
   margin-top:50px;
   color: #FDC733; 
+}
+
+.client-say-container
+{
+  display:flex;
+  justify-content: center;
+  padding:20px;
+}
+
+.testimonial-one , .testimonial-two {
+  width:535px;
+  height: 239px;
+  background-color: grey;
+  margin-left: 40px;
+}
+
+footer{
+  background-color: #012348;
+  width:1887px;
+  height:567px;
+  color: white;
+}
+
+.top-products , .quick-links, .features , .resources {
+ 
+  display: flex;
+  flex-direction: column;
+}
+
+footer li {
+  color: grey;
+}
