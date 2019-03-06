@@ -1,65 +1,84 @@
 /* DEFINICIONES GENERALES*/
+html, body{
+  font-size: 14px;
+  background-color: #ffffff;
+  margin:0;
+}
 body{
-    color: rgb(7, 41, 104);
-    font-family: calibri, helvetica;
-    font-size: 14px;
-    background-color: #ffffff;
-    margin:0;
+  color: rgb(7, 41, 104);
+  font-family: Helvetica, Calibri, Arial;
 }
 
 .container{         /* esto te permite definir el ancho general de la web, y facilita futuras modificaciones*/
-    margin: 0 auto;
-    overflow: hidden;
-    width: 90%;
-    max-width: 900px;
-    min-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 90%;
+  max-width: 900px;
+  min-width: 400px;
 }
 
-a{
-    text-decoration: none;
-    color: rgb(7, 41, 104);
-    font-weight: bold;
+a{                            /*Comportamiento general de los links a*/
+  text-decoration: none;
+  color: rgb(7, 41, 104);
+  font-weight: bold;
 }
 
-a:hover{
-    color: rgb(255, 238, 0);
+a:hover{                      /*Comportamiento general del estado hover de los links a*/
+  color: rgb(255, 208, 0);
 }
 
-ul{
-    list-style:none;
-    padding: 0;
-    margin: 0;
-    font-weight: bold;
-    display: block;
+ul{                           /*Comportamiento general del estado hover de los links ul*/
+  list-style:none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  display: block;
 }
 
-li{
-    display: inline-block;
-    padding: 15px;
-    margin: auto 0;
+li{                         /*Comportamiento general del estado hover de los links a*/
+  display: inline-block;
+  padding: 15px;
+  margin: auto 0;
 }
 
-.btn-container{
-    margin:0 auto;
-    width: 200px;
-    overflow: hidden;
+.btn-group{                 /*estilos para el div que agrupa los botones*/
+  width: 250px;
+  margin:0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content:center;
+    /* position: relative; */
 }
 
-.btn{
-    display: block;
-    border-radius: 10%;
-    width:80px;
-    height: 25px;
+.btn{                       /* estilos generales para los botones */
+  display: block;
+  border-radius: 5px;
+  width:110px;
+  height: 30px;
+  text-align: center;
+  margin: 0 5px;
+  line-height: 30px;
+  font-variant-caps:all-small-caps;
 }
 
-.blue{
-    color:  rgb(255, 238, 0);
-    background-color: rgb(7, 41, 104);
+.blue{                      /* estilo para elementos con fondo azul */
+  color:  rgb(255, 208, 0);
+  background-color: rgb(7, 41, 104);
 }
 
-.yellow{
-    color: rgb(7, 41, 104);
-    background-color: rgb(255, 238, 0) ;
+.blue:hover{                /* estilo para el hover de los elementos con fondo azul */
+  color: rgb(7, 41, 104);
+  background-color: rgb(255, 208, 0);
+}
+
+.yellow{                  /* estilo para elementos con fondo amarillo */
+  color: rgb(7, 41, 104);
+  background-color: rgb(255, 208, 0);
+}
+
+.yellow:hover{            /* estilo para el hover de los elementos con fondo amarillo */
+  color:  rgb(255, 208, 0);
+  background-color: rgb(7, 41, 104);
 }
 
 .main-banner{
@@ -84,16 +103,17 @@ li{
 .main-banner header .logo{
     display: block;
     float: left;
-    padding: 15px 0 0 15px; 
+    padding: 10px 0; 
 }
 
 nav{
     float: right;
 }
 
-h3, h1{
+h2, h1{
     text-align: center;
     margin: 0;
+    text-transform: uppercase;
 }
 
 h1{
@@ -101,34 +121,79 @@ h1{
     margin: 12px;
 }
 
-h3{
-    font-size: 24px;
-}
 .main-banner-content{
-    height: calc(100% - 50px);  
+    height: calc(75% - 50px);  
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.main-banner .btn-container a.btn{
+.main-banner .btn-group a.btn{
     display: block;
     float:left;
+    /* position: absolute; */
+}
 
+section{
+  padding: 50px 0; 
+}
+
+.section-details{
+  margin-bottom: 30px;
+}
+
+.section-name{
+  text-align: center;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+.title{
+  text-transform: capitalize;
+  font-weight: bolder;
+  color: rgb(7, 41, 104);
 }
 
 p.centerParagraph{
     margin: 0 auto;
-    width: 400px;
+    width: 30%;
+    text-align: center;
 }
 
-.features-list{
+.section-desc{
+  color: #868686;
+  font-size: 0.9em;
+  font-style: italic; 
+}
+.section-item-list{
     display: flex;
     flex-direction: row; /*es el valor que el flex trae por defecto*/
     justify-content: space-between;
 }
+/* 
+.features{
+  padding: 3%;
+} */
 
-.features-item{
-    background-color: lightgray;
-    padding: 20px;
-    margin: 10px;
+.item{
+    background-color: rgb(247, 240, 255);
+    margin: 1%;
+    text-align: justify;
+    padding: 2%;
 }
+
+.icon i{
+  font-size:2em;
+}
+
+.description{
+  color: #868686;
+  font-size: 0.95em;
+  font-weight: normal;
+}
+
+.courses img{
+  display: block;
+   
+  
+}
+
