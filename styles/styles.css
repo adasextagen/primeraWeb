@@ -5,11 +5,11 @@ body{
 .main-banner{
   background: url("../images/home-banner.jpg") no-repeat center bottom;
   background-size:cover;
-  height: 80vh; /* vh = viewport height*/
+  height: 100vh; /* vh = viewport height*/
 }
 
 .main-banner-content {
-  height: calc(50vh - 50px);
+  height: calc(75vh - 50px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,11 +28,16 @@ header{
 }
 
 .logo{
-  float:left;
+  background: url("../images/logo.png") no-repeat left bottom;
+  background-size: 100px;
+  display: inline-block;
+  width: 100px;
+  margin-top: 10px;
 }
 
 nav{
   display: block;
+  text-decoration: none;
   float: right;
   overflow: hidden;
 }
@@ -41,7 +46,7 @@ ul {
   font-size: 12px;
   text-align: center;
   padding:0 0 0 15px;
-  list-style: none;  
+  list-style: none;
 }
 
 li {
@@ -65,9 +70,45 @@ h3{
   margin-bottom: 12px;
 }
 
-div.primarybuttons{
-  margin: 0 auto;
-  width: 200px;
+div .primarybuttons {
+  position: relative;
+}
+
+.primarybuttonleft {
+  display: block;
+  border:1px solid #010546;
+  border-radius: 10px;
+  width: 100px;
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding:7px 0;
+  height: 30px;
+  box-sizing: border-box;
+  color: rgb(216, 216, 6);
+  background-color: #010546;
+  text-decoration:none;
+  position: absolute;
+  left: 300px;
+  transition:background-color, 0.5s;
+}
+
+.primarybuttonright {
+  display: block;
+  border:1px solid rgb(216, 216, 6);
+  border-radius: 10px;
+  width: 100px;
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding:7px 0;
+  height: 30px;
+  box-sizing: border-box;
+  color: #010546;
+  background-color: rgb(216, 216, 6);
+  text-decoration:none;
+  font-style: bold;
+  position: absolute;
+  left: 450px;
+  transition:background-color, 0.5s;
 }
 
 section h3 {
@@ -100,4 +141,11 @@ p.centerParragraph {
 
 .features-item p {
   color: #6d6d6d
+}
+
+.icon-hat {
+  background: url("../images/pawprint.png") ;
+  background-size: 100px;
+  display: block;
+  width: 50px;
 }
