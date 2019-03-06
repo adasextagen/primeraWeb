@@ -20,7 +20,6 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 30px;
-  text-decoration: none;
 }
 
 /* por qué no puedo alinear el nav usando display? */
@@ -112,7 +111,7 @@ a.see {
 
 .blue .title {
   font-size: 25px;
-  padding: 75px 0 0 0;
+  padding: 25px 0 0 0;
   color: white;
 }
 
@@ -302,9 +301,7 @@ form label input {
 .register-bttn {
   display: flex;
   flex-direction: column;
-  text-decoration: none;
-  width: 200px;
-  height: 40px;
+  text-decoration: none;  
   background-color: #fdc632;
   color: #002346;
   font-size: 15px;
@@ -313,8 +310,8 @@ form label input {
   margin: 0 auto
 }
 
-section.white div.container {
-  width: 900px;
+div.trainers {
+  height: 450px;
 }
 
 .trainers-list {
@@ -329,9 +326,8 @@ section.white div.container {
   margin: 70px 0 0 0;
   padding: 20px;
   background-color: #f9f9fe;
+  box-shadow: 10px 10px 4px -13px;
 }
-
-/* agregar sombra */
 
 .trainer-desc {
   font-size: 13px;
@@ -360,4 +356,139 @@ img.businessman {
   margin-left: -20px;
   margin-top: -20px;
   margin-bottom: 20px;
+}
+
+.event-list {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.first-event, .second-event {
+  width: 350px;
+  height: 250px;
+  margin-top: 40px;
+  display: block;
+}
+
+.event-pic-1 {
+  position: relative;  
+}
+
+.first-event .event-details {
+  display: inline-block;
+  background-color: black;
+  opacity: 0.4;
+  width: 160px;
+  height: 180px;
+  position: absolute;
+  top: 10;
+  right: 0;
+  z-index: 1;
+}
+
+.event-details p {
+  color: white;
+  font-size: 12px;
+}
+
+
+/* TERMINAR UPCOMING EVENTS */
+
+div.clients {
+  height: 400px;
+}
+
+.client-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.client-item {
+  width: 400px;
+  height: 170px;
+  margin-top: 70px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 10px 10px 4px -13px;
+  display: flex;
+}
+
+.client-desc {
+  font-size: 13px;
+  color: #7c838a;
+  font-size: 12px;
+}
+
+.client-name {
+  margin: 0;
+  color: #002346;
+  font-size: 15px;
+}
+
+.client-text {
+  display: inline-block;
+  margin: 20px 20px;
+}
+
+img.client-pic {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  margin: 20px 20px;
+  border-radius: 10px;
+}
+
+footer h5 {
+  color: white;
+  font-size: 15px;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-block, .footer-newsletter {
+  display: inline-block;
+}
+
+.footer-newsletter p, footer ul li {
+  font-size: 13px;
+  color: #7c838a;
+}
+
+footer ul li {
+  list-style: none;
+  padding: 0 0 20px 0;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+#sub-email {
+  color: #7c838a;
+  background-color: #334f6c;
+  border: none;
+  padding: 10px 20px 10px 10px;
+}
+
+.subscribe-bttn {
+  background-color: #fdc632;
+  color: #002346;
+  padding: 10px 17px;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.copyright {
+  color: white;
+  padding: 40px 0 0 0; 
+  display: inline;
 }
