@@ -169,210 +169,92 @@ section h3 {
 
 }
 
-.subtitle {
-  font-weight: bold;
-  font-size: 30px;
-  margin-bottom:5px;
+.our-popular-courses-container {
+display:flex;
+justify-content: center;
+padding: 50px;
 }
 
-.register-now , .upcoming-events {
+.course-box-one, .course-box-two , .course-box-three {
+display:flex;
+flex-direction: row;
+width:330px;
+height:297px;
+background-color: pink;
+margin: 20px 0 20px 30px;
+justify-content: center;
+}
+
+.register-now {
   background-color: #012348;
-  width: 100%;
+  color: white;
+  width:100%;
   height: 639px;
-  color: white;
+}
+.text-register-now {
+  margin: 10px 0 0 150px;
+ position: relative;
+ top:50px;
+ left:100px;
+}
+h4 {
+  font-size: 42px;
 }
 
-footer {
-  background-color:  #012348;
-  width: 100%;
-  height: 400px;
-}
-
-.trends-container {
-  
-
-  
-}
-.trends-list .container {
-  
- 
-}
-
-
-.trends-box .container {
- width: 50%;
- margin: 2%;
- padding: 1%;
- box-sizing: border-box;
-}
-
-.trends-content {
-  background-color:#F9F9FF;
-  width: 330px;
-}
-
-
-.image-container {
- position:relative;
-overflow: hidden;
-}
-
-.main-trends-image img: {
-  position:relative;
- overflow: hidden;
- background-color: #F9F9FF;
-
- 
-}
-
-.trends-images {
-  width: 330px;
-  height: 259px;
-  margin-bottom: 0px;
-}
-
-.price {
-width:60px;
-height: 60px;
-background-color:  #FDC733;
-border-radius: 30px; 
-position: relative;
-top: 300px;
-left: 250px;
-}
-
-.price-circle {
-  text-align: center;
-  font-weight: bold;
+.counter {
   position: relative;
-  top: 10px;
-  left:8px;
-  font-size: 25px;
-}
-.main-content-box {
-background-color:#F9F9FF;
-width: 330px;
-height: 297px;
-margin-top: 0px;
-}
-
-
-.call-to-action-trends  {
-  background-color:  #012348;
-  padding: 5px 20px 5px 20px;
-  width: 150px;
-  height: 30px;
-  color: white;
-  margin: 50px;
-  position: relative;
-  top:25px;
-  left:1px;
-}
-
-
-.subtitle-trends , .paragraph-trends {
-  position: relative;
-  top:30px;
-  left: 1px;
-  font-size: 20px;
-  margin-left: 20px;
-
-}
-.main-content-box {
-
+  top: 200px;
+  right: 1000px;
 
 }
 
-.avatar-details {
-  margin-top: 20px;
-  align-items: left;
-  justify-content: space-between;
-  flex-direction: row;
-  display:flex;
-}
-
-.trends-details {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
-
-}
-
-.trends-details-numbers {
- 
-  text-decoration: none;
-  font-size: 12px;
- margin-top: 0;
-display:block;
-box-sizing: border-box;
- 
-}
-.profile-avatar {
-  width:40px;
-  height: 40px;
-  border-radius: 20px;
-  display: block;
-  margin-top: 20px;
-  position: relative;
-  left: 10px;
-  top: 1px;
-
-}
-
-.name {
-  font-weight: bold;
-  margin-left:1px;
-  margin-top: 20px;
-  position: relative;
-  left: 15px;
-  top:5px;
-}
-
-.register-now-text {
-  color: white;
-  position: relative;
-  top: 80px;
-  left: 400px;
-font-size: 20px;}
-
-.register-details {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  margin: 400px 0 400px 400px;
-  font-weight: bold;
-  line-height: 100px;
- 
-  
-}
-.register-details span {
+.counter span {
   font-size: 40px;
   font-weight: bold;
   padding-left:20px;
+  line-height: 100px;
 }
 
-.register-details div {
+.days , .hours , .mins , .secs {
   width: 155px;
   height: 123px;
-  border: white 2px solid;
-  border-radius: 15px;
+  border: white 1px solid;
+  border-radius: 5px;
   margin-left:20px;
+  background-color: rgba(255,255,255, 0.2);
+  display: block;
+  float: right;
 }
 
-.register-box {
+.register-form {
   background-color: #ffffff;
   text-align: center;
   width: 350px;
   height:379px;
-  display: block;
-  float: right; 
   color: black;
-  
+  position: relative;
+  top:20px;
+  left:1200px;
+}
+
+form-text p{
+  margin-top: 2px;
+}
+h5 {
+  font-size:25px;
+  padding-top:40px;
+  margin-bottom: 1px;
+}
+
+input {
+  border-style: none;
+  border-bottom: 1px solid grey;
+  padding: 20px;
+  line-height: 10px;
 }
 
 button {
-background-color:  #FDC733;
+  background-color:  #FDC733;
 width: 190px;
 height: 40px;
 border: 1px solid  #FDC733;
