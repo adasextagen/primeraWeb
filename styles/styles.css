@@ -260,3 +260,73 @@ height: 40px;
 border: 1px solid  #FDC733;
 margin: 20px;
 }
+
+/*our expert trainers*/
+
+.trainers-container 
+{
+display: flex;
+justify-content: center;
+
+padding: 20px;
+
+}
+
+.trainer-one , .trainer-two , .trainer-three , .trainer-four {
+  width: 285px;
+  height: 466px;
+  background-color: pink;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px 0 20px 150px;
+}
+
+.upcoming-events-container {
+  background-color: #012348;
+  width: 1887px;
+  height:890px;
+  color: white;
+}
+
+.image-view-details-container {
+display: flex;
+justify-content: center;
+padding: 20px;
+}
+
+.image-view-details-one , .image-view-details-two {
+  width: 610px;
+  height: 440px;
+  background-color: pink;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 150px 0 0 180px;
+}
+
+h4, .upcoming-events-text{
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  text-align: center; 
+
+}
+
+h4 {
+  padding-top:100px;
+  margin-bottom: 5px;
+}
+
+.upcoming-events-text {
+font-style: italic;
+color: grey;
+}
+
+.view-all-event {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  text-align: center; 
+  margin-top:50px;
+  color: #FDC733; 
