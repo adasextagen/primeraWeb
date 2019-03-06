@@ -51,8 +51,8 @@ nav a:hover {
 
 .container {
   margin: 0 auto;
-  overflow: hidden;
   width: 90%;
+  overflow: hidden;
   min-width: 600px;
   max-width: 900px;
 }
@@ -161,7 +161,6 @@ h4 {
 }
 
 .image {
-  position: relative;
   width: calc(100% + 40px);
   margin-left: -20px;
   margin-top: -20px;
@@ -206,8 +205,7 @@ h4 {
 .blue {
   background-color: #002346;
   overflow: hidden;
-  padding: 70px; /*revisar*/
-  position: relative;
+  padding: 70px;
 }
 
 .registernow {
@@ -258,16 +256,27 @@ h4 {
   font-weight: bold;
 }
 
+section.blue div.container {
+  position: relative;
+  height: 300px
+}
+
 .formulario {
   background-color: white;
   box-sizing: border-box;
   width: 250px;
   height: 300px;
-  display: inline-block;
+  display: block;
   padding: 20px;
   margin: 10px;
+  float: right;
   position: absolute;
+  top: 0;
+  right: 0;
 }
+
+/* cuando achico la ventana me pisa las demas cosas porque esta ubicado con position
+relative. como lo soluciono? */
 
 .form-title {
   font-size: 20px;
@@ -298,7 +307,57 @@ form label input {
   height: 40px;
   background-color: #fdc632;
   color: #002346;
+  font-size: 15px;
   text-align: center;
   line-height: 40px;
   margin: 0 auto
+}
+
+section.white div.container {
+  width: 900px;
+}
+
+.trainers-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.trainers-item {
+  width: 180px;
+  margin: 70px 0 0 0;
+  padding: 20px;
+  background-color: #f9f9fe;
+}
+
+/* agregar sombra */
+
+.trainer-desc {
+  font-size: 13px;
+  color: #7c838a;
+  text-align: center;
+  font-size: 12px;
+}
+
+.job, .trainer-name {
+  text-align: center;
+  margin: 0;
+}
+
+.trainer-name {
+  color: #002346;
+  font-size: 15px;
+}
+
+.job {
+  color: #94999f;
+  font-size: 10px;
+}
+
+img.businessman {
+  width: calc(100% + 40px);
+  margin-left: -20px;
+  margin-top: -20px;
+  margin-bottom: 20px;
 }
