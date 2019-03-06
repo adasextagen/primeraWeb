@@ -2,6 +2,7 @@ body{
   margin: 0;
   font-family: Arial, Helvetica, sans-serif
 }
+
 .main-banner{
   background: url("../images/home-banner.jpg") no-repeat center bottom;
   background-size:cover;
@@ -27,6 +28,12 @@ header{
   max-width: 900px;
 }
 
+a{
+  text-decoration:none;
+  font-weight: bold;
+  color: #030521
+}
+
 .logo{
   background: url("../images/logo.png") no-repeat left bottom;
   background-size: 100px;
@@ -37,16 +44,15 @@ header{
 
 nav{
   display: block;
-  text-decoration: none;
   float: right;
   overflow: hidden;
 }
 
 ul {
+  list-style: none;
   font-size: 12px;
   text-align: center;
   padding:0 0 0 15px;
-  list-style: none;
 }
 
 li {
