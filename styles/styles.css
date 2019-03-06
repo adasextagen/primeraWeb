@@ -254,9 +254,14 @@ h4 {
   width: 350px;
   height:379px;
   color: black;
-  position: relative;
-  top:5px;
-  left:1200px
+ display: flex;
+ justify-content: center;
+ margin-right: 0;
+ margin-left:1000px;
+ margin-top:10px;
+ margin-bottom:100px;
+ position: relative;
+ top:-350px;
 }
 
 form-text p{
