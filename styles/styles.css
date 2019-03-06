@@ -23,14 +23,17 @@ margin-left:30px;
 
 
 }
-nav {
+.principal-menu {
   display: block;
   float: right;
   margin-top: 60px;
 margin-right:50px;
+font-weight: bold;
+
 }
 
-ul {
+
+menu {
   list-style: none;
   color:#012348;
   font-weight: bold;
@@ -351,14 +354,34 @@ footer{
   width:1887px;
   height:567px;
   color: white;
-}
+  padding-left:150px;
+  padding-top:80px;}
 
-.top-products , .quick-links, .features , .resources {
+.top-products , .quick-links, .features , .resources , .newsletter {
  
   display: flex;
   flex-direction: column;
+  list-style: none;
+  justify-content: center;
+  align-content: center;
+
+ 
 }
 
 footer li {
   color: grey;
+  padding-bottom:20px;
+  justify-content: left;
+}
+
+.footer-nav {
+  display: block;
+  float: left;
+  margin-top: 60px;
+margin-right:50px;
+}
+
+.footer-subtitles {
+  color: white;
+  font-weight: bold;
 }
