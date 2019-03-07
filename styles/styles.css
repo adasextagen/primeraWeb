@@ -204,3 +204,46 @@ span.price{
 
   /* no sé si ésta fue la mejor solución pero quedó(?) */
 }
+
+/*Blue Sections*/
+
+.section-blue{
+  background-color: #002347;
+}
+
+/* Section: Register Now*/
+
+.register-now{
+  width: 60%;
+}
+
+.register-now h3{
+  color: #ffffff;
+}
+
+/*si pongo el p dentro de .register-now me toma el resto de los p de la web en blanco*/
+
+.subtitle-blueSec{
+  color: #ffffff;
+}
+
+.time-boxes{
+  display: flex;
+  flex-direction: row; /*valor por defecto del flex*/
+  margin-top: 40px;
+}
+
+.number{
+background: #334f6c;
+padding: 35px 20px;
+margin-right: 15px;
+text-align: center;
+border: 1px solid rgba(255, 255, 255, 0.4);
+border-radius: 5px;
+margin-top: 65px;
+}
+
+.number span{
+  color: #ffffff;
+  font-size: 17px;
+}
