@@ -1,20 +1,99 @@
-header {
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#002347;
+    margin:0;
+}
+
+.main-banner {
+    background-image:URL(" ../images/home-banner.jpg");
+    background-size:100%;
+    background-repeat:no-repeat;
+    font-weight:bold;
+    height:700px;
     overflow:hidden;
+}
+.main-banner header {
+    overflow:hidden;
+    display:flex;
+    justify-content:space-around;
 }
 
 .header-logo {
     float:left;
+    margin: 20px;
+}
+
+ .header-logo-img {
+    height:60%;
 }
 
 .main-banner header nav {
     float:right;
-    }
+}
+
+.main-banner header nav ul {
+    margin:0;
+    padding:0;
+    font-size:10px;
+}
 
 .main-banner header nav ul li {
     display:inline-block;
-    text-decoration:none;
-    }
+    margin: 20px 15px;
+}
 
 .main-banner header nav ul li a {
     text-decoration:none;
-    }
+}
+
+.icon {
+    height:15px;
+    width:auto;
+}
+
+.main-title {
+   text-align:center;
+   margin: 100px 0 0 0;
+}
+
+.main-title p {
+    font-size:14px;
+}
+
+.main-title h1 {
+    font-size:30px;
+    margin:0;
+}
+
+.main-menu {
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    margin:40px;
+}
+
+.main-banner .main-menu .button {
+    border: 1px solid; 
+    border-radius:5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 10px; 
+    font-size:10px;
+    padding:10px 20px;
+    width: 80px;
+}
+
+.main-banner .main-menu .button.one {
+    border-color:#002347;
+    background-color:#002347;
+    color:#f7ac06;
+}
+.main-banner .main-menu .button.two {
+    border-color:#f7ac06;
+    background-color:#f7ac06;
+    color: #002347;
+}
+
+.secondary-title {
+    
+}
