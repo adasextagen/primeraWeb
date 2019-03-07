@@ -35,7 +35,7 @@ a:hover{
     overflow: hidden;
     width: 90%;
     min-width: 600px;
-    max-width: 900px;
+    max-width: 1000px;
 }
 
 header{
@@ -181,7 +181,7 @@ p.centerParagraph{
 }
 
 .productInfo{
-    padding: 25px;
+    padding: 18px;
 }
 
 .circlePrice{
@@ -229,6 +229,7 @@ p.centerParagraph{
 .sellerAccount .sellerPhoto{
     border: 2px solid #121750;
     border-radius: 100%;
+    float:left;
 }
 
 .sellerAccount a{
@@ -236,11 +237,12 @@ p.centerParagraph{
     font-weight: bold;
     color: #121750;
     text-align: center;
-    line-height: 15px;
+    line-height: 44px;
+    margin-left: 5px;
 
 }
 
-.socialMedia{
+span .socialMedia{
     float: right;
     display:block;
 }
@@ -250,19 +252,118 @@ p.centerParagraph{
     color: #121750;
     font-weight: bold;
     font-size: 15px;
+    float: right;
+ 
 }
 
 .socialMedia a .iconEmail{
     margin-left: 8px;
     margin-right: 8px;
-    display: inline;
+    float: right;
+
+}
+/*TERCERA PARTE*/
+
+
+.register-now{
+    background-color: #050E31;
+    padding: 80px 50px 65px 50px;
+    margin-top: 90px;
+}
+
+
+.register-now-text{
+    width: 60%;
+    display: inline-block;
+    color: whitesmoke;
+    overflow: hidden;
+}
+
+.register-now-text .white-title{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.register-now-text p{
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.countdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.countdown div{
+    background-color: #7781AC;
+    border: 2px solid #BBC4E7;
+    border-radius: 5px;
+    padding: 30px 15px;
 
 }
 
-.iconEmail{
+.countdown, .numbers, .word{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.coundown, .numbers{
+    font-size: 28px;
+    margin-right: 5PX;
+}
+
+
+form{
+    background-color: white;
+    border: 1px solid #030521;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 45px;
+    float: right;
+    min-width: 200px;
+}
+
+
+form .form-title{
+    font-size: 22px;
+    color: #040832;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+form p{
+    font-size: 14px;
+    color: #939399;
+    text-align: center;
+    margin-top:0px;
+    margin-bottom: 25px;
 
 }
 
+form input{
+    font: 12px  #E1E2E6;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    padding: 10px;
+
+}
+
+
+button, .submit{
+    background-color: #F7AC06;
+    font-size: 14px;
+    font-weight: bold;
+    color: #040832;
+    border: 0;
+    padding: 15px;
+    margin-top: 30px;
+}
 
 
 
