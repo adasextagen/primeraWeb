@@ -4,14 +4,21 @@ body {
     margin:0;
 }
 
-.main-banner {
-    background-image:URL(" ../images/home-banner.jpg");
-    background-size:100%;
-    background-repeat:no-repeat;
-    font-weight:bold;
-    height:700px;
-    overflow:hidden;
+a:visited {
+    color:inherit;
 }
+
+a {
+    text-decoration:none;
+}
+
+.main-banner {
+    background:URL(" ../images/home-banner.jpg") center bottom;
+    background-size:cover;
+    font-weight:bold;
+    height:105vh;
+}
+
 .main-banner header {
     overflow:hidden;
     display:flex;
@@ -23,7 +30,7 @@ body {
     margin: 20px;
 }
 
- .header-logo-img {
+.header-logo-img {
     height:60%;
 }
 
@@ -42,25 +49,21 @@ body {
     margin: 20px 15px;
 }
 
-.main-banner header nav ul li a {
-    text-decoration:none;
-}
-
-.icon {
+.main-banner .icon {
     height:15px;
     width:auto;
 }
 
-.main-title {
+.main-banner-content {
    text-align:center;
    margin: 100px 0 0 0;
 }
 
-.main-title p {
+.main-banner-content > p {
     font-size:14px;
 }
 
-.main-title h1 {
+.main-banner-content > h1 {
     font-size:30px;
     margin:0;
 }
@@ -76,7 +79,6 @@ body {
     border: 1px solid; 
     border-radius:5px;
     text-align: center;
-    text-decoration: none;
     margin: 0 10px; 
     font-size:10px;
     padding:10px 20px;
@@ -94,6 +96,49 @@ body {
     color: #002347;
 }
 
+.features {
+    margin:15vh;
+}
 .secondary-title {
-    
+    text-align:center;
+    font-weight:bolder;
+    font-size:25px;
+    margin:0;
+}
+
+.secondary-descriptor {
+    text-align:center;
+    font-style:italic;
+    color:grey;
+    font-size:10px;
+    margin:10px 0 0 0;
+}
+
+.features-selection {
+    list-style-type: none;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    padding:0 80px;
+    margin: 40px 60px;
+}
+
+.features-selection .icon {
+    height:30px;
+}
+
+.features-selection > li {
+    margin:10px;
+    background-color:#f9f9fe;
+    padding:20px;
+}
+
+.features-selection .product-title {
+    margin:10px 0;
+}
+
+.features-selection .product-descriptor {
+    margin:0;
+    font-size:10px;
+    color:gray;
 }
