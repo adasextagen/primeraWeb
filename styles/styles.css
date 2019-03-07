@@ -417,10 +417,13 @@ justify-content: center;
 padding: 20px;
 }
 
+.events-image {
+  width: 610px;
+  height: 440px;
+}
 .image-view-details-one , .image-view-details-two {
   width: 610px;
   height: 440px;
-  background-color: pink;
   display: inline-flex;
   flex-direction: row;
   justify-content: center;
@@ -454,17 +457,29 @@ color: grey;
   color: #FDC733; 
 }
 
+
+/*clients*/
 .client-say-container
 {
   display:flex;
   justify-content: center;
   padding:20px;
 }
-
+.image-testimonial-container {
+  display: flex;
+}
+.testimonial-image {
+  width:121px;
+  height:121px;
+  position: relative;
+  top: 55px;
+  left:46px;
+}
 .testimonial-one , .testimonial-two {
   width:535px;
   height: 239px;
-  background-color: grey;
+  background-color: white;
+  box-shadow: 0 2px 2px 2px #cccccc;
   margin-left: 40px;
 }
 
