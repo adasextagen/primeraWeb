@@ -72,8 +72,9 @@ h1{
 }
 
 h3{
-  font-size: 21px;
-  margin-bottom: 12px;
+  font-size: 23px;
+  font-variant: bold;
+  margin: 30px auto 12px;
 }
 
 div .primarybuttons {
@@ -122,7 +123,7 @@ section h3 {
 }
 
 p.centerParragraph {
-  margin: 10px auto;
+  margin: 10px auto 100px;
   width: 450px;
   font-style: italic;
   color: #6d6d6d
@@ -136,7 +137,7 @@ p.centerParragraph {
 
 .features-item {
   padding: 20px;
-  background-color: aliceblue;
+  background-color: rgb(241, 245, 248);
   margin: 0 10px;
 }
 
@@ -154,4 +155,25 @@ p.centerParragraph {
   background-size: 100px;
   display: block;
   width: 50px;
+}
+/*
+OUR POPULAR COURSES
+*/
+.features-item-images{
+  display: inline-block;
+  padding: 0px;
+  margin: 50px 8px 0px;
+  position:relative;
+}
+
+.price{
+  font-weight: bold;
+  color: #010546;
+  border: 1px solid #f7c216;
+  border-radius: 100%;
+  padding: 10px;
+  background-color: #f7c216;
+  position: absolute;
+  top: 47%;
+  right: 5%;
 }
