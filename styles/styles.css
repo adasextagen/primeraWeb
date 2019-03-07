@@ -1,0 +1,106 @@
+body{
+    margin: 0
+}
+
+.main-banner {
+    background-image: url("../images/home-banner.jpg");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.main-banner-content {
+    height: calc(80vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    height: 50px;
+}
+
+.container {
+    margin: auto;
+    overflow: hidden;
+    width: 90%;
+    min-width: 600px;
+    max-width: 900px;
+}
+
+.logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+h3, h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color:#154360 ;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 12px;
+    margin-bottom:  12px;
+}
+
+div.primaryButtons {
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.button1 {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    background: blue;
+    background-color: yellow;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.button2 {
+    font-size: 12px;
+    width: 100px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    background: yellow;
+    background-color: blue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+p.centerParragraph {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 400px;
+  }
+
+.features-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.features-item {
+    padding: 50px;
+    background-color: #CCD1D1;
+    margin: 0 10px;
+}
+
+.icon-hat {
+    background-image: url("../images/hat.jpg");
+}
