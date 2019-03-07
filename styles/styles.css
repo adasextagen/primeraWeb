@@ -7,18 +7,7 @@ body{
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
-}
-
-.main-banner-content {
-    height: calc(80vh - 50px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-header {
-    height: 50px;
+    height: 100vh;
 }
 
 .container {
@@ -29,12 +18,33 @@ header {
     max-width: 900px;
 }
 
-.logo {
-    float: left;
+.main-banner-content .container{
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-nav {
+header {
+    height: 50px;
+}
+
+.logo {
+    margin: 0 auto;
+    float: left;
+    padding: 10px;
+}
+
+nav, li {
+    list-style: none;
     float: right;
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px; 
+    font-weight: bold;
+
 }
 
 h3, h1{
@@ -53,13 +63,15 @@ h3 {
     margin-bottom:  12px;
 }
 
-div.primaryButtons {
-    margin: auto;
+.main-banner-content div.primaryButtons {
+    display: flex;
+    margin: 0 auto;
+    margin-left: 340px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif; 
 }
 
-.button1 {
+.main-banner-content .button1 {
     font-size: 12px;
     font-weight: bold;
     padding: 10px;
@@ -83,10 +95,18 @@ div.primaryButtons {
     text-decoration: none;
 }
 
+.awesomeFeature {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 p.centerParragraph {
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
     width: 400px;
+    margin-top: 50px;
   }
 
 .features-list {
@@ -96,6 +116,8 @@ p.centerParragraph {
 }
 
 .features-item {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 50px;
     background-color: #CCD1D1;
     margin: 0 10px;
@@ -103,4 +125,11 @@ p.centerParragraph {
 
 .icon-hat {
     background-image: url("../images/hat.jpg");
+}
+
+.ourPopularCourses {
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
 }
