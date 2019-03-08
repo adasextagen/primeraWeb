@@ -58,6 +58,7 @@ li:hover{
 
 li a.magGlass img{
   width: 20px;
+  transform: translate(0, 5px)
 }
 
 li a.magGlass img:hover{
@@ -238,11 +239,9 @@ div.favIcons img.favs{
 
 div.register{
   height: 400px;
-  background-color: #14406d;
+  background-color: #0a3763;
   color: #fff;
   margin-top: 150px;
-  
-    
 }
 
 div.register h3{
@@ -260,14 +259,71 @@ div.register h3{
 ul.time{
   transform: translate(20px, 150px);
   margin-top: 35px;
-  transition: 0s all;
+  
 }
 
 ul.time li{
+  font-family: Arial, Helvetica, sans-serif;
   border: 1px solid #fff;
   background-color: #517da8;
-  padding: 30px 23px; 
+  padding: 25px 20px; 
   border-radius: 15px;
-  
-  
+  margin-right: 8px 
 } 
+
+div.courses{
+  color: #0a3763;
+  background-color: #fff;
+  float: right;
+  width: 250px;
+  height: 350px;
+  margin-right: 18px;
+  font-family: Arial, Helvetica, sans-serif; 
+  padding-left: 30px;
+  transform: translate(0, -75px) 
+
+}
+
+div.courses h5{
+  font-size: 28px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #0a3763;
+}
+
+
+div.courses p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(114, 114, 110);
+  transform: translate(15px, -10px)
+}
+
+div.courses form{
+  font-size: 16px;
+  color: rgb(144, 114, 110);
+  font-weight: bold;
+  margin-right: 10px;
+  margin-top: 25px; 
+  
+}
+ div.courses input{
+   border: none;
+   border-bottom: 1px solid rgb(144, 114, 110); 
+   padding: 5px 0px;
+   margin-bottom: 8px;
+}
+
+input.enviar{
+  font-size: 18px;
+  width: 170px;
+  background-color:#F2E811;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0a3763;
+  margin-top: 10px;
+  
+  
+
+}
