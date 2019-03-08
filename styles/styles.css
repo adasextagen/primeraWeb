@@ -21,6 +21,7 @@ body{
 .main-banner-content .container{
     height: calc(100vh - 50px);
     display: flex;
+    margin-top: 60px; 
     flex-direction: column;
     justify-content: center; 
 }
@@ -35,23 +36,28 @@ header {
     padding: 10px;
 }
 
-nav, li {
+nav li, a{
     list-style: none;
     float: right;
     display: inline;
     padding: 10px;
-    text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px; 
     font-weight: bold;
+    text-decoration: none;
+    color: #01012b;
+}
 
+li :hover{
+    color: #F1C40F;
 }
 
 h3, h1{
+    display: block;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    color:#154360 ;
+    color: #01012b ;
 }
 
 h1 {
@@ -60,6 +66,7 @@ h1 {
 
 h3 {
     font-size: 12px;
+    margin-top: 40px;
     margin-bottom:  12px;
 }
 
@@ -69,15 +76,16 @@ h3 {
     margin-left: 340px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif; 
+    border-radius: 6px;
 }
 
 .main-banner-content .button1 {
     font-size: 12px;
     font-weight: bold;
     padding: 10px;
-    border-radius: 8px;
-    background: blue;
-    background-color: yellow;
+    border-radius: 4px;
+    color: #01012b;
+    background-color: #F1C40F  ;
     cursor: pointer;
     text-decoration: none;
 
@@ -88,11 +96,12 @@ h3 {
     width: 100px;
     font-weight: bold;
     padding: 10px;
-    border-radius: 8px;
-    background: yellow;
-    background-color: blue;
+    border-radius: 4px;
+    color: #F1C40F ;
+    background-color: #01012b;
     cursor: pointer;
     text-decoration: none;
+    margin: 0 0 0 12px;
 }
 
 .awesomeFeature {
@@ -102,14 +111,15 @@ h3 {
 }
 
 p.centerParragraph {
-    margin: 0 auto;
+    display: block;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    width: 400px;
-    margin-top: 50px;
+    width: 300px;
   }
 
 .features-list {
+    margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -123,13 +133,28 @@ p.centerParragraph {
     margin: 0 10px;
 }
 
-.icon-hat {
-    background-image: url("../images/hat.jpg");
-}
-
 .ourPopularCourses {
     margin-top: 50px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-weight: bold;
+}
+
+p.centerParragraph2 {
+    margin: auto;
+}
+
+.features-list2 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.features-item2 {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    background-color: #CCD1D1;
+    margin: 0 10px;
 }
