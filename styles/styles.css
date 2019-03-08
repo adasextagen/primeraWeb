@@ -137,12 +137,22 @@ h4 {
     color: rgb(17, 17, 73);
 }
 
+.stylecursos {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+
+ }
+
+
 .listaCursos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     background-color: rgb(189, 183, 235);
-    
+    width: 30%;
+
+ 
   }
 
   .desripcionCurso {
@@ -170,7 +180,7 @@ h4 {
         height: 150px;
       }
 
-      .tituloRegistracion {
+      .tituloAzul {
         color: white;
         font-size: 25px;
         float: left;
@@ -207,3 +217,73 @@ h4 {
       .tiempo-numero {
         font-size: 20px;
         }
+
+    h5 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #336699;
+    margin-top: 5px;
+    }
+
+    h4 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color:  rgb(17, 17, 73);
+        margin-bottom: 5px;
+
+    }
+    .styleTrainer {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px auto;
+    
+     }
+
+    .listaTrainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: rgb(224, 222, 238);
+        width: 190px;
+        border-radius: 5px solid black;
+
+    }
+
+    .tituloAzulCentrado {
+
+        color: white;
+        font-size: 25px;
+        margin: 3px;
+    
+      }
+
+     
+    .eventos {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px auto;
+    
+    }
+
+    .imagen1Evento{
+    position: relative;
+    }
+
+    .textoImagen1Evento {
+        position: absolute;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        text-align: center;
+        width: 100px;
+        background-color: grey;
+        float: right;
+    
+
+    }
+    
+    
+        
+
+
+
