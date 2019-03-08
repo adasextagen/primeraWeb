@@ -61,11 +61,11 @@ h3, h1{
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 28px;
 }
 
 h3 {
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 40px;
     margin-bottom:  12px;
 }
@@ -75,7 +75,7 @@ h3 {
     margin: 0 auto;
     margin-left: 340px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
     border-radius: 6px;
 }
 
@@ -105,7 +105,7 @@ h3 {
 }
 
 .awesomeFeature {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
@@ -135,13 +135,17 @@ p.centerParragraph {
 
 .ourPopularCourses {
     margin-top: 50px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     font-weight: bold;
 }
 
 p.centerParragraph2 {
+    display: block;
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    width: 300px;
 }
 
 .features-list2 {
@@ -157,4 +161,12 @@ p.centerParragraph2 {
     padding: 50px;
     background-color: #CCD1D1;
     margin: 0 10px;
+}
+
+.box1 {
+    background-image: url("../images/box1.png");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50px;
 }
