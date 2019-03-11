@@ -152,6 +152,7 @@ header{
 .main-banner-content div .learn-more:hover{
     color: #030521;
     background-color: #f7c216;
+    transition: 0.6s;
 }
 
 .main-banner-content div .see-course{
@@ -164,6 +165,7 @@ header{
 .main-banner-content div .see-course:hover{
     color: #f7c216;
     background-color: #030521;
+    transition: 0.6s;
 }
 
 /* AWESOME FEATURE */
@@ -178,6 +180,14 @@ header{
     padding: 20px;
     background-color: aliceblue;
     margin: 0 10px;
+}
+
+.awesome-feature img{
+    padding: 0;
+    background-color: #030521;
+    width: 4vh;
+    height: 4vh;
+    border: none;
 }
 
 /* OUR POPULAR COURSES */
@@ -260,6 +270,7 @@ span.price{
 }
 
 .social-media-status img{
+    background-color: #030521;
     transform: translateY(20%) /* CON ESTO CENTRE LOS ICONOS DE LIKE Y PEOPLE */
 }
 
