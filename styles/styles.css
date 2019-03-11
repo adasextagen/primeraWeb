@@ -246,7 +246,7 @@ section .courses-info{
 
 
 .register{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
 
 }
@@ -290,4 +290,8 @@ section .courses-info{
     font-size: 5px;
     color: #ffffff;
 
-} 
+} .register-form{
+    display: inline-flex;
+    flex-direction: column;
+
+}
