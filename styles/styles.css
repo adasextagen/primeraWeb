@@ -540,5 +540,33 @@ text-align: left;
     height: 15px;
 }
 
+.final-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.final-list ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 30px auto;
+    width: 200px;
+}
+
+.final-list li a, .text-newsletter {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.final-list li{
+    margin: 8px 0;
+}
+
+.footer{
+    text-align: left;
+    margin: 30px 0;
+}
+
+
 
 
