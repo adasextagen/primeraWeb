@@ -9,22 +9,13 @@ header {
     max-width: 80vh;
 }
 nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
     float: right;
-    margin-top: 8px;
+    display: flex;
 }
 ul {
-    display: inline-flex;
+    display: flex;
     float: right;
     overflow: hidden;
-    list-style-type: none ;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
 }
 li {
     display: inline;
@@ -57,16 +48,17 @@ font-size: 38px;
   }
   .container{
     margin: 0 auto;
-    overflow: hidden;
     width: 90%;
     min-width: 600px;
     max-width: 900px;
   }
   .logo{
     float:left;
+    margin-top: 10px;
   }
   h1{
-    font-size: 48px
+    font-size: 48px;
+    margin-bottom: 10px;
   }
   h3{
     font-size: 24px;
@@ -74,43 +66,58 @@ font-size: 38px;
     text-align: center;
   }
   h4{
-    font-size: 8px;
+    font-size: 6px;
+    color: #336699;
   }
   .primarybuttons{
     margin: 0 auto;
-    width: 300px;
-    height: 200px;
+    height: 500px;
     text-align: center;
   }
   p.centerParragraph {
     margin: 0 auto;
     width: 400px;
   }
-  .features-list {
+  .features-list, .courses-list {
     display: flex;
     flex-direction: row; /*valor por defecto del flex*/
-    justify-content: space-between;
+    margin: 0 auto;
+    justify-content: center;
   }
-  .features-item {
+  .features-item, .courses-item {
     padding: 20px;
     background-color: aliceblue;
-    margin: 0 10px;
+    margin:10px;
+    width: 200px;
   } 
   a {
+    color: #336699;
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
+    padding: 10px;
     } 
+  .white-link {
+    color: white;
+  }
   a:hover{
     color: gold;
   }
-.learn{
+.learn, .see{
     background-color: #336699;
     border-radius: 5px;
-    margin: 0 10px 0 0;
-    height: 400px;
+    margin: 10px 10px 0 0;
+    height: 300px;
     width: 400px;
-  } 
+    padding: 10px;
+    }
+.see{
+    background-color: gold;
+}
+.learn{
+  color: gold;
+}
+
 .titles, .subtitle {
   margin-top: 15px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -155,3 +162,11 @@ p {
   background-color: aliceblue;
   margin: 0 10px;
 }
+.blue-background{
+  background-color: #336699;
+}
+.courses-item {
+  padding: 20px;
+  margin:10px;
+  width: 200px;
+} 
