@@ -215,6 +215,7 @@ div.features-itemBis a.desButtom{
   margin-top: 60px;
 }    
 
+
 div a.desButtom:hover{
   color: #fff;
   font-size: 16px;
@@ -276,7 +277,7 @@ div.courses{
   background-color: #fff;
   float: right;
   width: 250px;
-  height: 350px;
+  height: 330px;
   margin-right: 18px;
   font-family: Arial, Helvetica, sans-serif; 
   padding-left: 30px;
@@ -323,7 +324,36 @@ input.enviar{
   font-family: Arial, Helvetica, sans-serif;
   color: #0a3763;
   margin-top: 10px;
-  
-  
+}
+
+div.fondo{
+  background-color: #fff;
+}
+
+div.definition h4{
+  transform: translate(38px, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+div.definition h6{
+  transform: translate(24px, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: rgb(118, 120, 121);
+  margin: 3px 6px 25px 0;
+} 
+
+img.logosRed{
+  transform: translate(35px, 0);
+  margin-bottom: 20px;
+  height: 30px ;
+}
+
+div.definition p{
+color: rgb(118, 120, 121);
+font-size: 14px;
 
 }
