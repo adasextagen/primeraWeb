@@ -1,16 +1,24 @@
 body {
     margin: 0 auto;
-    width: 800px
 }
 header {
-    display: inline; 
+    display: flex;
+    position: right;
+    height: 100px;
+    width: 80%;
+    max-width: 80vh;
 }
 nav {
-    display: inline;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
     float: right;
+    margin-top: 8px;
 }
 ul {
-    display: inline;
+    display: inline-flex;
+    float: right;
+    overflow: hidden;
     list-style-type: none ;
     margin-block-start: 0px;
     margin-block-end: 0px;
@@ -20,20 +28,130 @@ ul {
 }
 li {
     display: inline;
+    margin: 10px;
 }
 h3, h1 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     color: #336699;
     margin: 0;
 }
 h3{
 font-size: 15px;
+margin-bottom: 12px;
 }
 h1{
 font-size: 38px;
 }
+.main-banner{
+    background: url("../images/home-banner.jpg") no-repeat center bottom;
+    background-size: cover;
+    height: 80vh; /* vh = viewport height*/
+  }
+  .main-banner-content {
+    height: calc(80vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 90%;
+    min-width: 600px;
+    max-width: 900px;
+  }
+  .logo{
+    float:left;
+  }
+  h1{
+    font-size: 48px
+  }
+  h3{
+    font-size: 24px;
+    display: block;
+    text-align: center;
+  }
+  h4{
+    font-size: 8px;
+  }
+  .primarybuttons{
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+  }
+  p.centerParragraph {
+    margin: 0 auto;
+    width: 400px;
+  }
+  .features-list {
+    display: flex;
+    flex-direction: row; /*valor por defecto del flex*/
+    justify-content: space-between;
+  }
+  .features-item {
+    padding: 20px;
+    background-color: aliceblue;
+    margin: 0 10px;
+  } 
+  a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    } 
+  a:hover{
+    color: gold;
+  }
+.learn{
+    background-color: #336699;
+    border-radius: 5px;
+    margin: 0 10px 0 0;
+    height: 400px;
+    width: 400px;
+  } 
+.titles, .subtitle {
+  margin-top: 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 34px;
+}
+.caption{
+  font-size: 15px;
+  color: darkgray;
+  font-style: oblique;
+  font-weight: 50;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.subtitle, h4{
+  font-size: 24px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.feature {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkgrey;
+  font-size: 15px;
+}
+.features {
+  float: right;
+}
+.image{
 
-
-
+}
+.trainers{
+  display: flex;
+  flex-direction: row; /*valor por defecto del flex*/
+  justify-content: space-between;
+}
+.trainer{
+  padding: 20px;
+  background-color: aliceblue;
+  margin: 0 10px;
+}
