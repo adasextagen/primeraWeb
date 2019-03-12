@@ -171,15 +171,15 @@ section h3 {
 }
 
 .features-item {
-  padding: 20px;
-  width: 40%;
+  padding: 10px 14px 17px 39px;
+  width: 300px;;
   background-color: aliceblue;
-  margin: 0 10px 
+  margin: 0 20px 
 
 }
 .icons {
-  width:60px;
-  height:60px;
+  width:30px;
+  height:30px;
 }
 
 h5 {
@@ -194,13 +194,15 @@ padding: 50px;
 
 }
 
-.image-cointainer img {
+.image-cointainerb img {
  display: flex;
+ 
 }
 
 .courses-image{
   width: 330px;
   height: 259px;
+  
 }
 
 .price {
@@ -209,7 +211,7 @@ padding: 50px;
   border-radius: 30px;
   background-color: #FDC733;
   position: relative;
-  top:-33px;
+  top:-178px;
   left:248px;
 
 }
@@ -229,6 +231,7 @@ padding: 50px;
 }
 
 
+
 .call-to-action-design {
   width:80px;
   height:30px;
@@ -244,13 +247,23 @@ padding: 50px;
 
 }
 
+.text-inside-courses-box {
+
+  text-align: left;
+  margin-left:20px;
+}
+
+.text-inside-courses-box  h3{
+
+ padding-bottom: 10px; 
+h}
 
 .course-list {
-  display:inline-flex;
+  display:flex;
   justify-content: flex-end;
   position: relative;
-  top: 50px;
-  left: 50px;
+  top: 204px;
+  left: -62px;
 }
 
 .course-details-block
@@ -261,7 +274,15 @@ padding: 50px;
   left: 50px;
 }
 
-
+span {
+  margin-left:12px;
+}
+.course-avatar img {
+  width:30px;
+  left: 30px;
+  border-radius:30px;
+ 
+}
 
 .course-box-one, .course-box-two , .course-box-three {
   width: 330px;
@@ -270,8 +291,20 @@ margin: 20px 0 20px 30px;
 justify-content: center;
 background-color: #f9f9ff;
 }
+.icon-details {
+  width: 20px;
+  height: 20px;
+  margin-right:0px;
+}
 
+.details-likes-people {
+  margin-left:6px;
+  display: flex;
+}
 
+.mini-icons {
+  padding: 0 3px 0 3px;
+}
 /*Register now*/
 .register-now {
   background-color: #012348;
@@ -383,10 +416,7 @@ padding: 20px;
   width: 285px;
   height: 466px;
   background-color: #ffffff;
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 20px 0 20px 100px;
+   margin: 20px 0 20px 100px;
   box-shadow: 0 2px 2px 2px #cccccc;
 }
 
@@ -404,6 +434,8 @@ padding: 20px;
 }
 
 .text-experts{
+text-align: center;
+margin: 10px;
 
 }
 
@@ -485,6 +517,11 @@ color: grey;
   background-color: white;
   box-shadow: 0 2px 2px 2px #cccccc;
   margin-left: 40px;
+}
+
+.testimonial-text {
+  text-align: left;
+  margin: -96px 5px 5px 212px;
 }
 
 footer{
