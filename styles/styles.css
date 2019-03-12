@@ -166,6 +166,7 @@ p.centerParagraph{
   font-style: italic; 
 }
 .section-item-list{
+    width: 100%;
     display: flex;
     flex-direction: row; /*es el valor que el flex trae por defecto*/
     justify-content: space-between;
@@ -356,14 +357,31 @@ p.centerParagraph{
   -moz-appearance: none;
 }
 
+
+
 .trainer{
   width: 23%;
+  margin: 0 1%;
   text-align: center;
   color: #868686;
   box-shadow: 0 0 5px #cccccc;
-  overflow: hidden;
+  display: flex;                      /*para garantizar que el contenedor general cubre a los hijos que tienen flex dentro de ellos se usan estas declaraciones de flex con el STRETCH */
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: stretch;               /*para garantizar que el contenedor general cubre a los hijos que tienen flex dentro de ellos se usan estas declaraciones de flex con el STRETCH */
 }
 
+.trainer .item-img{
+  display: block;
+  width: 100%;
+  height: 40%;
+}
+
+.trainer .item-img img{
+  height:100%;
+  object-fit: cover;
+  object-position: center;
+}
 .trainer-name{
   font-size: 1.2em;
   padding: 7%  0 0 0;
@@ -379,26 +397,25 @@ p.centerParagraph{
 
 .trainer-phrase{
   font-size: 0.9em;
-  font-weight: bold;
+  font-weight: normal;
   display: block;
   width: 85%;
   margin: 0 auto;
   text-align: center;
-  line-height: 1.9em;
-  padding: 10% 0;
+  line-height: 1.4rem;
+  padding: 10% 0 5% 0;
 }
 
 .trainer-socialnetworks {
-  width: 100%;
+  width: 40%;
+  margin: 5% auto;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .trainer-socialnetworks i{  
-  font-size: 1em;
-  display: block;
+  font-size: 0.7em;
   color: #cccccc;
-  padding: 5%;
-  margin-bottom: 2%;
 }
+
