@@ -344,6 +344,18 @@ span.price{
         top: 56%;
         right: 25%;
     }
+
+    .courses a.design{
+        max-width: 300px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    div.content-text{
+        text-align: center;
+    }
 }
 
 /* REGISTER NOW */
