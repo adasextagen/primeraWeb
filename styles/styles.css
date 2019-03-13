@@ -26,7 +26,7 @@ ul{
   
 .container{
     margin: 0 auto;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 90%;
     /*min-width: 600px;
     max-width: 900px;*/
@@ -63,7 +63,6 @@ section{
     color: grey;
     font-style: italic;
     text-align: center;
-    /*padding-bottom: 70px;*/
 }
 
 .content-text h4{
@@ -176,7 +175,7 @@ header{
     {
         display: block;
         margin: 0 50px;
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
@@ -203,6 +202,18 @@ header{
 }
 
 /* RESPONSIVE AWESOME FEATURE */
+
+@media (max-width: 600px){
+    .features-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .features-item{
+        margin: 15px auto;
+    }
+}
 
 /* OUR POPULAR COURSES */
 
@@ -292,6 +303,27 @@ span.price{
     border-radius: 100px;
 }
 
+/* RESPONSIVE OUR POPULAR COURSES */
+
+@media (max-width: 600px){
+    .courses{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .courses .courses-computer,
+    .courses .courses-custom,
+    .courses .courses-social{
+        margin: 15px auto;
+    }
+
+    span.price{
+        top: 67%;
+        right: 5%;
+    }
+}
+
 /* REGISTER NOW */
 
 .register-now{
@@ -368,6 +400,22 @@ form input.submit{
     font-weight: bold
 }
 
+/*RESPONSIVE REGISTER NOW */
+@media (max-width: 600px){
+    .register-now{
+        width: 100%;
+    }
+
+    .countdown{
+        flex-wrap: wrap;
+    }
+     
+    form{
+        float: none;
+        margin-top: 15px;
+    }
+}
+
 /* OUR EXPERT TRAINERS */
 
 .trainers{
@@ -412,6 +460,18 @@ form input.submit{
 
 .trainers a img.icon:hover{
     background-color: #030521;
+}
+
+/* RESPONSIVE OUR EXPERT TRAINERS */
+
+@media (max-width: 600px){
+    .trainers{
+        flex-direction: column;
+    }
+
+    .trainers div{
+        margin: 15px auto;
+    }
 }
 
 /* UPCOMING EVENTS */
@@ -499,6 +559,14 @@ div.events-lists{
     font-size: 10px;
 }
 
+/* RESPONSIVE UPCOMING EVENTS */
+
+@media (max-width: 600px){
+    .events{
+        flex-direction: column;
+    }
+}
+
 /* CLIENT SAY ABOUT ME */
 
 div.clients{
@@ -546,6 +614,18 @@ div.clients{
 
 .clients-nav img.icon:hover{
     background-color: #f7c216;
+}
+
+/* RESPONSIVE CLIENT SAY ABOUT ME */
+
+@media (max-width: 600px){
+    div.clients{
+        flex-direction: column;
+    }
+
+    .clients-details{
+        margin: 15px auto;
+    }
 }
 
 /* FINAL */
@@ -636,4 +716,33 @@ input.subscribe-button{
 
 .final img.icon:hover{
     background-color: #f7c216;
+}
+
+/* RESPONSIVE FINAL */
+
+@media (max-width: 600px){
+    .final .final-list-left{
+        width: 100%;
+        float: none;
+    }
+
+    .final .final-list-right{
+        float: none;
+        clear: both;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .final footer p{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+    .final footer nav{
+        float: none;
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
 }
