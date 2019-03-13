@@ -10,7 +10,7 @@
   }
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:#012348;
+    color:#021b35;
     margin: 0;
   }
   
@@ -35,7 +35,7 @@
   
   menu {
     list-style: none;
-    color:#012348;
+    color:#021b35;
     font-weight: bold;
   
   }
@@ -44,6 +44,7 @@
     display:inline-flex;
     justify-content: flex-end;
     margin-left: 50px;
+    color:#021b35;
   
   }
   
@@ -52,7 +53,7 @@
   }
   
   a:link {
-    color:#012348;
+    color:#021b35;
   }
   a:hover {
     color: #FDC733;
@@ -63,7 +64,8 @@
     background-image:  url("../images/home-banner.jpg");
     background-repeat:  no-repeat;
     width: 100%;
-    height:900px;
+    height:875px;
+    background-size: contain;
     
   }
   
@@ -112,7 +114,7 @@
   .button1 {
     width: 160px;
     height: 50px;
-    background-color:#012348;
+    background-color:#021b35;
     margin-right: 20px;
     border-radius: 5px;
     color: #FDC733;
@@ -142,7 +144,7 @@
   }
   
   a.button2:hover {
-    color: #012348
+    color: #021b35;
   }
   
   section h3 {
@@ -172,7 +174,7 @@
   .features-item {
     padding: 10px 14px 17px 39px;
     width: 300px;
-    background-color: aliceblue;
+    background-color: rgb(225, 230, 235);
     margin: 0 20px 
   
   }
@@ -196,7 +198,7 @@
     margin-top:1px;
     font-size: 14px;
   }
-  /*Our popular courses*/
+
   .our-popular-courses-container {
   display:flex;
   justify-content: center;
@@ -221,13 +223,13 @@
     border-radius: 30px;
     background-color: #FDC733;
     position: relative;
-    top:-178px;
+    top:-163px;
     left:248px;
   
   }
   
   .price-style {
-    color: #012348;  
+    color: #021b35;  
     font-size: 25px;
     font-weight: bold;
     line-height: 60px;
@@ -240,21 +242,16 @@
     float:left;
   }
   
-  
-  
   .call-to-action-design {
     width:80px;
     height:30px;
-    background-color: #012348;
+    background-color: #021b35;
     color: #ffffff;
     margin-top: 2px;
-   position: relative;
-   top: 1px;
-   left:-234px;
-  }
-  
-  .text-courses {
-  
+    position: relative;
+    top: -8px;
+    left:-228px;
+    box-sizing: border-box;
   }
   
   .text-inside-courses-box {
@@ -266,7 +263,7 @@
   .text-inside-courses-box  h3{
   
    padding-bottom: 10px; 
-  h}
+  }
   
   .course-list {
     display:flex;
@@ -317,7 +314,7 @@
   }
   /*Register now*/
   .register-now {
-    background-color: #012348;
+    background-color: #021b35;
     color: white;
     width:100%;
     height: 639px;
@@ -411,8 +408,6 @@
   margin: 20px;
   }
   
-  /*our expert trainers*/
-  
   .trainers-container 
   {
   display: flex;
@@ -451,7 +446,7 @@
   
   /*Upcoming events*/
   .upcoming-events-container {
-    background-color: #012348;
+    background-color: #021b35;
     width: 100%;
     height:890px;
     color: white;
@@ -535,7 +530,7 @@
   }
   
   footer{
-    background-color: #012348;
+    background-color: #021b35;
     width:100%;
     height:567px;
     color: white;
