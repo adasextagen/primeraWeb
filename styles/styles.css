@@ -28,8 +28,8 @@ ul{
     margin: 0 auto;
     overflow: hidden;
     width: 90%;
-    min-width: 600px;
-    max-width: 900px;
+    /*min-width: 600px;
+    max-width: 900px;*/
 }
 
 .subtitle{
@@ -168,6 +168,18 @@ header{
     transition: 0.6s;
 }
 
+/* RESPONSIVE MAIN */
+
+@media (max-width: 600px){
+    .main-banner-content a.learn-more,
+    .main-banner-content a.see-course
+    {
+        display: block;
+        margin: 0 50px;
+        font-size: 20px;
+    }
+}
+
 /* AWESOME FEATURE */
 
 .features-list {
@@ -189,6 +201,8 @@ header{
     height: 4vh;
     border: none;
 }
+
+/* RESPONSIVE AWESOME FEATURE */
 
 /* OUR POPULAR COURSES */
 
