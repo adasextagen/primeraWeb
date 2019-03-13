@@ -170,12 +170,27 @@ header{
 /* RESPONSIVE MAIN */
 
 @media (max-width: 600px){
+    .main-banner nav{
+        float: none;
+        clear: both;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
     .main-banner-content a.learn-more,
     .main-banner-content a.see-course
     {
         display: block;
         margin: 0 50px;
         font-size: 15px;
+    }
+
+    .main-banner{
+        height: 100vh; 
+    }
+
+    .main-banner-content{
+        height: calc(100vh - 50px);
     }
 }
 
@@ -318,9 +333,16 @@ span.price{
         margin: 15px auto;
     }
 
+    .courses-image{
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+
     span.price{
-        top: 67%;
-        right: 5%;
+        top: 56%;
+        right: 25%;
     }
 }
 
@@ -401,6 +423,7 @@ form input.submit{
 }
 
 /*RESPONSIVE REGISTER NOW */
+
 @media (max-width: 600px){
     .register-now{
         width: 100%;
@@ -412,7 +435,7 @@ form input.submit{
      
     form{
         float: none;
-        margin-top: 15px;
+        margin-top: 50px;
     }
 }
 
@@ -471,6 +494,16 @@ form input.submit{
 
     .trainers div{
         margin: 15px auto;
+    }
+
+    div.trainers-box{
+        padding: 30px;
+    }
+
+    img.trainers-picture{
+        max-width: 250px;
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -584,6 +617,7 @@ div.clients{
 .clients-details img{
     float: left;
     margin-right: 15px;
+    min-width: 125px;
 }
 
 .clients-name h5{
@@ -626,6 +660,8 @@ div.clients{
     .clients-details{
         margin: 15px auto;
     }
+
+    
 }
 
 /* FINAL */
