@@ -191,6 +191,8 @@ p.centerParagraph{
   color: #868686;
   font-size: 0.95em;
   font-weight: normal;
+  width: 80%;
+  margin: 10% 0;
 }
 
 .courses{
@@ -208,22 +210,24 @@ p.centerParagraph{
 }
 
 .course-descr{
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  /* height: 80%; */
   padding: 10%;
 }
 
 .course-price{
   display: block;
   float: right;
+  position: absolute;
   font-size: 1.2em;
+  right: 5%;
+  top: 39%;
   width: 4rem;
   height: 4rem;
   border-radius: 2rem;
   line-height: 4rem;
   text-align: center;
-  margin-right: 0 2% 0 auto;
-  z-index: 10;
+  margin-right: 2%;
   background-color: rgb(255, 196, 0);
   font-weight: bold;
 }
@@ -232,31 +236,45 @@ p.centerParagraph{
   line-height: 50px;
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: space-around;
 }
 
+.social-profile{
+  flex-grow: 1;
+}
 
 .avatar{
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 25px;
   background-color: #868686;
   overflow: hidden;
 }
 
 .avatar img{
-  /* display: inline-flex; */
-  width: 100%;  
+  width: 100%;
   height: 100%;
-  object-fit: fill;
-  object-position: center center;
+  display: inline;
+  object-fit: cover;
+  object-position: center;
   }
 
 .social-data-interaction p{
   display: inline-flex;
   margin: 0;
+}
+
+.social-profile{
+  
+}
+
+.inner-btn {
+  width: fit-content;
+  padding: 3%;
+  text-align: center;
+  line-height: 1em;
 }
 
 .inner-btn a{
@@ -475,33 +493,41 @@ p.centerParagraph{
 
 .event-info-topline{
   display: flex;
-  justify-content: space-between;  
+  flex-direction: row;
 }
 .event-date{
   position: relative;
   float: left;
   border-right: 1px solid #ffffff;
   padding: 0 5% 0 0;
-  flex: 1;
+  /* flex: 1; */
+  min-width: 25%;
 }
 
 .event-day{
+  display: block;
   color: rgb(255, 196, 0);
   font-size: 2em;
   font-weight: bolder;
   text-align: left;
   padding: 0;
+  margin: 0;
 }
 
-.event-month{
-  text-size: 0.8em;
+.event-month {
+  margin: 15% 0 0 0;
+  font-weight: bold;
+  font-size: 1em;
+  display: block;
 }
 
 .event-hours-location{
+  /* display: flex;
+  flex-direction: column; */
   position: relative;
   float: right;
   text-align: left;
-  flex: 3;
+  min-width: 65%;
   padding: 0 0 0 5%;
   clear: both;
 }
