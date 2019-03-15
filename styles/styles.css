@@ -24,7 +24,7 @@ a{                            /*Comportamiento general de los links a*/
 }
 
 a:hover{                      /*Comportamiento general del estado hover de los links a*/
-  color: rgb(255, 208, 0);
+  color: rgb(255, 196, 0);
 }
 
 ul{                           /*Comportamiento general del estado hover de los links ul*/
@@ -62,22 +62,22 @@ li{                         /*Comportamiento general del estado hover de los lin
 }
 
 .blue{                      /* estilo para elementos con fondo azul */
-  color:  rgb(255, 208, 0);
+  color: rgb(255, 196, 0);
   background-color: rgb(2, 35, 97);
 }
 
 .blue:hover{                /* estilo para el hover de los elementos con fondo azul */
   color: rgb(7, 41, 104);
-  background-color: rgb(255, 208, 0);
+  background-color: rgb(255, 196, 0);
 }
 
 .yellow{                  /* estilo para elementos con fondo amarillo */
   color: rgb(7, 41, 104);
-  background-color: rgb(255, 208, 0);
+  background-color: rgb(255, 196, 0);
 }
 
 .yellow:hover{            /* estilo para el hover de los elementos con fondo amarillo */
-  color:  rgb(255, 208, 0);
+  color:  rgb(255, 196, 0);
   background-color: rgb(2, 35, 97);
 }
 
@@ -151,7 +151,6 @@ section{
 .title{
   text-transform: capitalize;
   font-weight: bolder;
-  color: rgb(2, 35, 97);    
 }
 
 p.centerParagraph{
@@ -225,8 +224,39 @@ p.centerParagraph{
   text-align: center;
   margin-right: 0 2% 0 auto;
   z-index: 10;
-  background-color: rgb(255, 208, 0);
+  background-color: rgb(255, 196, 0);
   font-weight: bold;
+}
+
+.social-data-interaction{
+  line-height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+
+
+.avatar{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #868686;
+  overflow: hidden;
+}
+
+.avatar img{
+  /* display: inline-flex; */
+  width: 100%;  
+  height: 100%;
+  object-fit: fill;
+  object-position: center center;
+  }
+
+.social-data-interaction p{
+  display: inline-flex;
+  margin: 0;
 }
 
 .inner-btn a{
@@ -357,18 +387,17 @@ p.centerParagraph{
   -moz-appearance: none;
 }
 
-
-
 .trainer{
   width: 23%;
   margin: 0 1%;
   text-align: center;
   color: #868686;
   box-shadow: 0 0 5px #cccccc;
+  min-height: auto;
   display: flex;                      /*para garantizar que el contenedor general cubre a los hijos que tienen flex dentro de ellos se usan estas declaraciones de flex con el STRETCH */
   flex-direction: column;
   flex-grow: 1;
-  align-items: stretch;               /*para garantizar que el contenedor general cubre a los hijos que tienen flex dentro de ellos se usan estas declaraciones de flex con el STRETCH */
+  align-items: stretch;
 }
 
 .trainer .item-img{
@@ -419,3 +448,60 @@ p.centerParagraph{
   color: #cccccc;
 }
 
+.event-details{
+  position: relative;
+  width: 45%;  
+  overflow: hidden;
+}
+
+.event-details img{
+  margin: 0;
+  border: none;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
+.event-info{
+  width: 50%;
+  height: 65%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: rgba(2, 35, 97, 0.479);
+  color:#ffffff;
+  padding: 5%;
+}
+
+.event-info-topline{
+  display: flex;
+  justify-content: space-between;  
+}
+.event-date{
+  position: relative;
+  float: left;
+  border-right: 1px solid #ffffff;
+  padding: 0 5% 0 0;
+  flex: 1;
+}
+
+.event-day{
+  color: rgb(255, 196, 0);
+  font-size: 2em;
+  font-weight: bolder;
+  text-align: left;
+  padding: 0;
+}
+
+.event-month{
+  text-size: 0.8em;
+}
+
+.event-hours-location{
+  position: relative;
+  float: right;
+  text-align: left;
+  flex: 3;
+  padding: 0 0 0 5%;
+  clear: both;
+}
