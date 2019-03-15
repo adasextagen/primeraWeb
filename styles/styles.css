@@ -151,7 +151,7 @@ ul {
     margin:10px;
     background-color:#f9f9fe;
     position:relative;
-    }
+}
 
 .courses .price-tag {
     display:block;
@@ -165,23 +165,41 @@ ul {
     line-height: 50px;
     font-weight: bold;
     position:absolute;
-    top: 44%;
+    top: 35%;
     left: 85%;
     transform: translate(-50%, -50%)
 }    
+
+.course-image {
+    width:100%;
+}
 
 .course-content {
     padding:20px;
 }
 
 a.course-button {
+    display:block;
     border: 1px solid; 
     text-align: center;
     padding: 5px 10px;
-    width: 20px;  
+    width: 40px;  
     font-size: 10px;
     font-weight:bold;
     border-color:#002347;
     background-color:#002347;
     color:white;
+    margin-bottom:20px;
+}
+
+.course-footer, .course-footer > a {
+    display:flex;
+    flex-wrap:wrap;
+    font-size:10px;
+    font-weight:bold;
+    
+}
+
+.author-img {
+    max-height:45px;
 }
