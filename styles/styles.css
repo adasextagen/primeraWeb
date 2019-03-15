@@ -1,14 +1,15 @@
 body{
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .main-banner{
   background: url("../images/home-banner.jpg") no-repeat center bottom;
   background-size:cover;
-  height: 80vh; /* vh = viewport height*/
+  height: 100vh; /* vh = viewport height*/
 }
 
 .main-banner-content {
-  height: calc(80vh - 50px);
+  height: calc(60vh - 50px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,6 +17,44 @@ body{
 
 header{
   height: 50px;
+  flex-direction: row;
+  justify-content: flex-end;
+  
+}
+
+.elements-nav{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #1c274f;
+}
+.li-nav,a{
+  width: auto;
+  margin:10px;
+  text-decoration-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  color: #1c274f;
+ 
+}
+
+.home{
+  color: orange;
+}
+
+.lupa{
+  width: 15px;
+  height: 15px;
+}
+li{
+  list-style-type: none;
+  text-decoration: none; 
+
 }
 
 .container{
@@ -25,32 +64,86 @@ header{
   min-width: 600px;
   max-width: 900px;
 }
-
 .logo{
-  float:left;
+  
+  display:flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-content: baseline;
+
 }
 
 nav{
-  float: right;
-}
-h3, h1 {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #336699;
-  margin: 0;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-h1{
-  font-size: 48px
+
+h1 {
+  text-align: center;
+  color: #1c274f;
+  margin: 0;
+  font-size: 2.7em;
+  color: #1c274f;
+
+}
+
+div.primarybuttons{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button-learn{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color:#052544;
+  font-family: Arial, Helvetica, sans-serif;
+  color:orange;
+  height: 50px;
+  width: 180px;
+  font-weight: bold;
+  line-height: 50px;
+  border-radius:5px 5px 5px 5px;
+
+}
+
+.button-course{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: orange;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #052544;
+  height: 50px;
+  width: 180px;
+  font-weight: bold;
+  line-height: 50px;
+  border-radius:5px 5px 5px 5px;
+
 }
 
 h3{
-  font-size: 24px;
-  margin-bottom: 12px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  color: #1c274f;
+  margin-bottom: 10px;
 }
-div.primarybuttons{
-  margin: 0 auto;
-  width: 200px;
+
+p.centerParragraph{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7em;
+  color: grey;
+  margin:0 auto;
+  font-style: italic;
+  margin-bottom: 100px;
+
 }
 
 p.centerParragraph {
@@ -58,10 +151,15 @@ p.centerParragraph {
   width: 400px;
 }
 
+.awesome-feature{
+  height: 70vh;
+}
+
 .features-list {
   display: flex;
   flex-direction: row; /*valor por defecto del flex*/
   justify-content: space-between;
+  align-items: center;
 }
 
 .features-item {
@@ -69,3 +167,104 @@ p.centerParragraph {
   background-color: aliceblue;
   margin: 0 10px;
 }
+
+.subtitle-web{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+  color: #1c274f;
+  margin-bottom: 10px;
+}
+
+section{
+  height: 80vh;
+}
+  .container {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 65%;
+}
+.lista-de-cursos{
+  margin-top:70px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+h3, .subtitulo {
+  text-align: center;
+  margin: 0;
+  margin-top: 100px;
+  color: #002444;
+
+}
+
+.subtitulo{
+  font-style: italic;
+  color: grey;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 10px;
+
+}
+
+
+
+.curso {
+background-color: #f9f9fe;
+width: 270px;
+height: 400px;
+position: relative;
+
+}
+
+.main-image {
+  width: 100%;
+
+}
+
+.design {
+  text-decoration: none;
+  background-color: #002444;
+  color: white;
+  font-size: 10px; 
+  line-height: 19px;
+  text-align: center;
+  width: 50px;
+  height: 19px;
+  display: block;
+  margin: 9px 0 0 15px;
+  font-weight: bold;
+
+  
+}
+
+.price {
+  font-weight: bold;
+  font-size: 12px;
+  background-color: #ffc452;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: block;
+  border-radius: 40px;
+  position: absolute; top: 160px; left: 210px;
+}
+
+.button-courses {
+  width: 240px;
+  font-size: 10px;
+  display:flex;
+  line-height: 58px;
+  height: 70px;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: center;
+
+}
+
+.nombre-usuario{
+  font-weight: bold;
+}
+
