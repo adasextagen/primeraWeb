@@ -141,6 +141,8 @@ h4 {
     display: flex;
     justify-content: space-around;
     margin: 20px auto;
+    padding: 35px;
+
 
  }
 
@@ -149,7 +151,7 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: rgb(189, 183, 235);
+    background-color: rgb(211, 210, 216);
     width: 30%;
 
  
@@ -164,11 +166,71 @@ h4 {
     
     }
 
-  .imagen {
+ .imagen {
     width: 150px;
-    margin: 20px 0px 0px 20px;
+    margin: 20px 0px 0px 50px;
+    
   }
+
+.design-button{
+    
+    background-color: rgb(44, 44, 75);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    padding: 5px;
+    width: 60px;
+    
+
+}
+.social-media-data {
+    display: inline;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+  .social-media-curso{
+    display: flex;
+    justify-content: flex-start;
+    
+   }
+
   
+.imagenCameron{
+    
+    background-color: black;
+    border-radius: 100%;
+    margin-right: 5px;
+    
+
+}
+
+.username-social-media{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    
+}
+
+
+.li .interactions-curso {
+    display: inline block;
+}
+
+
+li .interaction-avatar {
+    color: black;
+    border-radius: 100%;
+
+}
+
+.interaction-number {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: grey;
+}
+
   .primeraparteazul {
     background-color: #336699;
     overflow: hidden;
@@ -230,6 +292,7 @@ h4 {
         font-family: Arial, Helvetica, sans-serif;
         color:  rgb(17, 17, 73);
         margin-bottom: 5px;
+        margin-top: 10px;
 
     }
     .styleTrainer {
@@ -277,11 +340,14 @@ h4 {
         text-align: center;
         width: 100px;
         background-color: grey;
-        float: right;
-    
-
+            
     }
     
+    .fecha {
+        font-family: Arial, Helvetica, sans-serif;
+        color: yellow;
+
+    }
     
         
 
