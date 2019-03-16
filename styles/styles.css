@@ -583,11 +583,11 @@ div.events-calendar{
     margin: 0;
     padding: 20px;
     background-color: rgba(98,97,116,0.4);
-    width: 50%;
+    width: 60%;
     position: absolute;
     top: 0;
     right: 0;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
 div.events-lists{
@@ -655,6 +655,10 @@ div.events-lists{
 
     .subtitle-section-blue h3{
         font-size: 25px;
+    }
+
+    div.events-calendar{
+        width: 100%;
     }
 }
 
