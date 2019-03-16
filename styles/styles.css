@@ -170,19 +170,33 @@ header{
 /* RESPONSIVE MAIN */
 
 @media (max-width: 600px){
+    .main-banner .logo{
+        float: left;
+        margin: 10px 0;
+    }
+
+    .main-banner .logo img{
+        max-height: 30px;
+    }
+    
     .main-banner nav{
-        float: none;
-        clear: both;
-        margin: 0 auto;
-        padding-top: 30px;
+        display: none;
+    }
+
+    .main-banner-content h3{
+        font-size: 12px;
+    }
+
+    .main-banner-content h1{
+        font-size: 30px;
     }
 
     .main-banner-content a.learn-more,
     .main-banner-content a.see-course
     {
         display: block;
-        margin: 0 50px;
-        font-size: 15px;
+        margin: 0 70px 10px 70px;
+        font-size: 12px;
     }
 
     .main-banner{
@@ -190,7 +204,7 @@ header{
     }
 
     .main-banner-content{
-        height: calc(100vh - 50px);
+        height: calc(60vh - 35px);
     }
 }
 
@@ -218,13 +232,11 @@ header{
 
 /* RESPONSIVE AWESOME FEATURE */
 
-@media (max-width: 800px){
-    .features-list{
-        flex-wrap: wrap;
-    }
-}
-
 @media (max-width: 600px){
+    .subtitle h3{
+        font-size: 25px; /* LO CAMBIA EN TODOS */
+    }
+
     .features-list{
         flex-direction: column;
         justify-content: space-between;
@@ -334,19 +346,23 @@ span.price{
     .courses .courses-computer,
     .courses .courses-custom,
     .courses .courses-social{
+        padding: 20px;
         margin: 15px auto;
     }
 
     .courses-image{
-        max-width: 300px;
+        /*max-width: 300px;*/
         display: block;
         margin: 0 auto;
-        padding-top: 30px;
+    }
+
+    .courses .courses-content{
+        margin: 20px 0 0 0;
     }
 
     span.price{
-        top: 56%;
-        right: 25%;
+        top: -50px;
+        right: 0;
     }
 
     .courses a.design{
@@ -423,18 +439,19 @@ form input.submit{
 .countdown{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .countdown div{
     border: 1px solid white;
-    padding: 30px;
+    padding: 27px;
     border-radius: 5px;
     background-color: #1c406b;
+    margin: 10px 5px;
 }
 
 .countdown .number{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold
 }
 
@@ -443,6 +460,21 @@ form input.submit{
 @media (max-width: 600px){
     .register-now{
         width: 100%;
+    }
+
+    .countdown{
+        justify-content: center;
+    }
+
+    .countdown div{
+        padding: 10px;
+        border-radius: 5px;
+        margin: 2px;
+    }
+
+    .countdown .number{
+        font-size: 15px;
+        font-weight: bold
     }
 
     .countdown{
@@ -551,7 +583,7 @@ div.events-calendar{
     margin: 0;
     padding: 20px;
     background-color: rgba(98,97,116,0.4);
-    width: 45%;
+    width: 50%;
     position: absolute;
     top: 0;
     right: 0;
@@ -560,16 +592,22 @@ div.events-calendar{
 
 div.events-lists{
     margin: 0;
+    display: flex;
 }
 
-.events-date, .events-place{
+.events-date,
+.events-place{
     font-weight: normal;
+}
+
+.events-place{
+    padding-left: 10px;
 }
 
 .events-date{
     display: inline-block;
     border-right: 1px solid white;
-    padding-right: 10%;
+    padding-right: 10px;
 }
 
 .events-date li span{
@@ -613,6 +651,10 @@ div.events-lists{
 @media (max-width: 600px){
     .events{
         flex-direction: column;
+    }
+
+    .subtitle-section-blue h3{
+        font-size: 25px;
     }
 }
 
