@@ -218,9 +218,14 @@ header{
 
 /* RESPONSIVE AWESOME FEATURE */
 
+@media (max-width: 800px){
+    .features-list{
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width: 600px){
     .features-list{
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
@@ -246,7 +251,6 @@ header{
     padding: 0;
     background-color: aliceblue;
     margin: 0 10px;
-    position: relative;
 }
 
 span.price{
@@ -257,13 +261,13 @@ span.price{
     padding: 15px;
     background-color: #f7c216;
     position: absolute;
-    top: 47%; /* NO ES LA MEJOR SOLUCION */
-    right: 5%; /* NO ES LA MEJOR SOLUCION */
+    top: -50px; /* MEJOR SOLUCION */
+    right: 0;
 }
 
 .courses .courses-content{
     margin: 20px;
-    overflow: hidden;
+    position: relative;
 }
 
 .courses a.design{
