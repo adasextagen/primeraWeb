@@ -205,10 +205,7 @@ h3, .subtitulo {
   margin-top: 10px;
   margin-bottom: 50px;
   font-size: 10px;
-
 }
-
-
 
 .curso {
 background-color: #f9f9fe;
@@ -228,12 +225,12 @@ position: relative;
   background-color: #002444;
   color: white;
   font-size: 10px; 
-  line-height: 19px;
+  line-height: 30px;
   text-align: center;
-  width: 50px;
-  height: 19px;
+  width: 65px;
+  height: 30px;
   display: block;
-  margin: 9px 0 0 15px;
+  margin: 9px 0 0 20px;
   font-weight: bold;
 
   
@@ -243,13 +240,13 @@ position: relative;
   font-weight: bold;
   font-size: 12px;
   background-color: #ffc452;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   text-align: center;
   display: block;
   border-radius: 40px;
-  position: absolute; top: 160px; left: 210px;
+  position: absolute; top: 150px; left: 210px;
 }
 
 .button-courses {
@@ -259,12 +256,31 @@ position: relative;
   line-height: 58px;
   height: 70px;
   flex-direction: row;
-  align-content: space-around;
+  align-content: space-between; 
   align-items: center;
 
+}
+
+.i-icono{
+  margin-left:20px;
 }
 
 .nombre-usuario{
   font-weight: bold;
 }
 
+.titulo-curso{
+  margin-left:20px;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.p-curso{
+  margin-left:20px;
+  font-size: 15px;
+}
+.i-chica{
+  width: 55px;
+  border-radius: 55px;
+  border: black;
+}
