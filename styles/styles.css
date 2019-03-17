@@ -109,20 +109,22 @@ li{
     margin-right: 30px;
 }
 
-.PageTitle{
+.title-subtitle .PageTitle-blue{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: round;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     color: #121750;
     margin-top: 80px;
+    margin-bottom: 15px;
+    text-align: center;
 }
   
-p.centerParagraph{
+.title-subtitle p.centerParagraph{
     margin: 0 auto;
     width: 425px;
     font-style: italic;
-    font-size: 12;
+    font-size: 14px;
     margin-bottom: 50px;
     color: #939399;
     text-align: center;
@@ -170,9 +172,7 @@ p.centerParagraph{
     background-color: aliceblue;
     margin: 0 10px;
     position: relative;
-    text-align: center;
 }
-
 
 .productInfo{
     padding: 18px;
@@ -187,10 +187,15 @@ p.centerParagraph{
     border: 0;
     text-align: center;
     background-color: #F7AC06;
-    font: 24px bold #121750;
+    font-size: 20px;
+    font-weight: bold;
+    color: #121750;
     padding: 15px;
-    margin-right: 20px;
+    margin-right: 10px;
     float: right;
+    position: absolute;
+    top: 180px;
+    right: 5%;
 }
 
 .Add-to-cart{
@@ -207,14 +212,14 @@ p.centerParagraph{
     display: inline-block;
 }
 
-.productDescription h4{
+.names{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: #121750;
     font-size: 18px;
 }
 
-.productDescription p{
+.description-grey{
     color: #939399;
     font-weight: bold;
     font-size: 14px;
@@ -222,7 +227,7 @@ p.centerParagraph{
 }
 
 .sellerData{
-    display: block;
+    display: flex;
 }
 
 .sellerAccount .sellerPhoto{
@@ -238,12 +243,13 @@ p.centerParagraph{
     text-align: center;
     line-height: 44px;
     margin-left: 5px;
-
+    flex-grow: 1;
 }
 
-span .socialMedia{
-    float: right;
-    display:block;
+.socialMedia{
+    text-align: center;
+    display: flex;
+    justify-content: right;
 }
 
 .socialMedia a .iconFavourite{
@@ -251,7 +257,6 @@ span .socialMedia{
     color: #121750;
     font-weight: bold;
     font-size: 15px;
-    float: right;
  
 }
 
@@ -278,13 +283,14 @@ span .socialMedia{
     overflow: hidden;
 }
 
-.register-now-text .white-title{
+.white-title-left{
     color: whitesmoke;
     font-size: 30px;
     font-weight: bold;
+    text-align: left;
 }
 
-.register-now-text p{
+.text{
     color: whitesmoke;
     font-size: 14px;
     font-weight: normal;
@@ -394,7 +400,7 @@ button, .submit{
     margin-bottom: 2px;
 }
 
-.experts p, .expert-job{
+.expert-job{
     color: #939399;
     font-size: 11px;
     font-weight: bold;
@@ -404,9 +410,9 @@ button, .submit{
     margin-bottom: 30px;
 }
 
-.experts p, .expert-description{
+.description-grey-center{
     color: #939399;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -421,8 +427,143 @@ button, .submit{
     margin-bottom: 15px;
 }
 
+/*sección events*/
 
 
+
+.upcoming-events{
+    background-color: #050E31;
+    overflow: hidden;
+}
+
+
+.upcoming-events, .title-subtitle{
+    margin-top: 80px;
+}
+
+.white-title{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.event{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.event-details{
+    background-color: #203175;
+    color: whitesmoke;
+    opacity: 0.6;
+    width: 50%;
+    position: absolute;
+    overflow: hidden;
+    align-content: flex-start;
+    top: 0;
+    right: 0; 
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.event.container{
+    max-width: 950px;
+   display: flex;
+   overflow: hidden;
+   margin-bottom: 80px;
+}
+
+.event1, .event2{
+    position: relative;
+  
+}
+
+.view-all{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.view-all a{
+    color: #F7AC06;
+}
+
+.date-place .number{
+    color: #F7AC06;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.date-place{
+
+}
+
+.number, .month{
+    display: block;
+    max-width: 40px;
+    margin: 0px;
+    border-right: 1px;
+}
+
+ul.time-place{
+    padding: 0px;
+    
+
+}
+
+.event-text{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+a .view.details {
+    color: #F7AC06;
+    padding: 10px 20px;
+}
+
+
+/*sección clientes */
+
+.clients{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.client1, .client2{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #F7AC06;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 40px;
+    padding: 35px 30px;
+    margin-bottom: 70px;
+}
+
+.client-info{
+    margin-left: 25px;
+}
+
+.link-list, .link{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.link{
+    background-color: #939399;
+    border: #939399;
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    padding: 3px;
+}
 
 
     
