@@ -346,17 +346,21 @@ ul {
         margin: 20px auto;
     
     }
-/*
+
     .primerEvento {
+        background-image: url("../images/minion1.jpg");
         position: relative;
+        background-size: cover;
+        height: 250px;
+        width: 350px;;
     }
-*/
-    .imagen1Evento{
-    position: relative;
+
+    /*.imagen1Evento{
+   
     width: 350px;
     height: 210px;;
     }
-
+*/
   /*
     .textoImagen1Evento {
         position: absolute;
@@ -376,11 +380,14 @@ ul {
         opacity: 0.5;
         width: 250px;
         font-family: Arial, Helvetica, sans-serif;
+        left: 29%;
+
 
     }
      
     .schedule {
         display: block;
+        margin-left:15px;
         
 
     }
@@ -408,6 +415,7 @@ ul {
         opacity: 1;
         width: 120px;
         padding:5px;
+        margin-left: 55px;
 
 
     }
