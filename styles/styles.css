@@ -131,13 +131,13 @@ p.centerParragraph {
     padding: 50px;
     background-color: #CCD1D1;
     margin: 0 10px;
+    color: #01012b;
 }
 
 .ourPopularCourses {
     margin-top: 50px;
+    padding-top: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
 }
 
 p.centerParragraph2 {
@@ -148,25 +148,41 @@ p.centerParragraph2 {
     width: 300px;
 }
 
-.features-list2 {
+.courses {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.features-item2 {
+.courses .courses-computer, .courses .courses-custom, .courses .courses-social{
     display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 50px;
+    padding: 0px;
     background-color: #CCD1D1;
     margin: 0 10px;
 }
 
-.box1 {
-    background-image: url("../images/box1.png");
-    background-position: center bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 50px;
+.content-text {
+    justify-content: center;
+    color: #01012b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.price {
+    border-radius: 100%;
+    border: 1px solid #F1C40F;
+    background-color: #F1C40F;
+    padding: 12px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    top: -45px;
+
+
+}
+
+.courses-content {
+    margin: 20px;
+    position: relative;
+
 }
