@@ -60,7 +60,7 @@ li{
 .container{
   margin: 0 auto;
   overflow: hidden;
-  width: 90%;
+  width: 65%;
   min-width: 600px;
   max-width: 900px;
 }
@@ -84,8 +84,9 @@ h1 {
   text-align: center;
   color: #1c274f;
   margin: 0;
-  font-size: 2.7em;
+  font-size: 2.4em;
   color: #1c274f;
+  padding-bottom: 20px;
 
 }
 
@@ -95,6 +96,7 @@ div.primarybuttons{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding-bottom:20px;
 }
 
 .button-learn{
@@ -109,7 +111,7 @@ div.primarybuttons{
   font-weight: bold;
   line-height: 50px;
   border-radius:5px 5px 5px 5px;
-
+  
 }
 
 .button-course{
@@ -152,7 +154,18 @@ p.centerParragraph {
 }
 
 .awesome-feature{
-  height: 70vh;
+  height: 400px;
+  width: 900px;
+  align-content: center;
+  align-items: baseline;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 65%;
+  height: 60%;
+  min-width: 600px;
+  max-width: 900px;
+
+  
 }
 
 .features-list {
@@ -160,12 +173,15 @@ p.centerParragraph {
   flex-direction: row; /*valor por defecto del flex*/
   justify-content: space-between;
   align-items: center;
+  width: 900px;
+  margin-top: 65px; 
 }
 
 .features-item {
   padding: 20px;
   background-color: aliceblue;
   margin: 0 10px;
+  height: 140px;
 }
 
 .subtitle-web{
@@ -175,19 +191,23 @@ p.centerParragraph {
   color: #1c274f;
   margin-bottom: 10px;
 }
-
-section{
-  height: 80vh;
-}
-  .container {
+.our-popular-courses{
   margin: 0 auto;
   overflow: hidden;
   width: 65%;
+  height: 60%;
+  min-width: 600px;
+  max-width: 900px;
 }
+
+
 .lista-de-cursos{
-  margin-top:70px;
+  margin-top:40px;
   display: flex;
   justify-content: space-between;
+  width: 1000px;
+  height: 500px; 
+
   
 }
 h3, .subtitulo {
@@ -210,9 +230,9 @@ h3, .subtitulo {
 .curso {
 background-color: #f9f9fe;
 width: 270px;
-height: 400px;
+height: 440px;
 position: relative;
-
+margin-right: 15px;
 }
 
 .main-image {
@@ -281,6 +301,195 @@ position: relative;
 }
 .i-chica{
   width: 55px;
+  height: 40px;
   border-radius: 55px;
   border: black;
+}
+
+.register{
+  margin: 0 auto;
+  width: 100%;
+  height: 600px;
+  background-color: #002444;
+}
+
+.title-register-now{
+  color: white;
+  font-size: 2em;
+  margin-left: 20%;
+  margin-right:40%;
+  padding-top: 8%;
+  
+}
+
+.description-register-now{
+  color: white;
+  font-size: 1em;
+  margin-top: 5px;
+  text-align: left;
+  margin-left: 20%;
+  margin-right: 40%;
+}
+
+.dates{
+  margin-left: 20%;
+  margin-right: 45%;
+  display:flex;
+  justify-items: flex-start; 
+  justify-content: space-between;
+  padding-top:4px;
+}
+
+.days{
+  color: white;
+  font-size: 1em;
+  background-color: rgba(248, 244, 244, 0.336);
+  border: white;
+  border-radius:5px 5px 5px 5px;
+  line-height: 40px;
+  width: 120px;
+  height: 80px;
+  display: block;
+  text-align: center;
+}
+
+.ciento-cincuenta{
+  font-weight: bold;
+  color:white;
+  font-size: 2em;
+}
+
+.hours{
+  color: white;
+  font-size: 1em;
+  background-color: rgba(248, 244, 244, 0.336);
+  border: white;
+  border-radius:5px 5px 5px 5px;
+  line-height: 40px;
+  width: 120px;
+  height: 80px;
+  display: block;
+  text-align: center;
+}
+
+.veinti-tres{
+  font-weight: bold;
+  color:white;
+  font-size: 2em;
+}
+
+.mins{
+  color: white;
+  font-size: 1em;
+  background-color: rgba(248, 244, 244, 0.336);
+  border: white;
+  border-radius:5px 5px 5px 5px;
+  line-height: 40px;
+  width: 120px;
+  height: 80px;
+  display: block;
+  text-align: center;
+}
+
+.cuarenta-y-siete{
+  font-weight: bold;
+  color:white;
+  font-size: 2em;
+}
+
+.secs{
+  color: white;
+  font-size: 1em;
+  background-color: rgba(248, 244, 244, 0.336);
+  border: white;
+  border-radius:5px 5px 5px 5px;
+  line-height: 40px;
+  width: 120px;
+  height: 80px;
+  display: block;
+  text-align: center;
+}
+
+.cincuenta-y-nueve{
+  font-weight: bold;
+  color:white;
+  font-size: 2em;
+}
+
+.box-form{
+  margin-left: 65%;
+  margin-right: 15%;
+  background-color: white;
+  height: 450px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h5{
+font-size: 25px;
+color: #002444;
+}
+
+.courses-for-free{
+  text-align: center;
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+
+.it-is-time{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  color: grey;
+  margin-top:5px;
+  margin-bottom: 100px;
+}
+
+input{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items:center;
+  height: 35px;
+  border:none; 
+  font-weight: bold;
+  color: grey;
+}
+
+button{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: orange;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  height: 50px;
+  width: 200px;
+  font-weight: bold;
+  line-height: 50px;
+  box-shadow: none;
+  box-direction: none;
+
+}
+
+@media (max-width: 600px){
+.elements-nav{ 
+    display:none;
+  }
+.logo {
+    width: 100px;
+}
+.subtitle-web{
+  font-size: 0.8em;
+  text-align: center;
+}
+
+h1{
+  font-size: 1.7em;
+  text-align: center;
+}
+
+
 }
