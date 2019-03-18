@@ -8,7 +8,7 @@ body{
 }
 
 .main-banner-content {
-  height: calc(80vh - 50px);
+  height: calc(40vh - 50px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,29 +28,87 @@ header{
 
 .logo{
   float:left;
+  background: url("../images/logo.png")
 }
 
-nav{
+nav{  
   float: right;
+}
+
+nav li {
+  display: inline;
+  margin: 5px
+}
+
+nav li a{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: rgb(4, 32, 107);
+  font-size: 12px
 }
 h3, h1 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: #336699;
+  color: rgb(4, 32, 107);
   margin: 0;
 }
 
 h1{
-  font-size: 48px
+  font-size: 35px
 }
 
 h3{
-  font-size: 24px;
+  font-size: 15px;
   margin-bottom: 12px;
 }
-div.primarybuttons{
+
+h2{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(4, 32, 107)
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+  color: grey
+}
+
+.primarybuttons{
   margin: 0 auto;
-  width: 200px;
+  margin-top: 40px
+}
+
+.primarybuttons a{
+  margin: 15px;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 15px 40px;
+  border-radius: 15px
+}
+
+.learn-more{
+  border: 1px solid rgb(4, 32, 107);
+  background-color: rgb(4, 32, 107);
+  font-family: Arial, Helvetica, sans-serif;
+  color: goldenrod;
+  margin-right: 5px;
+  text-decoration: none
+}
+
+.see-course{
+  border: 1px solid goldenrod;
+  background-color: goldenrod;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(4, 32, 107);
+  margin-right: 5px;
+  text-decoration: none
+}
+
+.awesome-popular{
+  margin-top: 80px
 }
 
 p.centerParragraph {
@@ -62,10 +120,282 @@ p.centerParragraph {
   display: flex;
   flex-direction: row; /*valor por defecto del flex*/
   justify-content: space-between;
+  margin: 40px;
 }
 
 .features-item {
   padding: 20px;
-  background-color: aliceblue;
+  background-color:whitesmoke;
   margin: 0 10px;
+}
+
+.features-item img{
+  height: 40px
+}
+
+.features-item h4{
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: rgb(4, 32, 107)  
+}
+
+.features-item p{
+  text-align: left;
+  font-style: normal
+}
+
+.popular-courses{
+  margin-top: 80px;
+  margin-bottom: 80px
+}
+
+.courses-list {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+ }
+
+.courses {
+  padding: 70px;  
+  margin: 0 20px;
+  position: relative
+}
+
+.courses img{
+  height: 180px;
+  margin-bottom: 30px
+
+}
+
+.courses h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color:rgb(4, 32, 107)
+}
+
+.courses p{
+  font-style: normal;
+  text-align: left
+}
+
+.courses a{
+  background-color: rgb(4, 32, 107);
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid rgb(4, 32, 107);
+  padding: 10px 10px;
+  color: white;
+  font-size:12px
+}
+
+.courses .icon-price{
+  position: absolute;
+  top: 170px;
+  right: 5px;
+  color: rgb(4, 32, 107);
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid goldenrod;
+  background-color: goldenrod;
+  border-radius: 100%;
+  padding:15px
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(4, 32, 107)
+}
+
+.likes p {
+  color: rgb(4, 32, 107);
+  font-weight: bold
+}
+
+.likes img {
+  height: 35px;
+  margin-bottom:5px
+}
+
+img.members {
+  height: 20px
+}
+
+img.likes {
+  height: 20px;
+}
+
+li {
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px
+}
+
+/*REGISTER NOW*/
+.register-section {
+  background-color: rgb(4, 32, 107);
+  height: 400px
+}
+.register-now {
+  display: inline-flex; 
+}
+
+.register h2 {
+  color: white;
+  text-align: left
+}
+
+.register p {
+  font-style: normal;
+  color: white;
+  text-align: left
+}
+
+.time {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-end;
+  padding: 0
+  
+}
+
+.time li {
+  border: 1px solid #4A83DE;
+  margin: 5px;
+  height: 75px;
+  width: 100px;
+  border-radius: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  background-color: #8193AF;
+  padding-top: 30px
+}
+
+.number {
+  font-size:30px;
+  margin-right: 5px;
+  color: white;
+  text-align: center
+}
+
+.form-complete {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 150px;
+  background-color: white;
+  padding: 5px 20px;
+  height: 250px;
+  width: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+
+}
+
+.form-complete p {
+  font-style: normal;
+  margin: 5px;
+  margin-bottom: 15px;
+  text-align: left
+}
+
+.form-complete h4 {
+  margin:5px;
+  text-align: center;
+  color: rgb(4, 32, 107)
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center
+}
+
+.register {
+  width: 50%;
+  display: inline-block;
+  margin: 80px 100px;
+}
+
+.courses {
+  padding: 0;
+  background-color: antiquewhite;
+  margin: 8px;
+  position: relative;
+  padding: 10px;
+  width: 230px
+}
+
+.imgcourses {
+  width: 100%
+}
+
+button {
+  margin: auto;
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid goldenrod;
+  background-color: goldenrod;
+  color: rgb(4, 32, 107);
+  font-weight: bold
+}
+
+.trainers-description img {
+  height: 55%;
+  width: 100%
+}
+ 
+  
+.expert-trainers {
+  display: flex;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center
+}
+
+.experts{
+  margin-top: 50px;
+  
+}
+
+.experts h3 {
+  font-size: 25px
+}
+
+.experts p {
+  margin-bottom: 50px
+}
+
+.trainers-description h4{
+  font-size: 14px;
+  color: rgb(4, 32, 107)
+}
+ 
+.trainers-description h5 {
+  font-size: 12px;
+  color: rgb(4, 32, 107)
+}
+
+.trainers-description p{
+  font-style: normal;
+  margin: 0 auto;
+  font-size: 11px
+}
+
+.trainers-description {
+  margin: 10px
+}
+
+.social-media img{
+  width: 5%;
 }
