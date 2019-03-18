@@ -4,6 +4,7 @@ body{
 
 a {
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 nav ul {
@@ -166,7 +167,13 @@ h4 {
     
     }
 
- .imagen {
+ .imagenTrainers {
+    width: 150px;
+    margin: 20px 0px 0px 20px;
+    
+  }
+
+  .imagenCursos {
     width: 150px;
     margin: 20px 0px 0px 50px;
     
@@ -186,9 +193,10 @@ h4 {
 
 }
 .social-media-data {
-    display: inline;
+    display: flex;
     justify-content: space-around;
-    margin: 10px;
+    margin: 1px;
+    align-items: center;
 }
 
   .social-media-curso{
@@ -203,6 +211,7 @@ h4 {
     background-color: black;
     border-radius: 100%;
     margin-right: 5px;
+    margin-top: 7px;
     
 
 }
@@ -214,12 +223,21 @@ h4 {
 }
 
 
-.li .interactions-curso {
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+    
+}
+
+.interactions-curso {
     display: inline block;
+    
 }
 
 
-li .interaction-avatar {
+.interaction-avatar {
     color: black;
     border-radius: 100%;
 
@@ -229,6 +247,7 @@ li .interaction-avatar {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     color: grey;
+    display: inline;
 }
 
   .primeraparteazul {
@@ -327,11 +346,18 @@ li .interaction-avatar {
         margin: 20px auto;
     
     }
-
+/*
+    .primerEvento {
+        position: relative;
+    }
+*/
     .imagen1Evento{
     position: relative;
+    width: 350px;
+    height: 210px;;
     }
 
+  /*
     .textoImagen1Evento {
         position: absolute;
         color: white;
@@ -342,14 +368,47 @@ li .interaction-avatar {
         background-color: grey;
             
     }
-    
-    .fecha {
+    */
+       
+    .EventInformation {
+        position: absolute;
+        background-color: grey;
+        opacity: 0.5;
+        width: 250px;
         font-family: Arial, Helvetica, sans-serif;
-        color: yellow;
 
     }
-    
+     
+    .schedule {
+        display: block;
         
 
+    }
 
+    .day {
+        font-size: 25px;
+        color: yellow;
+        margin-bottom: 1px;
+    }
+    
+    .mes {
+        color: white;
+        margin-top:1px;
+    }
+
+    .textEvent {
+        color: white;
+        text-align: center;
+        font-size:12px;
+    }
+
+    .btnEvent {
+        background-color: yellow;
+        color: rgb(44, 44, 75);
+        opacity: 1;
+        width: 120px;
+        padding:5px;
+
+
+    }
 
