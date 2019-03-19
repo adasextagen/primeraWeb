@@ -16,6 +16,7 @@ ul {
     display: flex;
     float: right;
     overflow: hidden;
+    padding: 0px;
 }
 li {
     display: inline;
@@ -27,6 +28,7 @@ h3, h1 {
     font-weight: bold;
     color: #336699;
     margin: 0;
+    display: inline;
 }
 h3{
 font-size: 15px;
@@ -60,7 +62,7 @@ font-size: 38px;
     font-size: 48px;
     margin-bottom: 10px;
   }
-  h2{
+  h2, h5{
     font-size: 16px;
     color: #336699;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -73,6 +75,10 @@ font-size: 38px;
   h4{
     font-size: 6px;
     color: #336699;
+  }
+  h5{
+    text-align: center;
+    margin: 5px 0;
   }
   .primarybuttons{
     margin: 0 auto;
@@ -222,14 +228,15 @@ p.social{
   color: white;
   text-align: left;
   width: 80%;
+  padding: 20px 0px;
 }
 .time-left {
-  color: white;
-  opacity: 0,5;
-  border-radius: 15%;
+  background-color: rgba(248, 244, 244, 0.5);
+  border-radius: 30%;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 26px;
+  padding: 10px;
 }
 .bold-white-text{
   font-family: Arial, Helvetica, sans-serif;
@@ -238,14 +245,16 @@ p.social{
   color: white;
 }
 .form{
-  display: block;
-  float: right;
   background-color: white;
   width: 300px;
-  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   }
 .time-left-list{
-  display: inline;
+  display: inline-block;
+  float: left;
+  background-color: rgba (255, 255, 255, 15)
   }
 .form-title{
   color: #336699;
@@ -256,6 +265,27 @@ p.social{
 .form-subtitle{
   color: grey;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 5px 0px;
 }
+input{
+  border-bottom: gray;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  height: 10px;
+}
+.register-bttn{
+  padding: 20px;
+  width: 100%;
+  background-color: gold;
+  margin: 0 auto;
+  }
+.trainers-name, .trainers-position, .trainers-description{
+    text-align: center;
+  }
+  .icon {
+    color: gray;
+  }
+  
