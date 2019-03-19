@@ -10,7 +10,7 @@ body{
 }
 
 .main-banner-content {
-  height: calc(75vh - 50px);
+  height: calc(50vh - 50px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,7 +61,7 @@ li {
   padding-right:0px;
 }
 
-h3, h1 {
+h3, h1, h2 {
   text-align: center;
   color: #010546;
   margin: 0;
@@ -77,6 +77,10 @@ h3{
   margin: 30px auto 12px;
 }
 
+h2{
+  margin-top: 100px;
+}
+
 div .primarybuttons {
   position: relative;
 }
@@ -84,42 +88,55 @@ div .primarybuttons {
 .primarybuttonleft {
   display: block;
   border:1px solid #010546;
-  border-radius: 10px;
-  width: 100px;
+  border-radius: 5px;
+  width: 150px;
   text-align: center;
-  margin: 10px 0 0 0;
-  padding:7px 0;
-  height: 30px;
+  margin: 25px 5px 0 0;
+  padding:10px 0 10px 0;
+  height: 40px;
   box-sizing: border-box;
-  color: rgb(216, 216, 6);
+  color: #f7c216;
   background-color: #010546;
   text-decoration:none;
+  font-size: 12px;
   position: absolute;
   left: 300px;
   transition:background-color, 0.5s;
 }
 
+.primarybuttonleft:hover {
+  border:1px solid #f7c216;
+  color: #010546;
+  background-color: #f7c216;
+}
+
 .primarybuttonright {
   display: block;
-  border:1px solid rgb(216, 216, 6);
-  border-radius: 10px;
-  width: 100px;
+  border:1px solid #f7c216;
+  border-radius: 5px;
+  width: 150px;
   text-align: center;
-  margin: 10px 0 0 0;
-  padding:7px 0;
-  height: 30px;
+  margin: 25px 0 0 0;
+  padding:10px 0 10px 0;
+  height: 40px;
   box-sizing: border-box;
   color: #010546;
-  background-color: rgb(216, 216, 6);
+  background-color: #f7c216;
   text-decoration:none;
-  font-style: bold;
+  font-size: 12px;
   position: absolute;
-  left: 450px;
+  left: 500px;
   transition:background-color, 0.5s;
 }
 
+.primarybuttonright:hover {
+  border:1px solid #010546;
+  color: #f7c216;
+  background-color: #010546;
+}
+
 section h3 {
-  margin-top: 50px
+  margin-top: 25px
 }
 
 p.centerParragraph {
@@ -136,9 +153,9 @@ p.centerParragraph {
 }
 
 .features-item {
-  padding: 20px;
   background-color: rgb(241, 245, 248);
   margin: 0 10px;
+  padding: 20px;
 }
 
 .features-item h4 {
@@ -150,30 +167,231 @@ p.centerParragraph {
   color: #6d6d6d
 }
 
-.icon-hat {
-  background: url("../images/pawprint.png") ;
-  background-size: 100px;
-  display: block;
-  width: 50px;
-}
 /*
 OUR POPULAR COURSES
 */
-.features-item-images{
+
+.features-item a.design{
+  background-color: #010546;
+  border: 1px solid #010546;
+  color: white;
+  padding: 7px;
+  font-weight: normal;
+  font-size: 14px;
   display: inline-block;
-  padding: 0px;
-  margin: 50px 8px 0px;
-  position:relative;
+  position: absolute;
 }
 
-.price{
+.features-item span.price{
   font-weight: bold;
   color: #010546;
   border: 1px solid #f7c216;
   border-radius: 100%;
-  padding: 10px;
+  padding: 15px;
   background-color: #f7c216;
-  position: absolute;
-  top: 200px;
-  right: 350px; /*CORREGIR*/
+  position: relative;
+  top: -10px ;
+  right: -60%;
+  height: 20px;
+}
+
+/* la parte del social media con flex en otro div */
+
+.social-media{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.social-media a{
+  color: #010546;
+  font-size: 14px;
+}
+.social-media-account{
+  display: inline-block;
+  line-height: 30px;
+}
+
+.social-media-account img{
+  float: left;
+}
+
+.social-media-account a{
+  margin-left: 10px;
+}
+
+.social-media-status{
+  float: right;
+  margin-left: 50px;
+}
+
+.social-media-status a{
+  display: inline-block;
+  color: #010546;
+  line-height: 25px;
+}
+
+.social-media-status a img:hover{
+  background-color: #f7c216;
+}
+
+.social-media-status img{
+  transform: translateY(20%) 
+}
+
+.social-media img{
+  border-radius: 100px;
+}
+
+/*
+SECTION BLUE register now
+*/
+
+.section-blue {
+  background-color: #010546;
+  margin: 180px auto 30px;
+}
+
+.register-now {
+  color: white;
+  display: inline-block;
+  width: 65%;
+  text-align: left;
+  margin: 100px auto 35px;
+}
+
+.register-now h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 34px;
+  text-align: left;
+}
+
+
+.number-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px auto 100px;
+}
+
+.number-box div {
+  border: 1px solid white;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #13187c;
+  margin: 10px 5px;
+  color: white;
+  font-size: 18px:
+}
+
+.number-box .number{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+/* form */
+
+form {
+  background-color: white;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  float: right;
+  transform: translateY(-120%);
+}
+
+form div h4 {
+  margin: 0;
+  text-align: center;
+  color: #010546;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+form div p {
+  margin: 3px auto 20px;
+  text-align: center;
+  color: rgb(161, 159, 159);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+form input{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin: 15px 0 5px;
+  border-bottom-style: 1px solid grey;
+}
+
+form input.submit{
+  background-color: #f7c216;
+  color: #010546;
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+}
+
+/*
+TRAINERS
+*/
+
+.features-item-white {
+  padding: 12px;
+}
+
+.features-item-white h6 {
+  font-weight: bold;
+  color: #010546;
+  margin: 10px auto 2px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.srjob {
+  font-size: 12px;
+  text-align: center;
+  color: grey;
+  margin: 3px auto 20px;
+}
+
+.description-job {
+  font-size: 16px;
+  text-align: center;
+  color: rgb(100, 100, 100);
+  margin: 30px auto 55px;
+}
+
+.features-item-white a{
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  line-height: 25px;
+}
+
+.features-item-white a img:hover{
+  background-color: #f7c216;
+}
+
+/*
+UPCOMING EVENTS
+*/
+
+.section-blue .container h2 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.feature-item-blue {
+  padding: 12px;
+}
+
+.container-date {
+  background-color: rgba(red, green, rgb(3, 3, 128), alpha) ;
+  border: 1px solid rgba(red, green, rgb(3, 3, 128), alpha);
 }
