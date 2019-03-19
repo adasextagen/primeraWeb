@@ -118,14 +118,14 @@ ul {
     margin:10px 0 0 0;
 }
 
-.features-selection, .course-carousel {
+.features-selection, .course-carousel, .instructor-list {
     display:flex;
     flex-direction:row;
     padding:0;
     margin: 40px auto;
     width:75%;
     justify-content: center;
-    }
+}
 
 .features-selection .icon, .courses .icon {
     height:30px;
@@ -168,7 +168,8 @@ ul {
     top: 35%;
     left: 85%;
     transform: translate(-50%, -50%)
-}    
+    /*no hacerlo con porcentajes, estimar a qué distancia del 0 quiero que esté.*/
+}
 
 .course-image {
     width:100%;
@@ -197,9 +198,109 @@ a.course-button {
     flex-wrap:wrap;
     font-size:10px;
     font-weight:bold;
-    
 }
 
 .author-img {
     max-height:45px;
+}
+
+.registration {
+    background:#002346;
+    color:white;
+    display:flex;
+    justify-content: center;
+    padding:50px;
+}
+
+.registration-notform {
+    margin:50px 15px;
+}
+
+.registration-text {
+    width:600px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.secondary-title-1 {
+    font-weight:bolder;
+    font-size:25px;
+    margin:0;
+    }
+    
+.secondary-descriptor-1{
+    font-size:10px;
+    margin:10px 0 0 0;
+}
+
+.date-box {
+    display:inline-block;
+    background: #334f6c;
+    border: 1px solid darkgrey;
+    width:150px;
+    height:100px;
+    border-radius:5px;
+    text-align:center;
+    line-height:100px;
+    font-size:11px;
+}
+
+.date-box > span {
+    font-size:25px;
+    font-weight:bolder;
+}
+
+.registration-form {
+    background:white;
+    color:gray; 
+    padding:20px 15px;
+    text-align:center;
+}
+
+.registration-form > h4 {
+    color:#002347;
+    margin: 12px 0 0 0;
+}
+.registration-form > p {
+    margin: 0 0 20px 0;
+    font-size:10px;
+}
+
+
+.registration-form > input {
+    display:block;
+    margin:20px;
+    border: 0;
+    border-bottom:1px solid darkgrey;
+}
+
+.registration-form > span {
+    display:block;
+    border: 1px solid #f7ac06; 
+    background:#f7ac06;
+    color:#002347;
+    font-size:10px;
+    font-weight:bold;
+    text-align: center;
+    margin: 0 10px; 
+    font-size:10px;
+    padding:10px 20px;
+    width: 70%;
+}
+
+.trainer {
+    max-width:100%;
+}
+
+.icon-small {
+    height:15px;
+}
+
+.social-media {
+    display:flex;
+    flex-direction:row;
+    padding:0;
+/*    margin: 40px auto;
+    width:75%;*/
+    justify-content: center;
 }
