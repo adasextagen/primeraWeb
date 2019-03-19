@@ -60,6 +60,11 @@ font-size: 38px;
     font-size: 48px;
     margin-bottom: 10px;
   }
+  h2{
+    font-size: 16px;
+    color: #336699;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
   h3{
     font-size: 24px;
     display: block;
@@ -122,6 +127,7 @@ font-size: 38px;
   margin-top: 15px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 34px;
+  display: block;
 }
 .caption{
   font-size: 15px;
@@ -130,6 +136,7 @@ font-size: 38px;
   font-weight: 50;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  display: block;
 }
 .subtitle, h4{
   font-size: 24px;
@@ -143,14 +150,14 @@ font-size: 38px;
 }
 p {
   font-family: Arial, Helvetica, sans-serif;
-  color: darkgrey;
   font-size: 15px;
 }
 .features {
   float: right;
 }
 .image{
-
+  overflow: hidden;
+  width: 100%;
 }
 .trainers{
   display: flex;
@@ -162,11 +169,93 @@ p {
   background-color: aliceblue;
   margin: 0 10px;
 }
-.blue-background{
-  background-color: #336699;
-}
 .courses-item {
-  padding: 20px;
   margin:10px;
   width: 200px;
+  position: relative;
+  float: right;
 } 
+.price{
+  border-radius: 100%;
+  padding: 15px;
+  background-color: gold;
+  font-weight: bold;
+  font-size: 20px;
+  color: #336699;
+  position: absolute;
+  display: flex;
+  margin-left: 140px;
+  margin-top: -40;
+}
+.design-button{
+  background-color: #336699;
+  margin: 10px 10px 0 0;
+  height: 300px;
+  width: 400px;
+  padding: 10px;
+}
+a.design-button{
+  color: white;
+}
+.social-media{
+  display: flex;
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  color: #336699;
+  margin: 0 15px 0 15px;
+  justify-content: center, space-between;
+}
+.likes{
+  border-radius: 100%;
+}
+p.social{
+  font-size: 10px;
+  justify-content: center;
+}
+.blue-background{
+  background-color: #336699;
+  width: 100%;
+  margin: 0 auto;
+}
+.register-title{
+  color: white;
+  text-align: left;
+  width: 80%;
+}
+.time-left {
+  color: white;
+  opacity: 0,5;
+  border-radius: 15%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+.bold-white-text{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+.form{
+  display: block;
+  float: right;
+  background-color: white;
+  width: 300px;
+  align-items: flex-end;
+  }
+.time-left-list{
+  display: inline;
+  }
+.form-title{
+  color: #336699;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form-subtitle{
+  color: grey;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
