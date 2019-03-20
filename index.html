@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1"/>
     <link type="text/css" rel="stylesheet" href="styles/styles.css">
     <title>Primera Web</title>
   </head>
@@ -9,7 +10,7 @@
     <div class="main-banner">
       <header class="container">
         <a href="#" class="logo"><img img src="images/logo.png"></a> 
-        <nav>
+        <nav class="index-menu">
           <ul>
             <li> <a href="#"> Home </a> </li>
             <li> <a href="#"> About </a></li>
@@ -59,7 +60,7 @@
       <div class="product-list container">
         <div class="product1">
           <div>
-            <a class="productPhoto"><img src="images/poppy.jpg" width="275px" height="200"></a>
+            <a class="productPhoto"><img src="images/poppy.jpg" width="300px" height="215px"></a>
             <span class="circlePrice">$70</span>
           </div>
             <div class="productInfo">
@@ -82,7 +83,7 @@
           </div>
         <div class="product2">
           <div>
-            <a class="productPhoto"><img src="images/larkspur.jpg" width="275px" height="200"></a>
+            <a class="productPhoto"><img src="images/larkspur.jpg" width="300px" height="215px"></a>
             <span class="circlePrice">$70</span>
           </div>
           <div class="productInfo">
@@ -105,7 +106,7 @@
         </div>
         <div class="product3">
           <div>
-            <a class="productPhoto"><img src="images/pincushion.jpg" width="275px" height="200"></a>
+            <a class="productPhoto"><img src="images/pincushion.jpg" width="300px" height="215px"></a>
             <span class="circlePrice">$70</span>
           </div>
           <div class="productInfo">
@@ -308,53 +309,59 @@
         </ul>
       </div>
     </section>
-    <section>
+    <section class="last-section">
       <div class="end-list container">
-      <ul>
-        <li class="list-title">Top products</li>
-        <li class="list-items">Managed website</li>
-        <li class="list-items">Manage reputation</li>
-        <li class="list-items">Power Tools</li>
-        <li class="list-items">Marketing service</li>
-      </ul>
-      <ul>
-        <li class="list-title">Quick links</li>
-        <li class="list-items">Jobs</li>
-        <li class="list-items">Brand assets</li>
-        <li class="list-items">Investor relations</li>
-        <li class="list-items">Terms of service</li>
-      </ul>
-      <ul>
-        <li class="list-title">Features</li>
-        <li class="list-items">Jobs</li>
-        <li class="list-items">Brand assets</li>
-        <li class="list-items">Investor relations</li>
-        <li class="list-items">Terms of service</li>
-      </ul>
-      <ul>
-        <li class="list-title">Resources</li>
-        <li class="list-items">Guides</li>
-        <li class="list-items">Research</li>
-        <li class="list-items">Experts</li>
-        <li class="list-items">Agencies</li>
-      </ul>
-      <ul>
-        <li class="list-title">Newsletter</li>
-        <li class="list-items">You can trust us, we only send promo offers</li>
-        <li> 
-          <input class="email-entry" type="email" placeholder="Your Email Adress">
-          <input class="subscribe" type="submit" value="SUBSCRIBE">
-        </li>
-      </ul>
+        <div class="left-list">
+          <ul>
+            <li class="list-title">Top products</li>
+            <li><a class="list-items">Managed website</a></li>
+            <li><a class="list-items">Manage reputation</a></li>
+            <li><a class="list-items">Power Tools</a></li>
+            <li><a class="list-items">Marketing service</a></li>
+          </ul>
+          <ul>
+            <li class="list-title">Quick links</li>
+            <li><a class="list-items">Jobs</a></li>
+            <li><a class="list-items">Brand assets</a></li>
+            <li><a class="list-items">Investor relations</a></li>
+            <li><a class="list-items">Terms of service</a></li>
+          </ul>
+          <ul>
+            <li class="list-title">Features</li>
+            <li><a class="list-items">Jobs</a></li>
+            <li><a class="list-items">Brand assets</a></li>
+            <li><a class="list-items">Investor relations</a></li>
+            <li><a class="list-items">Terms of service</a></li>
+          </ul>
+          <ul>
+            <li class="list-title">Resources</li>
+            <li><a class="list-items">Guides</a></li>
+            <li><a class="list-items">Research</a></li>
+            <li><a class="list-items">Experts</a></li>
+            <li><a class="list-items">Agencies</a></li>
+          </ul>
+        </div>
+        <div class="right-list">
+          <ul>
+            <li class="list-title">Newsletter</li>
+            <li class="list-items">You can trust us, we only send promo offers</li>
+            <li>
+              <input class="email-entry" type="email" placeholder="Your Email Adress">
+              <input class="subscribe" type="submit" value="SUBSCRIBE">
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <footer>Copyright 2019 All rights reserve | This template was made with love by <a>Colorlib</a></footer>
-      </div>
+      <footer class="footer container">
+        <p>Copyright 2019 All rights reserve | This template was made with love by <a>Colorlib</a></p>
       <div class="socialMedia-squares">
-        <img src="images/facebook.png">
-        <img src="images/twitter.png">
-        <img src="images/linkedin.png">
+        <ul>
+          <li><img src="images/facebook.png" width="15px" height="15px"></li>
+          <li><img src="images/twitter.png" width="15px" height="15px"></li>
+          <li><img src="images/linkedin.png" width="15px" height="15px"></li>
+        </ul>
       </div>
+      </footer>
     </section>
   </body>
 </html>
