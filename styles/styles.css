@@ -220,6 +220,9 @@ header{
     padding: 20px;
     background-color: aliceblue;
     margin: 0 10px;
+    min-width: 25%;
+    flex: 1;
+    flex-basis: 33.33%;
 }
 
 .awesome-feature img{
@@ -233,19 +236,23 @@ header{
 /* RESPONSIVE AWESOME FEATURE */
 
 @media (max-width: 600px){
-    .subtitle h3{
-        font-size: 25px; /* LO CAMBIA EN TODOS */
-    }
-
     .features-list{
-        flex-direction: column;
-        justify-content: space-between;
+        flex-wrap: wrap;
     }
-
+    
     .features-item{
-        margin: 15px auto;
+        width: 50%;
+        margin: 15px 15px;
     }
 }
+
+@media (max-width: 400px){
+    .features-item{
+        width: 100%;
+        margin: 15px 15px;
+    }
+}
+
 
 /* OUR POPULAR COURSES */
 
@@ -314,7 +321,6 @@ span.price{
 .social-media-status{
     float: right;
 }
-
 
 .social-media-status a{
     display: inline-block;
@@ -499,7 +505,10 @@ form input.submit{
 }
 
 .trainers .trainers-box{
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    min-width: 20%;
+    flex-basis: 20%;
+    flex: 1;
 }
 
 .trainers ul{
@@ -537,6 +546,24 @@ form input.submit{
 
 @media (max-width: 600px){
     .trainers{
+        flex-wrap: wrap;
+    }
+    
+    .trainers .trainers-box{
+        width: 50%;
+        margin: 15px 15px;
+    }
+}
+
+@media (max-width: 400px){
+    .trainers .trainers-box{
+        width: 100%;
+        margin: 15px 15px;
+    }
+}
+
+/*@media (max-width: 600px){
+    .trainers{
         flex-direction: column;
     }
 
@@ -553,7 +580,7 @@ form input.submit{
         display: block;
         margin: 0 auto;
     }
-}
+}*/
 
 /* UPCOMING EVENTS */
 
