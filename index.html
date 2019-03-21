@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <!-- ACTIVANDO EL MEDIA QUERY -->
+    <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1"/>
     <link type="text/css" rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>Primera Web</title>
@@ -30,22 +32,28 @@
         </div>
       </div>
     </div>
+    <!-- SECCION nº xxx - FEATURES DE LA ACADEMIA -->
     <section id="features" class="container">
+      <!-- TITULO Y DESCRIPCION DE LA SECCION -->
       <div class="section-details">
         <p class="section-name title">Awesome features</p>
         <p class="centerParagraph section-desc">Replenish man have thin gathering lights yielding shall you</p>
       </div>
+      <!-- LISTA DE FEATURES -->
       <div class="section-item-list">
+        <!-- FEATURE 1 -->
         <div class="features item">
           <span class="icon"><i class="fas fa-graduation-cap"></i></span>
           <p class="title">Scholarship Facility</h4>
           <p class="description">One may creepeth, man bearing their firmament won't great heaven</p>
         </div>
+        <!-- FEATURE 2 -->
         <div class="features item">
           <span class="icon"><i class="fas fa-book-open"></i></span>
           <p class="title">Sell Online Courses</h4>
           <p class="description">One may creepeth, man bearing their firmament won't great heaven</p>
         </div>
+        <!-- FEATURE 3ç -->
         <div class="features item">
           <span class="icon"><i class="fas fa-globe"></i></span>
           <p class="title">Global Certification</h4>
@@ -60,50 +68,66 @@
       </div>
       <div class="section-item-list">
         <div class="courses item">
-          <span class="item-img"><img src="images/profile1.jpeg" alt="course title"></span>
-          <p class="course-price">$25</p>
-          <div class="inner-btn blue">
-            <a href="#">design</a>
-          </div>
-          <p class="title">computer engineering</p>
-          <p class="description">One may creepeth, man bearing their firmament won't fowl meat over the sea</p>
-          <div class="social-data-interaction">
-            <span class="avatar">
-              <img src="images/profile4.jpeg"/>
+            <span class="item-img">
+              <img src="images/profile1.jpeg" alt="course title">
             </span>
-            <p>Cameron</p>
-            <span class="social-interaction"><i class="far fa-user">25</i></span>
-            <span class="social-interaction"><i class="far fa-heart">45</i></span>
-          </div>
+            <div class="course-descr">
+              <p class="course-price">$25</p>
+              <div class="inner-btn blue">
+                <a href="#">design</a>
+              </div>
+              <p class="title">computer engineering</p>
+              <p class="description">One may creepeth, man bearing their one firmament won't fowl meat over the sea</p>
+              <div class="social-data-interaction">
+                <div class="social-profile">
+                  <span class="avatar">
+                    <img src="images/profile4.jpeg"/>
+                  </span>
+                  <p>Cameron</p>
+                </div>
+                <div class="social-likes">
+                  <span><i class="far fa-user">25</i></span>
+                  <span><i class="far fa-heart">45</i></span>
+                </div>
+              </div>
+            </div>
         </div>
         <div class="courses item">
-          <span class="item-img"><img src="images/profile1.jpeg" alt="course title"></span>
-          <p class="course-price">$25</p>
-          <div class="inner-btn blue">
-            <a href="#">design</a>
-          </div>
-          <p class="title">computer engineering</p>
-          <p class="description">One may creepeth, man bearing their firmament won't fowl meat over the sea</p>
-          <div class="social-data-interaction">
-            <span class="avatar">
-              <img src="images/profile4.jpeg"/>
-            </span>
-            <p>Cameron</p>
-            <span><i class="far fa-user">25</i></span>
-            <span><i class="far fa-heart">45</i></span>
+          <span class="item-img">
+            <img src="images/profile1.jpeg" alt="course title">
+          </span>
+          <div class="course-descr">
+            <p class="course-price">$25</p>
+            <div class="inner-btn blue">
+              <a href="#">design</a>
+            </div>
+            <p class="title">Custom Product Design</p>
+            <p class="description">One may creepeth, man bearing their one firmament won't fowl meat over the sea</p>
+            <div class="social-data-interaction">
+              <div class="social-profile">
+                <span class="avatar">
+                  <img src="images/profile4.jpeg"/>
+                </span>
+                <p>Cameron</p>
+              </div>
+              <div class="social-likes">
+                <span><i class="far fa-user">25</i></span>
+                <span><i class="far fa-heart">45</i></span>
+              </div>
+            </div>
           </div>
         </div>
         <div class="courses item">
           <span class="item-img">
             <img src="images/profile1.jpeg" alt="course title">
           </span>
-          <div class="course-descr item">
+          <div class="course-descr">
             <p class="course-price">$25</p>
             <div class="inner-btn blue">
               <a href="#">design</a>
             </div>
-            <p class="title">computer engineering</p>
-            <p class="description">One may creepeth, man bearing their firmament won't fowl meat over the sea</p>
+            <p class="title">social media network</p>
+            <p class="description">One may creepeth, man bearing their one firmament won't fowl meat over the sea</p>
             <div class="social-data-interaction">
               <div class="social-profile">
                 <span class="avatar">
@@ -148,7 +172,7 @@
     </section>
     <section id="Trainers" class="container">
       <div class="section-details">
-        <p class="section-name title centerParagraph">Our Expert Trainers</p>
+        <p class="centerParagraph section-name title">Our Expert Trainers</p>
         <p class="section-desc centerParagraph">Replenish man have thin gathering lights yielding shall you.</p>
       </div>
       <div class="section-item-list">
@@ -218,44 +242,57 @@
         </div>
       </div>
     </section>
+    <!-- SECCION DE EVENTOS -->
     <section id="events" class="blue-sect">
+      <!-- IDENTIFICACIÓN DE LA SECCIÓN -->
       <div class="section-details container">
         <p class="section-name title centerParagraph">upcoming events</p>
         <p class="section-desc centerParagraph">Replenish man have thin gathering lights yielding shall you.</p>
-        <div class="section-item-list">
-          <div class="event-details">
-            <img src="images/profile5.jpeg" alt="Event-name"/>
-            <div class="event-info">
+      </div>
+      <!-- CONTENIDO DE LA SECCION -->
+      <div class="section-item-list container">
+        <!-- CONTENIDO DE CADA ITEM - ITEM 1 -->
+        <div class="event-details">
+          <img src="images/profile5.jpeg" alt="Event-name"/>
+          <!-- CUADRO SUPERPUESTO CON LA INFORMACIÓN DEL EVENTO -->
+          <div class="event-info">
+            <!-- BLOQUE DE INFO SUPERIOR -->
+            <div class="event-info-topline">
               <div class="event-date">
                 <p class="event-day">15</p>
                 <p class="event-month">Jun</p>
               </div>
-              <div class="event-hours-location">
+              <div  class="event-hours-location">
+                <i class="far fa-clock event-hr-icon"></i>
+                <span class="event-hr">12:00 AM - 12:30 PM</span>
+                <i class="fas fa-map-marker-alt event-location-icon"></i>
+                <span class="event-location">Hilton Quebec</span>
+              </div>
+            </div>
+            <!-- DESCRIPCION DEL EVENTO -->
+            <p class="event-location">One make creepeth man for so bearing their firmament won't fowl meat over seas great</p>
+            <a href="#" class="btn yellow">view details</a>
+          </div>
+        </div>
+        <!-- CONTENIDO DEL ITEM DE LA SECCION - EVENTO 2 -->
+        <div class="event-details">
+          <img src="images/profile5.jpeg" alt="Event-name"/>
+          <div class="event-info">
+            <div class="event-info-topline">
+              <div class="event-date">
+                <p class="event-day">15</p>
+                <p class="event-month">Jun</p>
+              </div>
+              <div  class="event-hours-location">
                 <i class="far fa-clock event-hours">12:00 AM - 12:30 PM</i>
                 <i class="fas fa-map-marker-alt event-location">Hilton Quebec</i>
               </div>
-              <p class="event-location">One make creepeth man for so bearing their firmament won't fowl meat over seas great</p>
-              <a href="#" class="btn yellow">view details</a>
-            </div>
-          </div>
-          <div class="event-details">
-            <img src="images/profile5.jpeg" alt="Event-name"/>
-            <div class="event-info">
-              <div class="event-info-topline"
-                <div class="event-date">
-                  <p class="event-day">15</p>
-                  <p class="event-month">Jun</p>
-                </div>
-                <div  class="event-hours-location">
-                  <i class="far fa-clock event-hours">12:00 AM - 12:30 PM</i>
-                  <i class="fas fa-map-marker-alt event-location">Hilton Quebec</i>
-                </div>
-              </div>  
-              <p class="event-description">One make creepeth man for so bearing their firmament won't fowl meat over seas great</p>
-              <a href="#" class="inner-btn yellow ">view details</a>
-            </div>
+            </div>  
+            <p class="event-description">One make creepeth man for so bearing their firmament won't fowl meat over seas great</p>
+            <a href="#" class="inner-btn yellow">view details</a>
           </div>
         </div>
+      </div>
       </div>
     </section>
   </body>

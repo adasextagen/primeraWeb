@@ -83,15 +83,11 @@ li{                         /*Comportamiento general del estado hover de los lin
 
 .main-banner{
     background: url("../images/home-banner.jpg") no-repeat center bottom;
-    /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; */
     background-size: cover;
-    /* background-image: url("../images/home-banner.jpg");
-    background-position: center bottom; */
     height: 100vh; /*Viewport height*/
     text-align: center; 
     overflow: hidden;
+    margin: 0 0 2% 0;
 }
 
 .main-banner header{
@@ -103,7 +99,8 @@ li{                         /*Comportamiento general del estado hover de los lin
 .main-banner header .logo{
     display: block;
     float: left;
-    padding: 1% 0; 
+    padding: 1% 0;
+    margin: 1% 0; 
 }
 
 nav{
@@ -134,69 +131,78 @@ h1{
 }
 
 section{
-  padding: 5% 0;
+  padding: 5% 0 2% 0;
   overflow: auto; 
 }
 
 .section-details{
-  margin-bottom: 30px;
+  /* margin: 0 0 5% 0; */
 }
 
 .section-name{
   text-align: center;
-  margin: 0 0 1% 0;
   font-size: 2em;
+  margin: 0 0 2rem 0;
 }
 
 .title{
   text-transform: capitalize;
   font-weight: bolder;
+  color: rgb(2, 35, 97);
 }
 
 p.centerParagraph{
-    margin: 0 auto;
-    width: 30%;
-    text-align: center;
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
 }
 
 .section-desc{
   color: #868686;
   font-size: 0.9em;
-  font-style: italic; 
+  font-style: italic;
+  margin: 0 0 2em 0; 
 }
+
 .section-item-list{
-    width: 100%;
-    display: flex;
-    flex-direction: row; /*es el valor que el flex trae por defecto*/
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row; /*es el valor que el flex trae por defecto*/
+  justify-content: space-between;
 }
-/* 
+
 .features{
   padding: 3%;
-} */
+}
 
 .item{
   background-color: rgb(247, 240, 255);
   margin: 1%;
-  text-align: justify;
-  padding: 2%;
-  width: 30%;
+  text-align: left;
+  /* padding: 2%; */
+  /* width: 30%; */
+}
+
+.features .title{
+  margin:1.5rem 0 0 0;
 }
 
 .icon i{
-  font-size:2em;
+  font-size:2.5em;
 }
 
 .description{
   color: #868686;
   font-size: 0.95em;
   font-weight: normal;
-  width: 80%;
-  margin: 10% 0;
+  /* width: 80%; */
+  margin: 1rem 0 0 0;
+  line-height: 2em;
 }
 
 .courses{
   padding: 0;
+  margin: 0 2%;
   position: relative;
   overflow: hidden;
 }
@@ -205,14 +211,20 @@ p.centerParagraph{
   display: block;
   width: 100%;
   height:50%;
+  margin: 0;
+  border: none;
   object-fit: cover;
   object-position: center; 
 }
 
+.courses.title{
+  margin: 3em 0 0 0;
+}
+
 .course-descr{
-  width: 80%;
+  /* width: 80%; */
   /* height: 80%; */
-  padding: 10%;
+  padding: 7%;
 }
 
 .course-price{
@@ -221,35 +233,38 @@ p.centerParagraph{
   position: absolute;
   font-size: 1.2em;
   right: 5%;
-  top: 39%;
+  top: 43%;
   width: 4rem;
   height: 4rem;
   border-radius: 2rem;
   line-height: 4rem;
   text-align: center;
-  margin-right: 2%;
+  margin: 0%;
   background-color: rgb(255, 196, 0);
   font-weight: bold;
 }
 
 .social-data-interaction{
-  line-height: 50px;
-  text-align: center;
+  /* line-height: 50px; */
+  /* text-align: center; */
   display: flex;
   justify-content: space-between;
-  align-content: space-around;
+  margin: 10% 0 0 0;
+  align-items: stretch;
+  /* align-content: space-around; */
 }
 
 .social-profile{
   flex-grow: 1;
+  align-self: flex-start;
 }
 
 .avatar{
   display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 25px;
-  background-color: #868686;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 1.5em;
+  /* background-color: #868686; */
   overflow: hidden;
 }
 
@@ -259,20 +274,23 @@ p.centerParagraph{
   display: inline;
   object-fit: cover;
   object-position: center;
-  }
+}
 
-.social-data-interaction p{
-  display: inline-flex;
+.social-profile p{
+  display: inline-block;
   margin: 0;
+  font-weight: bold;
+  font-size: 0.8em;
+  line-height: 3em;
 }
 
-.social-profile{
-  
-}
+/* .social-profile{
+
+} */
 
 .inner-btn {
   width: fit-content;
-  padding: 3%;
+  padding: 2% 10%;
   text-align: center;
   line-height: 1em;
 }
@@ -281,7 +299,8 @@ p.centerParagraph{
   display: inline-block;
   color:#ffffff;
   text-transform: uppercase;
-  padding: 3%; 
+  font-size: 0.7em;
+  /* padding: 0.2rem 1rem;  */
   width: auto;
 }
 
@@ -289,6 +308,7 @@ p.centerParagraph{
   background-color: rgb(2, 35, 97);
   color:#ffffff;
   overflow: hidden;
+  padding: 7% 0;
 }
 
 .left{
@@ -468,8 +488,10 @@ p.centerParagraph{
 
 .event-details{
   position: relative;
-  width: 45%;  
+  width: 48%;  
   overflow: hidden;
+  /* object-fit: cover;
+  object-position: center */
 }
 
 .event-details img{
@@ -482,7 +504,7 @@ p.centerParagraph{
 
 .event-info{
   width: 50%;
-  height: 65%;
+  height: 50%;
   position: absolute;
   right: 0;
   top: 0;
@@ -500,8 +522,6 @@ p.centerParagraph{
   float: left;
   border-right: 1px solid #ffffff;
   padding: 0 5% 0 0;
-  /* flex: 1; */
-  min-width: 25%;
 }
 
 .event-day{
@@ -522,12 +542,16 @@ p.centerParagraph{
 }
 
 .event-hours-location{
-  /* display: flex;
-  flex-direction: column; */
-  position: relative;
-  float: right;
   text-align: left;
-  min-width: 65%;
-  padding: 0 0 0 5%;
-  clear: both;
+  margin: 0 0 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+
+.event-hours-location i{
+  margin: 0 5% 0 0
+}
+
+/* @media (max-width: 400px) */
+
