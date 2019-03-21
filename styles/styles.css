@@ -100,7 +100,7 @@ ul {
     color: #002347;
 }
 
-.features, .courses {
+.features, .courses, .trainers {
     margin:15vh;
 }
 .secondary-title {
@@ -118,7 +118,7 @@ ul {
     margin:10px 0 0 0;
 }
 
-.features-selection, .course-carousel, .instructor-list {
+.features-selection, .course-carousel, .trainer-list {
     display:flex;
     flex-direction:row;
     padding:0;
@@ -288,10 +288,6 @@ a.course-button {
     width: 70%;
 }
 
-.trainer {
-    max-width:100%;
-}
-
 .icon-small {
     height:15px;
 }
@@ -300,7 +296,66 @@ a.course-button {
     display:flex;
     flex-direction:row;
     padding:0;
-/*    margin: 40px auto;
-    width:75%;*/
-    justify-content: center;
+    margin: 40px 20px 0;
+/*    width:75%;*/
+    justify-content: space-evenly;
 }
+
+.trainer-list > li {
+    margin:10px;
+    width: 20vw;
+/*    padding:20px;*/
+    box-shadow: 10px red;
+}
+
+.trainer-image-1 {
+    background:url(../images/t1.jpeg);
+    background-position:center;
+    background-size:cover;
+    height:100%;
+}
+
+.trainer-image-2 {
+    background:url(../images/t2.jpeg);
+    background-position:center;
+    background-size:cover;
+    height:100%;
+}
+
+.trainer-image-3 {
+    background:url(../images/t3.jpg);
+    background-position:center;
+    background-size:cover;
+    height:100%;
+}
+
+.trainer-image-4 {
+    background:url(../images/t4.jpg);
+    background-position:center;
+    background-size:cover;
+    height:100%;
+}
+
+.trainer-text {
+    padding: 10px;
+    text-align:center;
+}
+
+.trainer-name {
+    margin:10px 0 5px 0;
+}
+
+.trainer-role {
+    margin:0;
+    font-weight:bold;
+    font-size:8px;
+    color:gray;
+}
+
+.trainer-descriptor {
+    margin:15px 0 0 0;
+    font-size:10px;
+    color:gray;
+}
+
+
