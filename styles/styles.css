@@ -480,12 +480,40 @@ form input.submit{
     flex: 1;
 }
 
-img.trainers-picture{
+.trainers-picture1{
+    background-image: url("../images/akashi_square.jpg");
+    background-size: cover;
+    background-position: center;
     width: 100%;
+    height: 200px;
+}
+
+.trainers-picture2{
+    background-image: url("../images/iwaizumi_square.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+.trainers-picture3{
+    background-image: url("../images/tsukishima_sainnante.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+}
+
+.trainers-picture4{
+    background-image: url("../images/bokuto_orenojidai.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
 }
 
 .trainers-details{
-    margin: 0 10px;
+    padding: 10px;
 }
 
 .trainers ul{
@@ -700,8 +728,6 @@ div.clients{
     .clients-details{
         margin: 15px auto;
     }
-
-    
 }
 
 /* FINAL */
