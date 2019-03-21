@@ -253,7 +253,6 @@ header{
     }
 }
 
-
 /* OUR POPULAR COURSES */
 
 .ourPopularCourses{
@@ -262,18 +261,16 @@ header{
 
 .courses{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .courses .courses-computer, .courses .courses-custom, .courses .courses-social{
     padding: 0;
     background-color: aliceblue;
     margin: 10px;
-    flex-basis: 30%;
+    flex-basis: 33.33%;
     flex: 1;
-    min-width: 20%;
+    min-width: 25%;
 }
 
 span.price{
@@ -284,7 +281,7 @@ span.price{
     padding: 15px;
     background-color: #f7c216;
     position: absolute;
-    top: -50px; /* MEJOR SOLUCION */
+    top: -50px; /* MEJOR SOLUCION PARA QUE EL PRECIO NO SE MUEVA */
     right: 0;
 }
 
@@ -346,48 +343,17 @@ span.price{
 
 /* RESPONSIVE OUR POPULAR COURSES */
 
-
-
-/*@media (max-width: 600px){
-    .courses{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+@media (max-width: 600px){
+    .courses .courses-computer, .courses .courses-custom, .courses .courses-social{
+        min-width: 45%;
     }
+}
 
-    .courses .courses-computer,
-    .courses .courses-custom,
-    .courses .courses-social{
-        padding: 20px;
-        margin: 15px auto;
+@media (max-width: 400px){
+    .courses .courses-computer, .courses .courses-custom, .courses .courses-social{
+        min-width: 100%;
     }
-
-    .courses-image{
-        display: block;
-        margin: 0 auto;
-    }
-
-    .courses .courses-content{
-        margin: 20px 0 0 0;
-    }
-
-    span.price{
-        top: -50px;
-        right: 0;
-    }
-
-    .courses a.design{
-        max-width: 300px;
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-        padding: 10px 0;
-    }
-
-    div.content-text{
-        text-align: center;
-    }
-}*/
+}
 
 /* REGISTER NOW */
 
@@ -519,7 +485,7 @@ img.trainers-picture{
 }
 
 .trainers-details{
-    margin: 0 15px;
+    margin: 0 10px;
 }
 
 .trainers ul{
@@ -831,18 +797,6 @@ input.subscribe-button{
 /* RESPONSIVE FINAL */
 
 @media (max-width: 600px){
-    .final .final-list-left{
-        width: 100%;
-        float: none;
-    }
-
-    .final .final-list-right{
-        float: none;
-        clear: both;
-        padding-top: 40px;
-        text-align: center;
-    }
-
     .final footer p{
         width: 100%;
         display: block;
@@ -854,5 +808,19 @@ input.subscribe-button{
         padding-top: 30px;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media (max-width: 650px){
+    .final .final-list-left{
+        width: 100%;
+        float: none;
+    }
+    
+    .final .final-list-right{
+        float: none;
+        clear: both;
+        padding-top: 40px;
+        text-align: center;
     }
 }
