@@ -171,6 +171,17 @@ p.centerParragraph {
 OUR POPULAR COURSES
 */
 
+.curiouscat {
+  background-image: url(../images/curiouscat.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.features-item img{
+  padding: 0;
+}
+
 .features-item a.design{
   background-color: #010546;
   border: 1px solid #010546;
@@ -273,7 +284,6 @@ SECTION BLUE register now
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 10px auto 100px;
 }
 
 .number-box div {
@@ -302,7 +312,7 @@ form {
   flex-direction: column;
   padding: 40px;
   float: right;
-  transform: translateY(-120%);
+  transform: translateY(-90%);
 }
 
 form div h4 {
@@ -342,7 +352,8 @@ TRAINERS
 */
 
 .features-item-white {
-  padding: 12px;
+  box-shadow: 2px 2px 2px lightgray;
+  margin: 10px 10px 10px 10px;
 }
 
 .features-item-white h6 {
@@ -395,3 +406,4 @@ UPCOMING EVENTS
   background-color: rgba(red, green, rgb(3, 3, 128), alpha) ;
   border: 1px solid rgba(red, green, rgb(3, 3, 128), alpha);
 }
+
