@@ -224,7 +224,7 @@ h4 {
 }
 
 
-ul {
+.ul-todos {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -458,6 +458,7 @@ li {
     background-color:rgb(243, 241, 248);
   margin-right: 15px;
   margin-left:15px;
+  margin-bottom: 30px;
   -webkit-box-shadow: 9px 10px 22px -6px rgba(158,142,158,1);
 -moz-box-shadow: 9px 10px 22px -6px rgba(158,142,158,1);
 box-shadow: 9px 10px 22px -6px rgba(158,142,158,1);
@@ -487,20 +488,31 @@ box-shadow: 9px 10px 22px -6px rgba(158,142,158,1);
 
 .lista-menu-final {
     font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    flex-direction: row;
 }
 
-ul .primer-lista-topProducts {
-    display: block;
+.primer-lista-topProducts {
+    list-style: none;
 }
 
 .titulo-menu {
    font-size: 15px;
     color: white;
+    font-weight: bold;
 
 }
 
 .informacion-menu {
     font-size: 12px;
-    color: grey;
+    color: rgb(172, 169, 169);
+    margin-top: 5px;
     
+}
+
+.btn-submit {
+    background-color: yellow;
+    color:  rgb(44, 44, 75);
+    
+
 }
