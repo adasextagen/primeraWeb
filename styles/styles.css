@@ -252,15 +252,16 @@ padding: 0 15px 0 15px;
 .registerNowCountdown{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 50px 0;
+  flex-wrap: wrap;
+  margin: 30px;
 }
 
 .registerNowCountdown div{
-  padding: 20px;
+  border: 1px solid white;
+  padding: 27px;
+  border-radius: 5px;
   background-color: rgb(36, 83, 129);
-  border-radius: 4px;
-  border: 1px solid rgb(73, 105, 138);
+  margin: 10px 5px;
 }
 
 .registerNowCountdown .number{
@@ -273,7 +274,7 @@ form {
   display: flex;
   flex-direction: column;
   float: right;
-  padding: 30px 40px;
+  padding: 20px 40px;
   position:relative;
   top: 90px;
   right: 150px;
@@ -314,6 +315,10 @@ form input.submit{
   margin: 60px 0 0 0;
 }
 
+.trainerInfo {
+  margin: 0 15px;
+}
+
 .trainersSection h3{
   text-align: center;
   font-size: 26px;
@@ -328,10 +333,12 @@ form input.submit{
 }
 
 .trainer {
-  padding: 20px;
-  background-color: rgba(243, 245, 247, 0.3);
-  margin: 0 10px;
+  box-shadow: 1px 1px 5px rgba(82, 81, 81, 0.2);
+  min-width: 20%;
+  flex-basis: 20%;
+  flex: 1;
   border: 1px solid rgb(235, 235, 235);
+  margin: 0 5px;
 }
 
 .trainersList{
@@ -346,35 +353,23 @@ form input.submit{
 .trainerName h4{
   font-weight: bold;
   font-size:16px;
-  margin: 7px 0 0 0;
+  margin: 12px 0 0 0;
 
 }
 
 .trainerName p{
-  margin: 0px;
+  margin: 5px;
   font-size: 13px;
 }
 
 .trainerDescription p{
-  font-size: 14px;
+  margin:40px 2px;
+  font-size: 13px;
   color:grey;
 }
 
 .trainerSocialMedia .trainerButtons li{
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 5px;
-  margin-right: 4px;
-}
-
-.trainerSocialMedia .trainerButtons{
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  left:8%;
-  margin: 5px 5px;
+  display: inline;
 }
 
 .trainerSocialMedia .trainerButtons .icon{
@@ -383,12 +378,13 @@ form input.submit{
 
 .upcomingEvents{
 background-color: #13283d;
+margin: 80px 0 0 0;
 }
 
 .upcomingEventsTitle h3{
   text-align: center;
   font-size: 26px;
-  padding: 100px 0 0 0;
+  padding: 60px 0 0 0;
   color: white;
 }
 
