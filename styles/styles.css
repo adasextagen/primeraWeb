@@ -33,7 +33,6 @@ a:hover{
 .container{
     margin: 0 auto;
     overflow: hidden;
-    width: 95%;
     min-width: 900px;
     max-width: 1000px;
 }
@@ -191,6 +190,11 @@ h4{
 
 .product-photo{
     position: relative;
+}
+
+.productPhoto img{
+    width: 100%;
+
 }
 .circlePrice{
     border-radius: 100%;
@@ -434,6 +438,10 @@ button, .submit{
     margin-bottom: 15px;
 }
 
+.expert-pic img{
+    width:100%;
+}
+
 /*sección events*/
 
 
@@ -450,12 +458,11 @@ button, .submit{
 
 .white-title{
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
     margin-bottom: 15px;
 }
-
 
 .event{
     display: flex;
@@ -464,30 +471,41 @@ button, .submit{
 }
 
 div.event-details{
-    background-color: #203175;
+    background-color: rgba(33, 65, 97, 0.5);
     color: whitesmoke;
-    opacity: 0.6;
     width: 50%;
     position: absolute;
-    overflow: hidden;
-    align-content: flex-start;
     top: 0;
     right: 0; 
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
+    padding: 20px 20px 30px 20px;
 }
 
 div.event.container{
     max-width: 950px;
-   display: flex;
-   overflow: hidden;
-   margin-bottom: 80px;
+    display: flex;
+    overflow: hidden;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .event1, .event2{
     position: relative;
-  
+}
+
+.event-text{
+    color: whitesmoke;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    padding: 15px 0px;
+}
+
+.view-details{
+    display: inline-block;
+    background-color: #F7AC06;
+    color: #050E31;
+    padding: 15px 35px;
+    font-size: 14px;
 }
 
 .view-all{
@@ -499,40 +517,41 @@ div.event.container{
     color: #F7AC06;
 }
 
-.date-place .number{
-    color: #F7AC06;
-    font-size: 24px;
-    font-weight: bold;
-}
-
 .date-place{
-
-}
-
-.number, .month{
     display: block;
-    max-width: 40px;
-    margin: 0px;
-    border-right: 1px;
 }
 
-ul.time-place{
-    padding: 0px;
-    
-
-}
-
-.event-text{
-    color: whitesmoke;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-a .view.details {
+.event-details .date-place .date{
+    font-size: 22px;
     color: #F7AC06;
-    padding: 10px 20px;
+    font-weight: bold;
+    border-right: 1px solid white;
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
 }
+
+.event-details .date-place .date span{
+    display: block;
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.date-place li{
+    font-weight: normal;
+    font-size: 14px
+}
+
+.time-place img{
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
 
 
 /*sección clientes */
@@ -586,31 +605,42 @@ a .view.details {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 900px; 
+    
 }
 
 .right-list ul{
     display: flex;
     flex-direction: column;
+    position: relative;
+}
 
+div.right-list{
+    width: 100%;
 }
 
 .last-section .left-list .list-title, .last-section .right-list .list-title{
     color: whitesmoke;
-    font-size: 16px;
+    font-size: 18px;
     font-size: bold;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
 }
+
 
 .list-items{
     color: #939399;
     font-weight: normal;
     font-size: 14px;
-    margin-top: 40px;
     line-height: 30px;
-
 }
 
+ul{
+    padding-right: 10px;
+}
+
+ul li{
+    display: inline-block;
+    padding-right: 0px;
+}
 
 .socialMedia-squares img{
     background-color: #576188;
@@ -628,6 +658,28 @@ a .view.details {
 
 .footer a{
     color: #F7AC06;
+}
+
+.email-entry, .subscribe{
+    margin-top: 20px;
+}
+
+.email-entry{
+    padding: 8px 60px 8px 10px;
+    background-color: #4A557F;
+    border: 0px;
+}
+
+.subscribe{
+    padding: 7px;
+    background-color: #F7AC06;
+    color: #050E31;
+    font-weight: bold;
+    border: 0;
+    font-size: 14px;
+    float:right;
+    position: absolute;
+    right: -15px;
 }
 
 
