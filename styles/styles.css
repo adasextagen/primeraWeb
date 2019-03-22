@@ -352,6 +352,7 @@ span.price{
 @media (max-width: 400px){
     .courses .courses-computer, .courses .courses-custom, .courses .courses-social{
         min-width: 100%;
+        margin: 0 0 30px 0;
     }
 }
 
@@ -499,7 +500,7 @@ form input.submit{
 .trainers-picture3{
     background-image: url("../images/tsukishima_sainnante.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top right;
     width: 100%;
     height: 200px;
 }
@@ -507,7 +508,7 @@ form input.submit{
 .trainers-picture4{
     background-image: url("../images/bokuto_orenojidai.jpg");
     background-size: cover;
-    background-position: top right;
+    background-position: center;
     width: 100%;
     height: 200px;
 }
@@ -553,11 +554,24 @@ form input.submit{
     .trainers .trainers-box{
         min-width: 40%;
     }
+
+    .trainers-picture1,
+    .trainers-picture2,
+    .trainers-picture3,
+    .trainers-picture4{
+        height: 300px;
+    }
+
+    .trainers-picture1,
+    .trainers-picture4{
+        background-position: top right;
+    }
 }
 
 @media (max-width: 400px){
     .trainers .trainers-box{
         min-width: 100%;
+        margin: 0 0 30px 0;
     }
 }
 
