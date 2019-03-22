@@ -240,20 +240,17 @@ padding: 0 15px 0 15px;
 .registerNow{
   color: white;
   display: inline-block;
-  width: 55%;
-  padding: 90px;
+  width: 60%;
+  margin: 50px 0;
 }
 
 .registerNowText{
-  padding: 0 5%;
   text-align:left;
 }
 
 .registerNowCountdown{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin: 30px;
 }
 
 .registerNowCountdown div{
@@ -276,8 +273,8 @@ form {
   float: right;
   padding: 20px 40px;
   position:relative;
-  top: 90px;
-  right: 150px;
+  top: 30px;
+  margin: 0 0 60px 0;
 }
 
 .formText{
@@ -373,12 +370,16 @@ form input.submit{
 }
 
 .trainerSocialMedia .trainerButtons .icon{
-  margin: 5px 8px;
+  margin: 15px 8px;
 }
 
 .upcomingEvents{
 background-color: #13283d;
-margin: 80px 0 0 0;
+margin: 80px 0 20px 0;
+}
+
+.upcomingEventsTitle{
+margin: 40px 0 30px 0;
 }
 
 .upcomingEventsTitle h3{
@@ -401,20 +402,131 @@ margin: 80px 0 0 0;
   flex-direction: row;
   color: white;
   text-align:center;
+  margin: 0 0 50px 0;
 }
 
 .events .leftEvent, .events .rightEvent{
-  margin: 50px 0px 0 0;
+  margin: 50px 20px 0 0;
 }
 
 .upcomingEventsContainer{
   padding: 50px 50px;
 }
 
+.leftEvent, .rightEvent{
+  position: relative;
+}
 
+.eventInfo{
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(121, 121, 131, 0.4);
+  width: 55%;
+  height: 70%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  float:left;
+}
 
+.eventDate, .eventPlace {
+  display: inline-block;
+  padding-right: 9px;
+  margin:15px 0 5px 0;
+}
 
+.eventDate{
+  border-right: 1px solid white;
+}
 
+.eventPlace{
+  font-weight:normal;
+  margin: 0;
+  font-size: 13px;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.eventDate span{
+color: #f7c216;
+}
+
+.eventDescription{
+  font-size: 13px;
+  margin: 7px 0 20px 0;
+  text-align: left;
+}
+
+.viewDetails{
+  background-color: #f7c216;
+  padding: 10px 20px;
+  margin: 0 0 20px 0;
+  float: left;
+}
+
+.view-all{
+  color: #f7c216;
+  display: block;
+  text-align: center;
+  font-weight: normal;
+  font-size: 12px;
+  margin: 0 0 80px 0;
+}
+
+.clientTitle{
+  margin: 60px 0 0 0;
+}
+
+.clientTitle h3{
+  text-align: center;
+  font-size: 26px;
+  margin: 0 0 5px 0;
+}
+
+.clientTitle p{
+  text-align: center;
+  font-size: 12px;
+  font-style: italic;
+  margin: 0 0 60px 0;
+}
+
+.clients{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 50px 0;
+}
+
+.clientsInfo{
+  box-shadow: 4px 15px 20px rgba(82, 81, 81, 0.2);
+  margin: 0 10px;
+  padding: 20px;
+}
+
+.clientsInfo img{
+  float: left;
+  margin-right: 25px;
+  min-width: 110px;
+  box-shadow: 2px 2px 5px rgba(82, 81, 81, 0.2);
+}
+
+.clientName h5{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.clientName p{
+  font-size: 14px;
+  color: grey;
+}
+
+.dots{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
 
 
 
