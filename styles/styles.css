@@ -100,9 +100,10 @@ ul {
     color: #002347;
 }
 
-.features, .courses, .trainers {
+.features, .courses, .trainers, .upcoming-events {
     margin:15vh;
 }
+
 .secondary-title {
     text-align:center;
     font-weight:bolder;
@@ -308,37 +309,19 @@ a.course-button {
     box-shadow: 10px red;
 }
 
-.trainer-image-1 {
-    background:url(../images/t1.jpeg);
-    background-position:center;
-    background-size:cover;
-    height:100%;
+.trainer {
+    max-height:160px;
+    overflow:hidden;
 }
 
-.trainer-image-2 {
-    background:url(../images/t2.jpeg);
-    background-position:center;
-    background-size:cover;
-    height:100%;
-}
-
-.trainer-image-3 {
-    background:url(../images/t3.jpg);
-    background-position:center;
-    background-size:cover;
-    height:100%;
-}
-
-.trainer-image-4 {
-    background:url(../images/t4.jpg);
-    background-position:center;
-    background-size:cover;
-    height:100%;
+.trainer-image {
+    width:100%;
 }
 
 .trainer-text {
     padding: 10px;
     text-align:center;
+    display:block;
 }
 
 .trainer-name {
@@ -358,4 +341,53 @@ a.course-button {
     color:gray;
 }
 
+.upcoming-events {
+    background:#002346;
+    color:white;
+    margin:0;
+    padding:50px;
+}
 
+.event-list {
+    display:flex;
+}
+
+.event-box {
+    height:400px;
+    width:550px;
+    overflow:hidden;
+    margin:0 auto;
+    position:relative;
+}
+
+.event-detail {
+    position:absolute;
+    top:0;
+    right:0;
+    width:200px;
+    height: 250px;
+    padding: 30px 20px;
+    background-color:rgba(33, 65, 97, 0.5)
+}
+
+.event-box image {
+    width:100%;
+    height:auto;
+}
+
+.event.date {
+    font-size:8px;
+    font-weight: bold;
+}
+
+.view-details {
+    display:block;
+    border: 1px solid #f7ac06; 
+    text-align: center;
+    margin: 0 auto; 
+    font-size:10px;
+    padding:10px 20px;
+    width: 80px;
+    background-color:#f7ac06;
+    color:#002347;
+}
