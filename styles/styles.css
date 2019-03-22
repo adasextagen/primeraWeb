@@ -19,6 +19,11 @@ body{
   justify-content: center;
 }
 
+section {
+  padding-top: 15px;
+  padding-bottom: 35px;
+}
+
 header{
   height: 50px;
 }
@@ -547,10 +552,13 @@ div.events-lists{
   padding-left: 15px;
 }
 
+/*
 .section{
   padding-bottom: 35px;
   padding-top: 15px;
+  
 }
+*/
 
 /*
 .author, .icon-comments, .icon-likes{
