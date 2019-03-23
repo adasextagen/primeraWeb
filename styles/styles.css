@@ -145,11 +145,16 @@ p.centerParragraph{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+p.paraTrainers{
+  margin-bottom: 90px;
+}
+
 .features-list {
   display: flex;
   flex-direction: row; /*valor por defecto del flex*/
   justify-content: space-between;
   margin-top: 40px;
+  max-width: 1100px;
 }
 
 .features-item {
@@ -175,7 +180,7 @@ p.centerParragraph{
 }
 
 span.photo img{
-  width: 280px;
+  width: 350px;
   margin-bottom: 50px;
 }
 
@@ -186,11 +191,11 @@ p.price{
   border-radius: 50%;
   float: right; 
   margin: 0 7px 80px 0;
-  transform: translate(-3px, -85px);
+  transform: translate(-8px, -90px);
   text-align: center;
   line-height: 65px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 19px;
+  font-size: 20px;
   font-weight: bold
 }
 
@@ -233,7 +238,7 @@ div.favIcons img.icon{
 
 div.favIcons p{
   float: left;
-  transform: translate(-10px, 15px);
+  transform: translate(-10px, 10px);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -241,7 +246,7 @@ div.favIcons p{
 
 div.favIcons img.favs{
   float: right;
-  transform: translate(0px, -26px)
+  transform: translate(-10px, -3px)
 }
 
 div.register{
@@ -253,41 +258,46 @@ div.register{
 
 div.register h3{
   color: #fff;
-  transform: translate(-300px, 120px);
-  font-size: 28px;
+  transform: translate(-400px, 60px);
+  font-size: 36px;
 }
 
  div.register p{
-  transform: translate(60px, 120px); 
+  transform: translate(30px, 80px); 
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 17px;
  }
 
 ul.time{
-  transform: translate(20px, 150px);
+  transform: translate(-10px, 150px);
   margin-top: 35px;
 }
 
 ul.time li{
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
   border: 1px solid #fff;
   background-color: #517da8;
-  padding: 25px 20px; 
-  border-radius: 15px;
-  margin-right: 8px 
+  padding: 43px 38px; 
+  border-radius: 14px;
+  margin-right: 8px; 
 } 
+ul.time li:hover{
+  background-color: #F2E811;
+  color: #0a3763;
+}
 
 div.courses{
   color: #0a3763;
   background-color: #fff;
   float: right;
-  width: 250px;
-  height: 330px;
+  width: 280px;
+  height: 380px;
   margin-right: 18px;
   font-family: Arial, Helvetica, sans-serif; 
   padding-left: 30px;
-  transform: translate(0, -75px) 
+  transform: translate(0, -125px) 
 }
 
 div.courses h5{
@@ -334,8 +344,13 @@ div.fondo{
   background-color: #fff;
 }
 
+div.definition{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 div.definition h4{
-  transform: translate(38px, 0);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -343,16 +358,17 @@ div.definition h4{
 }
 
 div.definition h6{
-  transform: translate(24px, 0);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   color: rgb(118, 120, 121);
-  margin: 3px 6px 25px 0;
+  margin: 3px 0 25px 0;
 } 
 
+div.definition p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 img.logosRed{
-  transform: translate(35px, 0);
-  margin-bottom: 20px;
   height: 30px ;
 }
 
@@ -362,6 +378,11 @@ font-size: 14px;
 }
 
 section.bluesection{
+  background-color: #0a3763;
+  height: 600px;
+}
+
+section.bluesectionBis{
   background-color: #0a3763;
   height: 750px;
 }
@@ -467,6 +488,13 @@ section a.arrow{
   width: 100%;
 }
 
+a.arrow:hover{
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.5s;
+
+}
+
 div.op{
   max-width: 1050px;
 }
@@ -474,14 +502,17 @@ div.op{
 div.clientOpinion{
   width: 450px;
   height: 200px;
-  
   display: flex;
   flex-direction: row; 
   align-items: center;
 }
 
 div.clientOpinion:hover{
-  box-shadow: 9px 9px 9px -1px rgba(97,96,97,0.47);
+  box-shadow: 7px 14px 9px 0px rgba(97,96,97,0.47);
+}
+
+div.oBis:hover{  
+  box-shadow: -7px 14px 5px 0px rgba(97,96,97,0.47);
 }
 
 div.adaFigure{
@@ -526,3 +557,24 @@ div.opinion > p{
   width: 250px;
   margin-right: 0; 
 }
+
+ul.points{
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+}
+
+
+ul.points li{
+  color: #F2E811;
+  background-color: #F2E811;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 40px 8px 0 0;
+} 
+
+ul.points li a:hover{
+  background-color: rgb(189, 192, 194);
+ 
+} 
