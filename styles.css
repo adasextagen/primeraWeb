@@ -1,0 +1,216 @@
+body{
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif; 
+  color: #1a206b;
+  font-size: 15px;
+
+}
+
+
+header{
+  height: 50px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 90%;
+  min-width: 600px;
+  max-width: 900px;
+  
+}
+
+.container{
+  margin: 0 auto;
+  overflow: hidden;
+  width: 90%;
+  min-width: 600px;
+  max-width: 900px;
+}
+
+.main-banner{
+background-image: url(../images/home-banner.jpg);
+background-size:cover;
+height: 80vh;
+
+}
+
+.logo{
+margin: 10px 0 0 0 ;
+}
+
+nav{
+  float: right;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+a{
+padding: 0 10px 0 10px;
+font-family: Arial, sans-serif;
+color: #1a206b;
+text-decoration: none;
+text-align: center; 
+}
+
+.Home {
+  color: #f3bc06;
+}
+
+.main-banner-content {
+  height: calc(80vh - 50px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+h3,h1{
+  text-align: center;
+  margin: 0;
+}
+
+h1{
+  font-size: 48px;
+}
+
+h3{
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.main-banner-buttons {
+  margin: 31px auto;
+  
+  font-size:12px; 
+
+
+}
+
+.learn-more{
+  border: 14px solid #1a206b;
+  color: #f3bc06;
+  box-sizing: border-box;
+  background-color: #1a206b;
+  margin: 10px;
+  border-radius: 5px;
+  padding:0 20px 0 20px;
+}
+.learn-more:hover{
+   border: 14px solid #f3bc06;
+   background-color: #f3bc06;
+   color: #1a206b;
+   box-sizing: border-box;
+   margin: 10px;
+   border-radius: 5px;
+   padding:0 20px 0 20px;
+}
+
+.see-course{
+  border: 14px solid #f3bc06;
+  background-color: #f3bc06 ;
+  color: #1a206b;
+  margin: 10px;
+  border-radius: 5px;
+  padding:0 20px 0 20px;
+
+}
+.see-course:hover{
+  border: 14px solid #1a206b;
+  background-color: #1a206b ;
+  color: #f3bc06;
+  margin: 10px;
+  border-radius: 5px;
+  padding:0 20px 0 20px;
+
+}
+/* AWESOME FEATURE SECTION */
+
+
+.main-text{
+padding: 20px 0 20px 0;
+
+}
+
+
+h2{
+  text-align: center;
+  margin: 0;
+  padding: 10px 0 0 0;
+
+
+}
+
+p{
+  text-align: center;
+  margin: 0
+}
+
+.icons {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+
+.icon-box{
+  background-color: aliceblue;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+span{
+  text-align: none; 
+}
+
+.img{
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+} 
+.courses-box {
+  margin: 0 10px;
+  background-color: aliceblue;
+}
+
+.couses-text{
+  position: relative;
+}
+
+
+
+@media(max-width:500px) {
+ .icons-container{ 
+     flex-wrap:wrap;
+ }
+
+.price-circle{
+    background-color: #f3bc06;
+    text-align: center;
+    border-radius: 100%;
+    width: fit-content;
+    padding: 20px;
+    position: absolute;
+    top: -32px;
+}
+.couses-text{
+  position: relative;
+}
+ 
+}
+
+.price-circle {
+  background-color: #f3bc06;
+  text-align: center;
+  border-radius: 100%;
+  width: fit-content;
+  padding: 20px;
+  position: absolute;
+  top: -32px;
+ 
+
+}
+
+.desing-button{
+  background-color: #1a206b;
+  text-align: center;
+  color: white;
+  
+}
