@@ -10,7 +10,7 @@ body{
   height: 80vh; /* vh = viewport height*/
 }
 
-@media (min-width:600px)
+@media (max-width:600px)
 
 .main-banner-content {
   height: calc(80vh - 50px);
@@ -23,6 +23,7 @@ section {
   padding-top: 15px;
   padding-bottom: 35px;
 }
+
 
 header{
   height: 50px;
