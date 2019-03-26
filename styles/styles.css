@@ -67,6 +67,8 @@ h3, h1 {
 h3 {
     font-size: 15px;
 }
+
+
 h1 {
     font-size: 30px;
 }
@@ -248,7 +250,7 @@ section .courses-info{
 .register{
     display: inline-flex;
     flex-direction: column;
-    width: 60%;
+    width: 540px;
     margin: 20px 20px 0 0;
 
 }
@@ -269,7 +271,6 @@ section .courses-info{
 
    
 }
-
 .register .register-details {
     display: flex;
     justify-content: space-around;
@@ -304,12 +305,13 @@ section .courses-info{
     
 
 }
+
  .register-form{
     display: inline-flex;
     flex-direction: column;
     background-color: #ffffff;
     height: 300px;
-    width: 30%;
+    width: 270px;
     align-items: center;
     margin: 20px 0 20px 0;
    
@@ -323,12 +325,12 @@ section .courses-info{
 
 
 }
-.register-form p{
+/* .register-form p{
     color: grey;
-}
+} */
 .register-form label{
     display: flex;
-    align-items: center;
+   
     flex-direction: column;
     margin: 15px 0 15px 0;
 
@@ -345,4 +347,113 @@ section .courses-info{
     background-color: yellow;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
+}
+
+.experts{
+    display:flex;
+    margin: 46px 0 0 0;
+    justify-content: space-between;
+
+}
+
+.expertes .expert-trainers{
+    width: 200px;
+    height: 400px;
+
+
+  
+    
+}
+.experts .expert-trainers .expert-img1{
+    width: 200px;
+    height: 200px;
+    background-image: url("../images/harps-joseph-719667-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+.experts .expert-trainers .expert-details{
+    width: 200px;
+
+}
+
+.experts .expert-details p:nth-child(1){
+    color: rgba(54, 54, 218);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.experts .expert-details p:nth-child(3){
+    font-size:12px;
+
+}
+
+.experts .expert-details ul{
+
+     justify-content: center;
+}
+
+.experts .expert-details ul .icon-social{
+    color: grey;
+    font-size:10px;
+}
+
+.clients{
+    display:flex;
+    justify-content: space-around;
+   overflow: hidde;
+
+}
+
+
+.clients .client-resume{
+    display: flex;
+    width: 400px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 11px grey;
+    margin: 20px 0;
+}
+
+.clients .client-resume .client-img{
+    width: 150px;
+    border-radius: 10px;
+    height: 100px;
+    /* background-image: url(".../images/kyle-loftus-592091-unsplash.jpg"); */
+    background-size:cover;
+    background-position: center;
+    background-color: blueviolet;
+}
+
+.clients .client-resume .client-details{
+    width: 150px;
+    height: 100px;
+}
+
+@media (max-width:500px) {
+    header {
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 25px;
+    
+    }
+    div .main-cta {
+    
+        justify-content: normal;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    .logo {
+        width: 60px;
+    
+    }
 }

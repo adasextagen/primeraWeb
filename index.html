@@ -2,10 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta data-n-head="true" name="viewport" content="width=device-width, initial-scale=1"/> <!--meta van al principio, sirve para que se adapte los media queries-->
     <link type="text/css" rel="stylesheet" href="styles/styles.css">
     <title>Primera Web</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    
   </head>
   <body>
     <div class="main-banner">
@@ -91,7 +93,7 @@
           </div>
           <div class="courses">
               <img src="images/alexis-brown-85793-unsplash.jpg" alt="students">
-              <div class="courses-price">
+              <div class="courses-price"> <!-- pasar a un div para que no se mueva cuando el contenido se agranda. Y le puedo dar un menos top en pixeles para que siempre este ahi  -->
                 <p>$25</p>
               </div>
               <div class="courses-detail">
@@ -155,7 +157,7 @@
          
             <div class="register-details">
               <div>
-                <p>150</p>
+                <p>150</p>  <!-- a una parte se le pone un span a otra no o a las dos un span-->
                 <span>Days</span>
               </div>
               <div>
@@ -177,7 +179,7 @@
             <p>It is high time for learning</p> <!-- por q se cambia de color -->
             <label>
               <span>Your Name</span>
-              <input type="text">
+              <input type="text">  <!--input focus-->
             </label>
             <label>
                 <span>Your Phone Number</span>
@@ -193,7 +195,150 @@
           </form>
       </section>
     </div>
-      
+    <section class="container">
+      <h3>Our Expert Trainers</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="experts">
+        <div class="expert-trainers">
+          <div class="expert-img1"> </div>
+          <div class="expert-details">
+            <p>Mated Nithan</p>
+            <p>Sr web designer</p>
+            <p>if you are looking at blanck cassettes on the web, you may be very confused at the</p>
+          <ul>
+            <li></li><i class="fab fa-facebook-f icon-social"></i>
+            <li></li><i class="fab fa-twitter icon-social"></i>
+            <li></li><i class="fab fa-linkedin icon-social"></i>
+            <li></li><i class="fab fa-pinterest-p icon-social"></i>
+          </ul>
+    
+          </div>
+        </div>
+        <div class="expert-trainers">
+          <div class="expert-img1"></div>
+          <div class="expert-details">
+            <p>Mated Nithan</p>
+            <p>Sr web designer</p>
+            <p>if you are looking at blanck cassettes on the web, you may be very confused at the</p>
+          <ul>
+            <li></li><i class="fab fa-facebook-f icon-social"></i>
+            <li></li><i class="fab fa-twitter icon-social"></i>
+            <li></li><i class="fab fa-linkedin icon-social"></i>
+            <li></li><i class="fab fa-pinterest-p icon-social"></i>
+          </ul>
+    
+          </div>
+        </div>
+        <div class="expert-trainers">
+          <div class="expert-img1"></div>
+          <div class="expert-details">
+            <p>Mated Nithan</p>
+            <p>Sr web designer</p>
+            <p>if you are looking at blanck cassettes on the web, you may be very confused at the</p>
+          <ul>
+            <li></li><i class="fab fa-facebook-f icon-social"></i>
+            <li></li><i class="fab fa-twitter icon-social"></i>
+            <li></li><i class="fab fa-linkedin icon-social"></i>
+            <li></li><i class="fab fa-pinterest-p icon-social"></i>
+          </ul>
+    
+          </div>
+        </div>
+        <div class="expert-trainers">
+          <div class="expert-img1"> </div>
+          <div class="expert-details">
+            <p>Mated Nithan</p>
+            <p>Sr web designer</p>
+            <p>if you are looking at blanck cassettes on the web, you may be very confused at the</p>
+          <ul>
+            <li></li><i class="fab fa-facebook-f icon-social"></i>
+            <li></li><i class="fab fa-twitter icon-social"></i>
+            <li></li><i class="fab fa-linkedin icon-social"></i>
+            <li></li><i class="fab fa-pinterest-p icon-social"></i>
+          </ul>
+    
+          </div>
+        </div>
+      </div>  
+    </section>
+    
+
+
+
+
+
+    <section class="container">
+        <h3>Client say about me</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="clients">
+          <div class="client-resume">
+            <div class="client-img"> </div>
+            <div class="client-details">
+              <p>Elite Martin</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero deleniti</p>  
+            </div>
+          </div>
+          <div class="client-resume">
+              <div class="client-img"> </div>
+              <div class="client-details">
+                <p>Elite Martin</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vero deleniti</p>  
+              </div>
+            </div>
+        </div>  
+    </section>
+<div class="box">
+  <section>
+    <div>
+      <p>Top Products</p>
+      <ul>
+        <li><a href="#">Managed Website</a></li>
+        <li><a href="#">Managed Reputation</a></li>
+        <li><a href="#">Power Tool</a></li>
+        <li><a href="#">Marketing Services</a></li>
+      </ul>
+    </div>
+    <div>
+        <p>Quick Links</p>
+        <ul>
+          <li><a href="#">Managed Website</a></li>
+          <li><a href="#">Managed Reputation</a></li>
+          <li><a href="#">Power Tool</a></li>
+          <li><a href="#">Marketing Services</a></li>
+        </ul>
+      </div>
+      <div>
+          <p>Features</p>
+          <ul>
+            <li><a href="#">Managed Website</a></li>
+            <li><a href="#">Managed Reputation</a></li>
+            <li><a href="#">Power Tool</a></li>
+            <li><a href="#">Marketing Services</a></li>
+          </ul>
+        </div>
+        <div>
+            <p>Resources</p>
+            <ul>
+              <li><a href="#">Managed Website</a></li>
+              <li><a href="#">Managed Reputation</a></li>
+              <li><a href="#">Power Tool</a></li>
+              <li><a href="#">Marketing Services</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Newsletter</p>
+            <ul>
+                <li>You can trust us, we only send promos offers</li>
+                <li><a href="#">Managed Reputation</a></li>
+               
+              </ul>
+          </div>
+  </section>
+</div>
+
+
+
+
   </body>
 </html>
 
