@@ -1,23 +1,93 @@
 body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif; 
+  color: #030331d7;
+  font-size: 15px;
+}
+header{
+  height: 50px;
+}
+li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #030331d7;
+}
+li a:hover{
+  color: #FFD700;
+}
+a.home{
+  color: #FFD700;
+}
+a.home:hover{ color: #030331d7;
+}
+ul{
+  list-style: none;
+  padding: 0;
   margin: 0;
+  font-weight: bold;
 }
 .main-banner{
   background: url("../images/home-banner.jpg") no-repeat center bottom;
   background-size:cover;
-  height: 80vh; /* vh = viewport height*/
+  height: 95vh; /* vh = viewport height*/
 }
-
+.main-banner .logo{
+  font-size: 15px;
+  float: left;
+  margin: 10px 0 0 0;
+}
+.main-banner nav{
+  float: right;
+  margin: 15px 0 0 0;
+}
+.main-banner li{
+  display: inline-block;
+  margin: 0 20px;
+  float: right;
+}
+.main-banner h3{
+  clear: both;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 15px;
+  margin: 15px 0 0 0
+  }
+.main-banner-content h1{
+  font-size: 35px;
+  padding: 20px 20px;
+}
 .main-banner-content {
-  height: calc(80vh - 50px);
+  height: calc(40vh - 50px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  margin-top: 20px;
 }
-
-header{
-  height: 50px;
+.main-banner-content div a{
+  font-size: 10px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 12px 30px;
+  margin-right: 6px;
+  border-radius: 5%;
+  text-decoration: none;
 }
-
+.main-banner-content div .learn-more{
+  color: #f7c216;
+  background-color: #030331d7;
+  }
+.main-banner-content div .learn-more:hover{
+  color: #030331d7;
+  background-color: #f7c216;
+}
+.main-banner-content div .see-course{
+  color: #030331d7;
+  background-color: #f7c216;
+  }
+.main-banner-content div .see-course:hover{
+  color: #f7c216;
+  background-color: #030331d7;
+  }
 .container{
   margin: 0 auto;
   overflow: hidden;
@@ -25,47 +95,244 @@ header{
   min-width: 600px;
   max-width: 900px;
 }
-
 .logo{
   float:left;
 }
-
 nav{
   float: right;
 }
 h3, h1 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: #336699;
+  color:  #030331d7;
   margin: 0;
 }
-
 h1{
-  font-size: 48px
+  font-size: 40px;
 }
-
 h3{
   font-size: 24px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
-div.primarybuttons{
-  margin: 0 auto;
-  width: 200px;
+section, .trainers{
+  padding: 100px 0;
 }
-
+ .courses{
+  padding-top:0px;
+}
 p.centerParragraph {
-  margin: 0 auto;
+  margin:15px auto 70px;
   width: 400px;
+  font-style: oblique;
+  color: #778899;
+  text-align: center;
 }
-
-.features-list {
+.features-list, .courses-list, .trainers-list {
   display: flex;
   flex-direction: row; /*valor por defecto del flex*/
   justify-content: space-between;
 }
+.features-list p, .courses-item p, .trainers-item p {
+  font-style: oblique;
+  color: #778899;}
 
-.features-item {
+.features-item{
   padding: 20px;
-  background-color: aliceblue;
+  background-color: #F0F8FF;
   margin: 0 10px;
+}
+.courses-item{
+  background-color: #F0F8FF;
+  }
+image.students{
+width:100%;
+position: relative;
+}
+.button {
+  background-color: #030331d7; 
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px;
+  font-weight: bold;
+}
+.button:hover{
+  color: #030331d7;
+  background-color:#9b9db6;
+  font-weight: bold;
+  }
+.courses-item h4{
+  text-align: center;
+}
+.courses-item p{
+  font-style: oblique;
+  color: #778899;
+  text-align: center;
+}
+.courses-item a.yellow{
+  font-weight: bold;
+  width:40px ;
+  height:40px ;
+  background-color: #f7c216;
+  border-radius:50%;
+  color: #030331d7;
+ font-size: 15px;
+ text-align: center;
+ float: right;
+ padding:20px 10px 5px;
+ text-decoration: none;
+ position: absolute;
+ font-weight: bold;
+ align-items: baseline right;
+ margin-left: 50px;
+ margin-top: -30px;
+ }
+.courses-item div.avatar{
+ display:flex;
+ direction:row;
+ height:40px;
+ }
+ .courses-item div ul,.trainers-item div ul {
+   text-decoration: none;
+   list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size:12px;
+ }
+ .box img{
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+   margin-right: 5px;
+   margin-bottom: 0px;
+ }
+ .box1{
+  margin-right: 5px;
+ }
+ .box2 img, .box3 img{
+  width:12px;
+  height:12px;
+  margin-right:5px;
+
+ }
+ .courses-item div li, .trainers-item div li{
+   display:inline-block;
+   margin: 10px;
+  
+ }
+ section.blueOne{
+  background-color: #030521;
+}
+
+section.blueOne h3, p{
+ color: white;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+section.blueOne h3{
+  font-size: 30px;
+}
+.subtitle p{
+  color:white;
+  margin-bottom: 80 px;
+}
+ .subtitle section.blueOne p{
+  padding-bottom: 70px;
+  color: grey;
+  font-style: Arial;
+  text-align: center;
+
+}
+ .register{
+  width: 70%;
+  display: inline-block;
+  color: white;
+}
+
+.register.subtitle{
+   text-align: left;
+}
+
+.register.subtitle h3{
+   color: white;
+   text-align:left;
+}
+
+.register.subtitle p{
+   color: white;
+   font-style: normal;
+   text-align: left;
+}
+
+form{
+   background-color: white;
+   border: 1px solid #030521;
+   display: flex;
+   flex-direction: column;
+   padding: 30px;
+   float: right;
+}
+form p{
+   margin: 5px 0 20px 0;
+   text-align: center;
+   color: grey;
+}
+form h4{
+   margin: 0;
+   text-align: center;
+}
+form input{
+   margin: 10px 0;
+   border-bottom-style: 1px solid grey;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+}
+
+form input.submit{
+   background-color: #f7c216;
+   color: #030521;
+   font-weight: bold;
+   padding: 15px;
+   border: none;
+}
+
+.countdown{
+   padding-top: 100px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.countdown div{
+   padding: 30px;
+   border-radius: 5px;
+   background-color:#5F9EA0;
+   color: #030521;
+}
+
+.countdown .number{
+   font-size: 20px;
+   font-weight: bold;
+   color: #030521;
+}
+
+.trainers-item{
+  width:22%;
+  background-color: #F0F8FF;
+
+}
+.trainers-item image{
+  width: 100%;
+  margin: 0;
+}
+.trainers-item h4, p{
+
+  padding-left: 12px;
+  padding-right: 12px;
 }
