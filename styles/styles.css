@@ -151,12 +151,6 @@ section{
   color: rgb(2, 35, 97);
 }
 
-p.centerParagraph{
-  margin: 0 auto;
-  width: 30%;
-  text-align: center;
-}
-
 .section-desc{
   color: #868686;
   font-size: 0.9em;
