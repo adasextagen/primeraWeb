@@ -310,7 +310,7 @@ section .courses-info{
     display: inline-flex;
     flex-direction: column;
     background-color: #ffffff;
-    height: 300px;
+    height: 350px;
     width: 270px;
     align-items: center;
     margin: 20px 0 20px 0;
@@ -342,8 +342,8 @@ section .courses-info{
 }
 .register-form button{
     width: 170px;
-    height: 70px;
-    margin: 15px 0 0 0;
+    height: 38px;
+    margin: 0px 0 0 0;
     background-color: yellow;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
@@ -430,6 +430,28 @@ section .courses-info{
     width: 150px;
     height: 100px;
 }
+.footer {
+    display: flex;
+}
+
+
+.footer ul{
+    display: flex;
+    flex-direction: column;
+
+} 
+
+.footer div p{  
+    color: #ffffff;
+    font-size: 12px;
+}
+.footer ul li a{
+    color: grey; 
+    line-height: 34px;
+    font-size: 10px;
+}
+
+
 
 @media (max-width:500px) {
     header {
