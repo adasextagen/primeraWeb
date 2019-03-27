@@ -168,12 +168,10 @@ span{
 .courses-box {
   margin: 0 10px;
   background-color: aliceblue;
-  ;
 }
 
 .couses-text{
   position: relative;
-  margin:20px;
 }
 
 
@@ -187,32 +185,25 @@ span{
     background-color: #f3bc06;
     text-align: center;
     border-radius: 100%;
+    width: fit-content;
+    padding: 20px;
     position: absolute;
     top: -32px;
-    margin: 0 170px;
-    
-  
 }
 .couses-text{
   position: relative;
-  
 }
  
 }
 
 .price-circle {
-  color: #1a206b;
   background-color: #f3bc06;
-  font-weight: bold;
   text-align: center;
-  border: 1px solid #f3bc06;
   border-radius: 100%;
-  padding: 15px;
+  width: fit-content;
+  padding: 20px;
   position: absolute;
-  top: -50px;
-  right: 5%;
-  
-  
+  top: -32px;
  
 
 }
@@ -221,26 +212,5 @@ span{
   background-color: #1a206b;
   text-align: center;
   color: white;
-  padding: 5px 15px;
-  margin:auto 15px;
   
-}
-
-.avatar-box{
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  margin: 5%;
-}
-.courses-avatar {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-}
-.avatar-icons{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-margin: 10%;
-
 }
