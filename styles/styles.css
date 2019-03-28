@@ -350,23 +350,31 @@ a.course-button {
 
 .event-list {
     display:flex;
+    padding:0;
+    margin: 40px auto;
+    width:75%; /*pero no me gusta cómo queda sin esto; para agregarlo necesito ver qué hago con el tamaño de los event-box*/
+    justify-content: center;
 }
 
 .event-box {
-    height:400px;
-    width:550px;
+    /*height:400px;
+    width:550px;*/
     overflow:hidden;
-    margin:0 auto;
+    margin:0 10px;
     position:relative;
+}
+
+.event-box > img {
+    width:100%;
 }
 
 .event-detail {
     position:absolute;
     top:0;
     right:0;
-    width:200px;
-    height: 250px;
-    padding: 30px 20px;
+    width:40%;
+    /*height: 250px;*/
+    padding: 20px 15px;
     background-color:rgba(33, 65, 97, 0.5)
 }
 
@@ -375,9 +383,38 @@ a.course-button {
     height:auto;
 }
 
-.event.date {
-    font-size:8px;
+.event-date {
+    font-size:10px;
+    float:left;
+    text-align:center;
+    margin:0;
+    padding: 0 5px;
+    margin:0 5px 0 0;
+    border-right:1px solid #fff;
+}
+
+.event-date > span {
+    font-size:20px;
     font-weight: bold;
+    color:#f7ac06;
+    display:block;
+}
+
+.event-venue {
+    font-size:8px;
+}
+
+.event-venue > p {
+    margin:8px 0cd;
+}
+
+.icon-very-small {
+    height:8px;
+}
+
+.event-description {
+    font-size:10px;
+    margin:20px 0;
 }
 
 .view-details {
@@ -391,3 +428,4 @@ a.course-button {
     background-color:#f7ac06;
     color:#002347;
 }
+
